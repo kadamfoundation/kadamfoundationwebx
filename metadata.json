@@ -1,0 +1,6 @@
+{
+  "name": "Kadam Foundation",
+  "description": "Youth-Led Nonprofit Organization empowering communities through grassroots education, civic engagement, and social welfare across India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

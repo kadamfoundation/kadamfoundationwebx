@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Donate | Kadam Foundation — Every Contribution Moves Us Forward</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Lora & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Lora:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary": "#76574e",
+            "surface-lilac-soft": "#D8C2D0",
+            "on-surface": "#211a16",
+            "on-secondary-fixed-variant": "#5c4037",
+            "tertiary": "#2b1710",
+            "on-secondary-container": "#795a50",
+            "on-background": "#211a16",
+            "on-secondary-fixed": "#2b160f",
+            "on-primary-container": "#ad9295",
+            "on-primary-fixed-variant": "#564143",
+            "surface-peach": "#E5D0C5",
+            "surface-tint": "#70595b",
+            "inverse-on-surface": "#fdeee7",
+            "surface": "#fff8f5",
+            "primary-container": "#3f2c2e",
+            "surface-bright": "#fff8f5",
+            "on-surface-variant": "#4f4445",
+            "text-primary": "#3F2C2E",
+            "on-secondary": "#ffffff",
+            "focus-ring": "#65413D",
+            "on-primary-fixed": "#281719",
+            "surface-clay-soft": "#E6C8B8",
+            "inverse-primary": "#ddbfc2",
+            "on-tertiary-fixed": "#2a1610",
+            "secondary-fixed-dim": "#e6beb2",
+            "text-secondary": "#6F514A",
+            "surface-container": "#faebe4",
+            "surface-container-low": "#fff1ea",
+            "outline-variant": "#d2c3c4",
+            "surface-container-lowest": "#ffffff",
+            "inverse-surface": "#372f2a",
+            "tertiary-fixed": "#ffdbd0",
+            "tertiary-container": "#422b24",
+            "surface-container-highest": "#eee0d9",
+            "on-tertiary-fixed-variant": "#5a4139",
+            "tertiary-fixed-dim": "#e3bfb4",
+            "on-error": "#ffffff",
+            "surface-raised": "#F8EEE8",
+            "primary-fixed": "#fadbdd",
+            "surface-container-high": "#f4e5de",
+            "on-error-container": "#93000a",
+            "status-success": "#315B45",
+            "on-primary": "#ffffff",
+            "surface-dim": "#e6d7d0",
+            "status-warning": "#76511C",
+            "text-inverse": "#FFF7F2",
+            "background": "#fff8f5",
+            "action-hover": "#2F2022",
+            "secondary-container": "#fdd4c8",
+            "status-error": "#8A3034",
+            "error-container": "#ffdad6",
+            "on-tertiary-container": "#b29187",
+            "border-subtle": "#D4B9AE",
+            "primary-fixed-dim": "#ddbfc2",
+            "surface-canvas": "#F2E3DC",
+            "surface-blue-soft": "#CDD0D2",
+            "primary": "#281819",
+            "outline": "#807475",
+            "secondary-fixed": "#ffdbd0",
+            "surface-olive-soft": "#D0CCB1",
+            "error": "#ba1a1a",
+            "on-tertiary": "#ffffff",
+            "surface-variant": "#eee0d9"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter-tablet": "1.25rem",
+            "space-xl": "2rem",
+            "gutter": "1.5rem",
+            "margin": "2.5rem",
+            "margin-tablet": "2rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "margin-mobile": "1.5rem",
+            "space-lg": "1.5rem",
+            "gutter-mobile": "1rem"
+          },
+          "fontFamily": {
+            "body-sm": ["Inter"],
+            "display-lg": ["Lora"],
+            "label-md": ["Inter"],
+            "eyebrow": ["Inter"],
+            "headline-lg": ["Lora"],
+            "display-lg-mobile": ["Lora"],
+            "headline-xl": ["Lora"],
+            "body-lg": ["Inter"],
+            "headline-md": ["Lora"],
+            "body-md": ["Inter"],
+            "display-xl-mobile": ["Lora"],
+            "display-xl": ["Lora"]
+          },
+          "fontSize": {
+            "body-sm": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "display-lg": ["44px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
+            "eyebrow": ["12px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "600" }],
+            "headline-lg": ["24px", { "lineHeight": "30px", "fontWeight": "600" }],
+            "display-lg-mobile": ["32px", { "lineHeight": "38px", "fontWeight": "600" }],
+            "headline-xl": ["32px", { "lineHeight": "38px", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "headline-md": ["20px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "body-md": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "display-xl-mobile": ["40px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "display-xl": ["56px", { "lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .custom-dashed-border {
+      background-image: repeating-linear-gradient(0deg, #D4B9AE, #D4B9AE 6px, transparent 6px, transparent 12px), repeating-linear-gradient(90deg, #D4B9AE, #D4B9AE 6px, transparent 6px, transparent 12px), repeating-linear-gradient(180deg, #D4B9AE, #D4B9AE 6px, transparent 6px, transparent 12px), repeating-linear-gradient(270deg, #D4B9AE, #D4B9AE 6px, transparent 6px, transparent 12px);
+      background-size: 1.5px 100%, 100% 1.5px, 1.5px 100% , 100% 1.5px;
+      background-position: 0 0, 0 0, 100% 0, 0 100%;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body class="bg-surface-canvas text-text-primary font-body-md antialiased selection:bg-surface-clay-soft selection:text-text-primary min-h-screen flex flex-col justify-between">
+<!-- Top Navigation Anchor (Direct Mapping from Shared Components JSON) -->
+<header class="w-full bg-surface-canvas border-b border-border-subtle sticky top-0 z-50 transition-colors">
+<div class="flex justify-between items-center w-full px-space-lg md:px-margin max-w-7xl mx-auto py-space-md">
+<!-- Brand Logo & Identity -->
+<a class="flex items-center gap-3 group transition-transform active:scale-95 duration-150" href="#">
+<img alt="Kadam Foundation circular footprint emblem logo" class="w-10 h-10 rounded-full object-cover border border-border-subtle shadow-sm transition-transform group-hover:scale-105 duration-200" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAG-eGCEc3LSYRbyzFpLflVm5EN4VAuddKZwPfap8Deo87WoGlqCrTKe2QgLGh8MpTFAxau8gKe1AfNRv8I2SJtbQj95CBsek_4OxNph3HxjrHEAfbH4IgIhCoW9vjTkFzGfuhMRAP7BCgXvIsHraQZ53TE3aGl6noTfp-AFcr72mncUq4Gfg4NjZqYOBBTidGJPIzk4cXhL3-otTVeaKeY8Q-d4sf_cOS8BhCSO-b9elmF642RpmzjRHlWMqHZ2lf8PQ"/>
+<span class="font-headline-md text-headline-md text-primary font-bold tracking-tight">Kadam Foundation</span>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center gap-7">
+<a class="text-text-secondary font-medium hover:text-primary transition-colors text-label-md font-label-md" href="#">Home</a>
+<a class="text-text-secondary font-medium hover:text-primary transition-colors text-label-md font-label-md" href="#">About</a>
+<a class="text-text-secondary font-medium hover:text-primary transition-colors text-label-md font-label-md" href="#">Programs</a>
+<a class="text-text-secondary font-medium hover:text-primary transition-colors text-label-md font-label-md" href="#">Stories</a>
+<a class="text-text-secondary font-medium hover:text-primary transition-colors text-label-md font-label-md" href="#">Our Team</a>
+<a class="text-text-secondary font-medium hover:text-primary transition-colors text-label-md font-label-md" href="#">Volunteer</a>
+<a class="text-text-secondary font-medium hover:text-primary transition-colors text-label-md font-label-md" href="#">Contact</a>
+</nav>
+<!-- Active Primary CTA: Donate -->
+<div class="flex items-center gap-3">
+<a class="bg-primary text-text-inverse px-6 py-2.5 rounded-full font-label-md text-label-md font-semibold hover:bg-action-hover transition-all duration-150 shadow-sm flex items-center gap-1.5 ring-2 ring-primary ring-offset-2 ring-offset-surface-canvas" href="#">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">volunteer_activism</span>
+<span>Donate</span>
+</a>
+<!-- Mobile Menu Trigger Button -->
+<button aria-label="Toggle navigation menu" class="md:hidden p-2 rounded-lg text-text-primary hover:bg-surface-raised transition-colors focus:outline-none focus:ring-2 focus:ring-focus-ring" id="mobileMenuBtn">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Dropdown Navigation -->
+<div class="hidden md:hidden px-space-lg py-space-md bg-surface-raised border-t border-border-subtle space-y-3" id="mobileMenu">
+<a class="block py-2 text-text-secondary hover:text-primary font-label-md text-label-md border-b border-border-subtle/50" href="#">Home</a>
+<a class="block py-2 text-text-secondary hover:text-primary font-label-md text-label-md border-b border-border-subtle/50" href="#">About</a>
+<a class="block py-2 text-text-secondary hover:text-primary font-label-md text-label-md border-b border-border-subtle/50" href="#">Programs</a>
+<a class="block py-2 text-text-secondary hover:text-primary font-label-md text-label-md border-b border-border-subtle/50" href="#">Stories</a>
+<a class="block py-2 text-text-secondary hover:text-primary font-label-md text-label-md border-b border-border-subtle/50" href="#">Our Team</a>
+<a class="block py-2 text-text-secondary hover:text-primary font-label-md text-label-md border-b border-border-subtle/50" href="#">Volunteer</a>
+<a class="block py-2 text-text-secondary hover:text-primary font-label-md text-label-md border-b border-border-subtle/50" href="#">Contact</a>
+<div class="pt-2">
+<span class="inline-block text-primary font-semibold border-b-2 border-primary pb-1 text-label-md font-label-md">Donate (Current Page)</span>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- SECTION 1: HERO SECTION -->
+<section class="py-12 md:py-20 px-space-lg md:px-margin max-w-7xl mx-auto text-center">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-peach text-text-primary border border-border-subtle font-eyebrow text-eyebrow tracking-widest uppercase mb-6 shadow-sm">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span>COMMUNITY SOLIDARITY &amp; GIVING</span>
+</div>
+<h1 class="font-display-lg md:font-display-xl text-display-lg-mobile md:text-display-xl text-primary font-semibold max-w-4xl mx-auto leading-tight mb-6">
+        Every Contribution Moves Us Forward
+      </h1>
+<p class="font-body-lg text-body-lg text-text-secondary max-w-2xl mx-auto leading-relaxed mb-10">
+        A heartfelt invitation to sustain Kadam Foundation’s youth-led, decentralized grassroots mission. We channel community solidarity directly to children's weekend learning pods, civic organizing cohorts, and frontline community circles across informal settlements.
+      </p>
+<!-- Trust Badges Row -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+<div class="flex items-center gap-3.5 p-4 rounded-2xl bg-surface-raised border border-border-subtle text-left">
+<div class="w-10 h-10 rounded-full bg-surface-clay-soft flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">handshake</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-semibold text-primary">Direct Grassroots Impact</h4>
+<p class="font-body-sm text-body-sm text-text-secondary">Direct support to frontline settlement pods</p>
+</div>
+</div>
+<div class="flex items-center gap-3.5 p-4 rounded-2xl bg-surface-raised border border-border-subtle text-left">
+<div class="w-10 h-10 rounded-full bg-surface-olive-soft flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-semibold text-primary">Youth &amp; Community Governed</h4>
+<p class="font-body-sm text-body-sm text-text-secondary">Accountable to student volunteers and parents</p>
+</div>
+</div>
+<div class="flex items-center gap-3.5 p-4 rounded-2xl bg-surface-raised border border-border-subtle text-left">
+<div class="w-10 h-10 rounded-full bg-surface-lilac-soft flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">nest_eco_leaf</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-semibold text-primary">Zero Overhead Leaks</h4>
+<p class="font-body-sm text-body-sm text-text-secondary">100% focused on direct frontline materials</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: CENTRAL DONATION SECTION (UPI QR CODE EXPERIENCE) -->
+<section class="pb-16 md:pb-24 px-space-lg md:px-margin max-w-7xl mx-auto">
+<div class="bg-surface-raised border border-border-subtle rounded-3xl p-6 md:p-12 shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<!-- Column A: QR Code Visual Card -->
+<div class="lg:col-span-5 flex flex-col items-center text-center">
+<div class="w-full max-w-sm bg-surface-container rounded-2xl border border-border-subtle p-6 relative">
+<!-- Subtle Targeting Corner Accents -->
+<div class="relative p-4 bg-surface rounded-xl border border-border-subtle/80 flex flex-col items-center justify-center">
+<div class="w-full flex justify-between items-center mb-3">
+<span class="text-xs font-mono font-medium text-text-secondary tracking-wider uppercase">UPI Dynamic Scanner</span>
+<span class="w-2.5 h-2.5 rounded-full bg-status-success animate-pulse" title="Active Scanner Ready"></span>
+</div>
+<!-- Stylized Authentic QR Visual -->
+<div class="w-56 h-56 bg-surface-canvas rounded-lg p-3 border border-border-subtle relative flex items-center justify-center group overflow-hidden">
+<!-- QR SVG Graphic Presentation with Kadam Center Brand Marker -->
+<svg class="w-full h-full text-primary" fill="none" viewbox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+<!-- Background Softness -->
+<rect fill="#F8EEE8" height="160" rx="6" width="160"></rect>
+<!-- Top Left Marker -->
+<rect fill="#3F2C2E" height="38" rx="4" width="38" x="14" y="14"></rect>
+<rect fill="#F8EEE8" height="26" rx="2" width="26" x="20" y="20"></rect>
+<rect fill="#3F2C2E" height="16" rx="1.5" width="16" x="25" y="25"></rect>
+<!-- Top Right Marker -->
+<rect fill="#3F2C2E" height="38" rx="4" width="38" x="108" y="14"></rect>
+<rect fill="#F8EEE8" height="26" rx="2" width="26" x="114" y="20"></rect>
+<rect fill="#3F2C2E" height="16" rx="1.5" width="16" x="119" y="25"></rect>
+<!-- Bottom Left Marker -->
+<rect fill="#3F2C2E" height="38" rx="4" width="38" x="14" y="108"></rect>
+<rect fill="#F8EEE8" height="26" rx="2" width="26" x="20" y="114"></rect>
+<rect fill="#3F2C2E" height="16" rx="1.5" width="16" x="25" y="119"></rect>
+<!-- Abstract QR Data Pattern Points -->
+<rect fill="#3F2C2E" height="8" rx="1" width="8" x="62" y="16"></rect>
+<rect fill="#3F2C2E" height="8" rx="1" width="8" x="74" y="16"></rect>
+<rect fill="#3F2C2E" height="8" rx="1" width="10" x="88" y="22"></rect>
+<rect fill="#3F2C2E" height="6" rx="1" width="16" x="62" y="30"></rect>
+<rect fill="#3F2C2E" height="14" rx="1" width="8" x="84" y="34"></rect>
+<rect fill="#3F2C2E" height="8" rx="1" width="12" x="64" y="44"></rect>
+<rect fill="#3F2C2E" height="16" rx="1" width="8" x="16" y="62"></rect>
+<rect fill="#3F2C2E" height="8" rx="1" width="12" x="30" y="66"></rect>
+<rect fill="#3F2C2E" height="10" rx="1" width="8" x="48" y="62"></rect>
+<rect fill="#3F2C2E" height="10" rx="1" width="10" x="16" y="86"></rect>
+<rect fill="#3F2C2E" height="8" rx="1" width="18" x="34" y="84"></rect>
+<rect fill="#3F2C2E" height="6" rx="1" width="14" x="38" y="96"></rect>
+<rect fill="#3F2C2E" height="8" rx="1" width="10" x="108" y="62"></rect>
+<rect fill="#3F2C2E" height="6" rx="1" width="18" x="126" y="64"></rect>
+<rect fill="#3F2C2E" height="10" rx="1" width="16" x="110" y="78"></rect>
+<rect fill="#3F2C2E" height="14" rx="1" width="12" x="134" y="76"></rect>
+<rect fill="#3F2C2E" height="6" rx="1" width="8" x="108" y="96"></rect>
+<rect fill="#3F2C2E" height="8" rx="1" width="12" x="124" y="94"></rect>
+<rect fill="#3F2C2E" height="8" rx="1" width="10" x="60" y="112"></rect>
+<rect fill="#3F2C2E" height="16" rx="1" width="8" x="76" y="108"></rect>
+<rect fill="#3F2C2E" height="8" rx="1" width="12" x="90" y="114"></rect>
+<rect fill="#3F2C2E" height="8" rx="1" width="18" x="62" y="132"></rect>
+<rect fill="#3F2C2E" height="14" rx="1" width="8" x="88" y="130"></rect>
+<rect fill="#3F2C2E" height="8" rx="1" width="14" x="104" y="134"></rect>
+<rect fill="#3F2C2E" height="16" rx="1" width="8" x="126" y="124"></rect>
+<!-- Center Safe Zone & Emblem Overlay -->
+<circle cx="80" cy="80" fill="#FFF8F5" r="18" stroke="#D4B9AE" stroke-width="1.5"></circle>
+<path d="M78 72C78 70.8954 78.8954 70 80 70C81.1046 70 82 70.8954 82 72V76H86C87.1046 76 88 76.8954 88 78C88 79.1046 87.1046 80 86 80H82V84C82 85.1046 81.1046 86 80 86C78.8954 86 78 85.1046 78 84V80H74C72.8954 80 72 79.1046 72 78C72 76.8954 72.8954 76 74 76H78V72Z" fill="#3F2C2E"></path>
+</svg>
+<div class="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="bg-surface px-2.5 py-1 rounded text-xs font-medium text-text-primary border border-border-subtle shadow-sm">Scan with Phone</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mt-3 italic">
+                  [Official Kadam Foundation UPI QR Code Placeholder — Scan to Donate]
+                </p>
+</div>
+<!-- UPI ID Reference Box with Instant Feedback Copy -->
+<div class="mt-4 p-3 bg-surface rounded-xl border border-border-subtle flex items-center justify-between">
+<div class="text-left">
+<div class="font-eyebrow text-eyebrow text-text-secondary uppercase">UPI VPA Handle</div>
+<div class="font-mono text-sm font-semibold text-primary" id="vpaText">kadamfoundation@upi</div>
+</div>
+<button class="flex items-center gap-1.5 px-3 py-1.5 bg-surface-clay-soft hover:bg-surface-peach text-primary rounded-full text-xs font-semibold transition-colors focus:ring-2 focus:ring-focus-ring" id="copyVpaBtn" title="Copy UPI ID to clipboard">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span id="copyBtnLabel">Copy</span>
+</button>
+</div>
+</div>
+<!-- UPI App Compatibility Indicator Badges -->
+<div class="mt-4 flex flex-wrap items-center justify-center gap-2">
+<span class="px-3 py-1 bg-surface-canvas rounded-full text-xs font-medium text-text-secondary border border-border-subtle flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">smartphone</span> Google Pay
+              </span>
+<span class="px-3 py-1 bg-surface-canvas rounded-full text-xs font-medium text-text-secondary border border-border-subtle flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">smartphone</span> PhonePe
+              </span>
+<span class="px-3 py-1 bg-surface-canvas rounded-full text-xs font-medium text-text-secondary border border-border-subtle flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">smartphone</span> Paytm
+              </span>
+<span class="px-3 py-1 bg-surface-canvas rounded-full text-xs font-medium text-text-secondary border border-border-subtle flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">account_balance</span> BHIM / Any Banking UPI
+              </span>
+</div>
+</div>
+<!-- Column B: 4-Step Plain-Language Instructions -->
+<div class="lg:col-span-7 space-y-6">
+<div>
+<div class="font-eyebrow text-eyebrow text-secondary uppercase tracking-wider mb-2">Straightforward &amp; Zero Gateway Fees</div>
+<h2 class="font-headline-xl text-headline-xl text-primary font-semibold">How to Make Your Contribution</h2>
+<p class="font-body-md text-body-md text-text-secondary mt-2">
+                We purposefully bypass high-fee corporate donation portals. Every rupee or currency unit sent via UPI reaches our operations directly, leaving 100% of your generous support in frontline community hands.
+              </p>
+</div>
+<!-- Step by Step Bento Cadence -->
+<div class="space-y-4">
+<!-- Step 1 -->
+<div class="flex gap-4 p-4 rounded-xl bg-surface border border-border-subtle/80 hover:border-border-subtle transition-all">
+<div class="w-8 h-8 rounded-full bg-surface-clay-soft flex items-center justify-center font-bold text-primary shrink-0 text-sm">1</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary font-semibold text-base">Open any UPI mobile application</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-0.5">
+                    Launch Google Pay, PhonePe, Paytm, BHIM, or your trusted mobile banking application on your phone.
+                  </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex gap-4 p-4 rounded-xl bg-surface border border-border-subtle/80 hover:border-border-subtle transition-all">
+<div class="w-8 h-8 rounded-full bg-surface-clay-soft flex items-center justify-center font-bold text-primary shrink-0 text-sm">2</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary font-semibold text-base">Scan the official Kadam Foundation QR code</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-0.5">
+                    Select ‘Scan QR’ and frame the code displayed here, or alternatively enter the VPA handle <span class="font-mono text-primary font-medium">kadamfoundation@upi</span>.
+                  </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex gap-4 p-4 rounded-xl bg-surface border border-border-subtle/80 hover:border-border-subtle transition-all">
+<div class="w-8 h-8 rounded-full bg-surface-clay-soft flex items-center justify-center font-bold text-primary shrink-0 text-sm">3</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary font-semibold text-base">Enter any contribution amount you wish</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-0.5">
+                    There are no minimums and no forced tiers. Whether it covers a box of chalk or a semester of study books, every single step matters.
+                  </p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex gap-4 p-4 rounded-xl bg-surface border border-border-subtle/80 hover:border-border-subtle transition-all">
+<div class="w-8 h-8 rounded-full bg-surface-clay-soft flex items-center justify-center font-bold text-primary shrink-0 text-sm">4</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary font-semibold text-base">Confirm and save your transaction record</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-0.5">
+                    Authorize the secure transfer using your UPI PIN and save the confirmation receipt or UTR number for verification.
+                  </p>
+</div>
+</div>
+</div>
+<!-- Note below steps -->
+<div class="p-3.5 bg-surface-peach/50 rounded-xl border border-border-subtle flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">info</span>
+<p class="font-body-sm text-body-sm text-text-secondary">
+<strong class="text-primary font-semibold">Decentralized Youth Operations:</strong> We do not ask for card details, bank logins, or third-party credential handoffs anywhere on this website.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: MISSION & PURPOSE STATEMENT (EDITORIAL PERSPECTIVE) -->
+<section class="py-12 md:py-20 px-space-lg md:px-margin max-w-7xl mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-12">
+<div class="font-eyebrow text-eyebrow text-secondary uppercase tracking-wider mb-2">WHERE YOUR SUPPORT JOURNEYS</div>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary font-semibold">
+          Holistic General Mission Support
+        </h2>
+<p class="font-body-md text-body-md text-text-secondary mt-3">
+          To sustain authentic community ownership, Kadam Foundation pools contributions into an unrestricted general fund. This deliberate approach gives our youth volunteers the agility to respond quickly to changing neighborhood priorities without rigid administrative bottlenecks.
+        </p>
+</div>
+<!-- Bento Program Matrix -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Pod 1: Education -->
+<div class="bg-surface-raised border border-border-subtle rounded-2xl p-6 flex flex-col justify-between hover:border-text-secondary transition-all">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-clay-soft flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined text-[24px]">menu_book</span>
+</div>
+<span class="font-eyebrow text-eyebrow text-secondary uppercase block mb-1">Project Shiksha</span>
+<h3 class="font-headline-md text-headline-md text-primary font-semibold mb-2.5">Weekend Learning Pods</h3>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">
+              Funding notebooks, workbooks, geometry kits, chalkboards, and safe weekend shelter rentals across five urban informal settlement communities.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-border-subtle/50 text-xs text-secondary font-medium">
+            Supporting 240+ recurring young learners
+          </div>
+</div>
+<!-- Pod 2: Civic Organizing -->
+<div class="bg-surface-raised border border-border-subtle rounded-2xl p-6 flex flex-col justify-between hover:border-text-secondary transition-all">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-blue-soft flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined text-[24px]">groups</span>
+</div>
+<span class="font-eyebrow text-eyebrow text-secondary uppercase block mb-1">Project Samanvay</span>
+<h3 class="font-headline-md text-headline-md text-primary font-semibold mb-2.5">Youth Civic Organizing</h3>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">
+              Supporting collegiate volunteer training camps, civic research toolkits, and participatory public dialogue workshops for first-time student leaders.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-border-subtle/50 text-xs text-secondary font-medium">
+            Mobilizing 60+ university campus ambassadors
+          </div>
+</div>
+<!-- Pod 3: Mental Health Circles -->
+<div class="bg-surface-raised border border-border-subtle rounded-2xl p-6 flex flex-col justify-between hover:border-text-secondary transition-all">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-lilac-soft flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined text-[24px]">diversity_1</span>
+</div>
+<span class="font-eyebrow text-eyebrow text-secondary uppercase block mb-1">Heal with Kadam</span>
+<h3 class="font-headline-md text-headline-md text-primary font-semibold mb-2.5">Empathetic Peer Circles</h3>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">
+              Sustaining safe, destigmatized youth listening spaces, certified emotional wellness guidance, and peer counseling materials in local dialects.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-border-subtle/50 text-xs text-secondary font-medium">
+            Bi-weekly peer sessions across three centers
+          </div>
+</div>
+<!-- Pod 4: Women's Cooperatives -->
+<div class="bg-surface-raised border border-border-subtle rounded-2xl p-6 flex flex-col justify-between hover:border-text-secondary transition-all">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-olive-soft flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined text-[24px]">interests</span>
+</div>
+<span class="font-eyebrow text-eyebrow text-secondary uppercase block mb-1">Empower Initiative</span>
+<h3 class="font-headline-md text-headline-md text-primary font-semibold mb-2.5">Artisan Micro-Aid</h3>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">
+              Providing raw sewing fabrics, craft equipment, and fair accounting training to local mothers' self-help collectives.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-border-subtle/50 text-xs text-secondary font-medium">
+            Self-sustaining micro-economic units
+          </div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: AFTER DONATING (RECEIPT & VERIFICATION GUIDANCE) -->
+<section class="py-12 md:py-16 px-space-lg md:px-margin max-w-7xl mx-auto">
+<div class="bg-surface border border-border-subtle rounded-3xl p-6 md:p-10 relative overflow-hidden">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-raised border border-border-subtle text-secondary font-eyebrow text-eyebrow uppercase mb-4">
+<span class="material-symbols-outlined text-[14px]">receipt_long</span>
+<span>Manual Verification &amp; Recognition</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-primary font-semibold mb-4">
+            Need a formal donation receipt or confirmation?
+          </h2>
+<p class="font-body-md text-body-md text-text-secondary mb-8">
+            Because we operate without automated merchant gateways, our youth finance secretariat reviews and verifies each contribution manually. This human-to-human process ensures complete accountability.
+          </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+<!-- Step 1 Info -->
+<div class="p-5 rounded-2xl bg-surface-raised border border-border-subtle">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-6 h-6 rounded-full bg-primary text-text-inverse text-xs flex items-center justify-center font-bold">A</span>
+<h4 class="font-label-md text-label-md font-semibold text-primary">Capture Transaction Record</h4>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">
+                Take a clear screenshot of your completed UPI transaction screen or copy down the 12-digit UPI Reference / UTR Number.
+              </p>
+</div>
+<!-- Step 2 Info -->
+<div class="p-5 rounded-2xl bg-surface-raised border border-border-subtle">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-6 h-6 rounded-full bg-primary text-text-inverse text-xs flex items-center justify-center font-bold">B</span>
+<h4 class="font-label-md text-label-md font-semibold text-primary">Send Details to our Secretariat</h4>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">
+                Share your transfer screenshot, full donor name, and postal or email address through our verified channels below.
+              </p>
+</div>
+</div>
+<!-- Contact Channel Actions -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-primary text-text-inverse font-label-md text-label-md font-semibold hover:bg-action-hover transition-colors" href="mailto:contact@[Placeholder:kadamfoundation.org]?subject=Donation%20Receipt%20Request">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+<span>contact@[Placeholder:kadamfoundation.org]</span>
+</a>
+<div class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-surface-raised border border-border-subtle text-text-primary font-label-md text-label-md font-medium">
+<span class="material-symbols-outlined text-[18px] text-status-success" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span>WhatsApp Desk: +91 [Placeholder: Official WhatsApp Desk Link]</span>
+</div>
+</div>
+<div class="mt-6 flex items-center gap-2 text-xs text-text-secondary">
+<span class="material-symbols-outlined text-[16px] text-secondary">schedule</span>
+<span>Acknowledgement letters and receipts are dispatched within <strong>48–72 operational hours</strong>.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: DONOR ETHICS & FINANCIAL INTEGRITY NOTE -->
+<section class="py-10 md:py-14 px-space-lg md:px-margin max-w-7xl mx-auto">
+<div class="p-8 rounded-3xl bg-surface-peach/40 border border-border-subtle text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-2xl bg-surface-clay-soft flex items-center justify-center shrink-0 text-primary mt-1">
+<span class="material-symbols-outlined text-[26px]">policy</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary font-semibold">Our Commitment to Clean Governance</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1.5 max-w-2xl leading-relaxed">
+              Kadam Foundation adheres to independent community audits, periodic financial disclosures, and strict non-profit governance under the Societies Registration Act. We honor the trust of every youth volunteer, parent, and benefactor who walks with us.
+            </p>
+</div>
+</div>
+<a class="shrink-0 px-5 py-2.5 rounded-full border border-primary text-primary hover:bg-primary hover:text-text-inverse font-label-md text-label-md font-medium transition-all duration-150" href="#">
+          View Financial Transparency Reports
+        </a>
+</div>
+</section>
+</main>
+<!-- Global Reusable Footer (Direct Mapping from Shared Components JSON) -->
+<footer class="bg-surface-clay-soft border-t border-border-subtle mt-16">
+<div class="w-full px-space-lg md:px-margin py-space-xl max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
+<!-- Brand & Description -->
+<div class="md:col-span-5 space-y-4">
+<a class="flex items-center gap-3" href="#">
+<img alt="Kadam Foundation circular footprint emblem logo" class="w-9 h-9 rounded-full object-cover border border-border-subtle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAG-eGCEc3LSYRbyzFpLflVm5EN4VAuddKZwPfap8Deo87WoGlqCrTKe2QgLGh8MpTFAxau8gKe1AfNRv8I2SJtbQj95CBsek_4OxNph3HxjrHEAfbH4IgIhCoW9vjTkFzGfuhMRAP7BCgXvIsHraQZ53TE3aGl6noTfp-AFcr72mncUq4Gfg4NjZqYOBBTidGJPIzk4cXhL3-otTVeaKeY8Q-d4sf_cOS8BhCSO-b9elmF642RpmzjRHlWMqHZ2lf8PQ"/>
+<span class="font-headline-md text-headline-md text-primary font-bold">Kadam Foundation</span>
+</a>
+<p class="font-body-sm text-body-sm text-text-secondary max-w-sm leading-relaxed">
+            Young steps towards the nation. A registered youth-led nonprofit organization building community learning pods, grassroots youth agency, and compassionate civic spaces.
+          </p>
+<div class="flex items-center gap-3 pt-2 text-primary">
+<a aria-label="Social Link" class="w-8 h-8 rounded-full bg-surface-canvas hover:bg-surface-raised flex items-center justify-center border border-border-subtle transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px]">public</span>
+</a>
+<a aria-label="Mail Link" class="w-8 h-8 rounded-full bg-surface-canvas hover:bg-surface-raised flex items-center justify-center border border-border-subtle transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+</a>
+<a aria-label="Community Feed" class="w-8 h-8 rounded-full bg-surface-canvas hover:bg-surface-raised flex items-center justify-center border border-border-subtle transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px]">rss_feed</span>
+</a>
+</div>
+</div>
+<!-- Links Cluster (Exact labels from Footer JSON) -->
+<div class="md:col-span-4 grid grid-cols-2 gap-4">
+<div class="space-y-2.5">
+<div class="font-label-md text-label-md font-semibold text-primary mb-2">Organization</div>
+<div><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="#">About Us</a></div>
+<div><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="#">Focus Areas</a></div>
+<div><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="#">Financial Transparency</a></div>
+<div><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="#">Annual Reports</a></div>
+</div>
+<div class="space-y-2.5">
+<div class="font-label-md text-label-md font-semibold text-primary mb-2">Engage</div>
+<div><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="#">Volunteer Portal</a></div>
+<div><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="#">Privacy Policy</a></div>
+<div><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="#">Terms of Service</a></div>
+<div><span class="font-body-sm text-body-sm text-primary font-semibold">Donate (Current)</span></div>
+</div>
+</div>
+<!-- Community Newsletter Dispatch -->
+<div class="md:col-span-3 space-y-3">
+<div class="font-label-md text-label-md font-semibold text-primary">Community Dispatch</div>
+<p class="font-body-sm text-body-sm text-text-secondary">
+            Receive quarterly updates directly from our grassroots informal settlement coordinators.
+          </p>
+<form class="space-y-2" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Kadam Foundation updates.');">
+<input class="w-full px-3.5 py-2 text-sm bg-surface-raised border border-border-subtle rounded-lg text-primary placeholder-text-secondary/70 focus:outline-none focus:border-primary" placeholder="Your email address" required="" type="email"/>
+<button class="w-full py-2 bg-primary text-text-inverse text-xs font-semibold rounded-lg hover:bg-action-hover transition-colors" type="submit">
+              Subscribe to Dispatches
+            </button>
+</form>
+</div>
+</div>
+<!-- Copyright Sub-bar -->
+<div class="pt-8 border-t border-border-subtle/70 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
+<p class="font-body-sm text-body-sm text-text-secondary">
+          © 2024 Kadam Foundation. A registered youth-led nonprofit organization. All rights reserved.
+        </p>
+<div class="flex items-center gap-1 text-xs text-text-secondary">
+<span>Crafted with solidarity for community empowerment</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- Micro-Interactions Script -->
+<script>
+    // Copy UPI VPA Handle functionality with immediate feedback
+    const copyBtn = document.getElementById('copyVpaBtn');
+    const vpaText = document.getElementById('vpaText').innerText;
+    const copyLabel = document.getElementById('copyBtnLabel');
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', () => {
+        navigator.clipboard.writeText(vpaText).then(() => {
+          copyLabel.innerText = 'Copied!';
+          copyBtn.classList.add('bg-status-success', 'text-white');
+          setTimeout(() => {
+            copyLabel.innerText = 'Copy';
+            copyBtn.classList.remove('bg-status-success', 'text-white');
+          }, 2500);
+        }).catch(() => {
+          copyLabel.innerText = 'Copied!';
+          setTimeout(() => { copyLabel.innerText = 'Copy'; }, 2000);
+        });
+      });
+    }
+
+    // Responsive Mobile Nav Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+  </script>
+</body></html>

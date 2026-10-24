@@ -1,0 +1,253 @@
+---
+name: Warm Editorial Community
+colors:
+  surface: '#fff8f5'
+  surface-dim: '#e6d7d0'
+  surface-bright: '#fff8f5'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#fff1ea'
+  surface-container: '#faebe4'
+  surface-container-high: '#f4e5de'
+  surface-container-highest: '#eee0d9'
+  on-surface: '#211a16'
+  on-surface-variant: '#4f4445'
+  inverse-surface: '#372f2a'
+  inverse-on-surface: '#fdeee7'
+  outline: '#807475'
+  outline-variant: '#d2c3c4'
+  surface-tint: '#70595b'
+  primary: '#281819'
+  on-primary: '#ffffff'
+  primary-container: '#3f2c2e'
+  on-primary-container: '#ad9295'
+  inverse-primary: '#ddbfc2'
+  secondary: '#76574e'
+  on-secondary: '#ffffff'
+  secondary-container: '#fdd4c8'
+  on-secondary-container: '#795a50'
+  tertiary: '#2b1710'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#422b24'
+  on-tertiary-container: '#b29187'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#fadbdd'
+  primary-fixed-dim: '#ddbfc2'
+  on-primary-fixed: '#281719'
+  on-primary-fixed-variant: '#564143'
+  secondary-fixed: '#ffdbd0'
+  secondary-fixed-dim: '#e6beb2'
+  on-secondary-fixed: '#2b160f'
+  on-secondary-fixed-variant: '#5c4037'
+  tertiary-fixed: '#ffdbd0'
+  tertiary-fixed-dim: '#e3bfb4'
+  on-tertiary-fixed: '#2a1610'
+  on-tertiary-fixed-variant: '#5a4139'
+  background: '#fff8f5'
+  on-background: '#211a16'
+  surface-variant: '#eee0d9'
+  surface-canvas: '#F2E3DC'
+  surface-raised: '#F8EEE8'
+  surface-peach: '#E5D0C5'
+  surface-clay-soft: '#E6C8B8'
+  surface-blue-soft: '#CDD0D2'
+  surface-olive-soft: '#D0CCB1'
+  surface-lilac-soft: '#D8C2D0'
+  text-primary: '#3F2C2E'
+  text-secondary: '#6F514A'
+  text-inverse: '#FFF7F2'
+  border-subtle: '#D4B9AE'
+  action-hover: '#2F2022'
+  focus-ring: '#65413D'
+  status-success: '#315B45'
+  status-warning: '#76511C'
+  status-error: '#8A3034'
+typography:
+  display-xl:
+    fontFamily: Lora
+    fontSize: 56px
+    fontWeight: '600'
+    lineHeight: 60px
+    letterSpacing: -0.02em
+  display-xl-mobile:
+    fontFamily: Lora
+    fontSize: 40px
+    fontWeight: '600'
+    lineHeight: 44px
+    letterSpacing: -0.01em
+  display-lg:
+    fontFamily: Lora
+    fontSize: 44px
+    fontWeight: '600'
+    lineHeight: 48px
+    letterSpacing: -0.01em
+  display-lg-mobile:
+    fontFamily: Lora
+    fontSize: 32px
+    fontWeight: '600'
+    lineHeight: 38px
+  headline-xl:
+    fontFamily: Lora
+    fontSize: 32px
+    fontWeight: '600'
+    lineHeight: 38px
+  headline-lg:
+    fontFamily: Lora
+    fontSize: 24px
+    fontWeight: '600'
+    lineHeight: 30px
+  headline-md:
+    fontFamily: Lora
+    fontSize: 20px
+    fontWeight: '600'
+    lineHeight: 26px
+  body-lg:
+    fontFamily: Inter
+    fontSize: 18px
+    fontWeight: '400'
+    lineHeight: 28px
+  body-md:
+    fontFamily: Inter
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 26px
+  body-sm:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 22px
+  label-md:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '500'
+    lineHeight: 20px
+  eyebrow:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: '600'
+    lineHeight: 16px
+    letterSpacing: 0.12em
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1.5rem
+  gutter-mobile: 1rem
+  gutter-tablet: 1.25rem
+  margin: 2.5rem
+  margin-mobile: 1.5rem
+  margin-tablet: 2rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2rem
+---
+
+## Brand & Style
+
+This design system embraces an authentic, human-centered NGO aesthetic designed for grassroots storytelling, credible youth leadership, and empathetic community mobilization. Rather than relying on cold corporate conventions or sterile SaaS-inspired white canvases, it establishes a grounded tactile warmth rooted in terracotta, sun-baked clay, soft peach, and deep espresso-ink tones.
+
+### Design Movement & Character
+- **Tactile Editorial NGO:** Inspired by print journalism, community chronicles, and tactile paper stock. Rich editorial serifs command headlines, paired with rhythmic, generous margins and soft, distinct program color planes.
+- **Organic Earthiness:** Surfaces avoid pure digital white `#FFFFFF` in favor of baked peach canvas `#F2E3DC` and warm raised parchment `#F8EEE8`, creating an inviting, low-fatigue visual environment.
+- **Youthful Authority:** Confident, deep ink actions and crisp typography counter-balance the pastel warmth, ensuring the UI remains grounded, accountable, and unmistakably authentic.
+
+## Colors
+
+The color system operates on an intentionally warm, single-mode palette reminiscent of earth, paper, and community craftsmanship. Dark mode is intentionally bypassed to maintain consistent physical print credibility and high-contrast warmth.
+
+### Semantic Hierarchy & Roles
+- **Primary Ink (`#3F2C2E`):** Anchors all core typography, primary button fills, iconography, and dominant navigation anchors. This deep brown-ink provides accessible contrast without the clinical starkness of pure black.
+- **Secondary Brand Clay (`#8F6E64`) & Rose (`#C09E94`):** Provide mid-tier depth for narrative section headers, impact blocks, and soft organic breaks.
+- **Neutral Canvas (`#F2E3DC`):** The standard page canvas backdrop. All root containers sit atop this warm, dusty tint.
+- **Raised Panels (`#F8EEE8`):** Applied to cards, quote panels, and elevated editorial story boxes to establish a soft paper layering effect.
+- **Program Tint Surfaces:** Individual thematic cards use soft, desaturated historical tints:
+  - `surface-clay-soft` (`#E6C8B8`): Community & Women Empowerment
+  - `surface-blue-soft` (`#CDD0D2`): Youth Welfare & Leadership
+  - `surface-olive-soft` (`#D0CCB1`): Environment & Ecology
+  - `surface-lilac-soft` (`#D8C2D0`): Animal Welfare & Health
+
+## Typography
+
+The typographic pairing balances literary editorial sophistication with high-clarity transactional readability.
+
+### Type Pairings
+- **Display & Section Titles (`Lora`):** A contemporary serif font with brushed curves and sturdy letterforms. Communicates warmth, heritage, journalistic authenticity, and community voice.
+- **Body, Controls & Metadata (`Inter`):** A neutral, highly legible sans-serif providing crystal-clear legibility across dense project reports, financial accountability figures, and form fields.
+
+### Typographic Rules
+- **Line Length:** Restrict reading containers to 45–75 characters (`max-width: 720px`) for continuous narrative copy.
+- **Eyebrows:** Always set in `Inter`, uppercase, semibold, with `0.12em` tracking to cleanly introduce topics above `Lora` titles.
+- **Numerics & Impact Metrics:** Hero statistics use large `Lora` numerals paired with `body-sm` sans-serif captions directly underneath.
+
+## Layout & Spacing
+
+Layouts follow a structured 4px linear rhythm built around an adaptable 12-column fluid grid system.
+
+### Responsive Breakpoints & Grid Rules
+- **Mobile (< 640px):** 4 columns, `gutter-mobile` (16px), `margin-mobile` (24px). Single card stacking.
+- **Tablet (640px – 1023px):** 8 columns, `gutter-tablet` (20px), `margin-tablet` (32px). Two-column card grids.
+- **Desktop (≥ 1024px):** 12 columns, `gutter` (24px), `margin` (40px to 56px). Max content container constrained to `1280px`.
+
+### Editorial Spacing Rhythm
+Vertical cadence emphasizes breathability and visual pauses between distinct storytelling milestones. Section paddings step cleanly: 48px on mobile, 64px on tablet, and 80px–96px on desktop showcases.
+
+## Elevation & Depth
+
+Visual hierarchy is constructed primarily via **tonal layering** and **tactile borders** rather than prominent drop shadows or modern synthetic blurs.
+
+### Tonal Stacking
+- **Level 0 (Canvas):** `#F2E3DC` core page ground.
+- **Level 1 (Panels & Story Cards):** `#F8EEE8` (light raised) or specific program tinted pastel planes (`#E6C8B8`, `#CDD0D2`, `#D0CCB1`, `#D8C2D0`).
+- **Level 2 (Deep Bands & Callouts):** `#8F6E64` (brand clay) or `#E5D0C5` (warm header bands).
+
+### Shadow Behavior
+- **Base Components:** Flat with a subtle `1px solid #D4B9AE` bounding outline. Never combine heavy drop shadows with borders.
+- **Occasional Lift (`shadow-sm`):** `0 2px 8px rgba(63, 44, 46, 0.06)` applied strictly to interactive cards or floating search inputs on hover.
+- **Modals & Overlays (`shadow-md`):** `0 8px 24px rgba(63, 44, 46, 0.10)` on light tinted backdrop surfaces.
+
+## Shapes
+
+The shape philosophy pairs inviting organic card corners with fully rounded pill actions, echoing the curved warmth of the brand's footprint motif.
+
+### Corner Radii Guidelines
+- **Buttons, Badges & Chips:** Fully pill-shaped (`border-radius: 999px`).
+- **Cards, Panels & Feature Containers:** Smooth, prominent rounding between `18px` and `22px` (`radius-lg` / `rounded-xl`).
+- **Form Controls & Inputs:** Soft, approachable `8px` (`radius-sm`).
+- **Dividers & Strokes:** Soft 1px stroke weight using `border-subtle` (`#D4B9AE`).
+
+## Components
+
+### Buttons & Interactive Controls
+- **Primary CTA:**
+  - Background: Brand Ink `#3F2C2E`, text: `#FFF7F2`, radius: `999px` (pill).
+  - Height: `48px`, horizontal padding: `24px`.
+  - Hover state: Darkens to `#2F2022` with a subtle `2px` forward shift on directional arrow icons.
+- **Secondary CTA:**
+  - Background: Transparent or `#F2E3DC`, border: `1px solid #3F2C2E`, text: `#3F2C2E`.
+  - Radius: `999px`.
+- **Keyboard Focus:** Visible `2px` offset ring in `#65413D` (`focus-ring`).
+
+### Story & Program Cards
+- **Structure:** `18px–22px` corner radius with `1px solid #D4B9AE` border.
+- **Color Theming:** Color-coded according to the 4 focus sectors using the designated pastel surfaces (`surface-clay-soft`, `surface-blue-soft`, `surface-olive-soft`, `surface-lilac-soft`).
+- **Typography:** Lora `headline-lg` titles accompanied by Inter `body-md` copy and `eyebrow` categorization tags.
+
+### Form Inputs & Fields
+- **Container:** `8px` radius, background `#F8EEE8`, border `1px solid #D4B9AE`.
+- **States:** Active/focus shifts border to `#3F2C2E` with a subtle `#65413D` outer glow.
+- **Labels:** Inter `label-md` in `#3F2C2E`, with error messages rendered strictly in `#8A3034`.
+
+### Chips & Badges
+- **Pill Shape:** Height `28px–32px`, horizontal padding `12px–16px`, radius `999px`.
+- **Appearance:** Tinted program surface with `#3F2C2E` text for category tagging.
+
+### Brand Mark Integration
+- Incorporates the official circular footprint emblem asset with preserved warm clay background tone. When positioned alongside typography, maintain minimum breathing room equal to half the logo mark's width.

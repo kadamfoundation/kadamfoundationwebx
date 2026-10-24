@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Kadam | Kadam Foundation</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts for Lora & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Lora:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Theme Configuration Verbatim -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "status-warning": "#76511C",
+            "surface-tint": "#70595b",
+            "inverse-surface": "#372f2a",
+            "action-hover": "#2F2022",
+            "on-secondary-fixed-variant": "#5c4037",
+            "on-error": "#ffffff",
+            "text-secondary": "#6F514A",
+            "on-background": "#211a16",
+            "primary-fixed-dim": "#ddbfc2",
+            "surface-container-low": "#fff1ea",
+            "background": "#fff8f5",
+            "outline-variant": "#d2c3c4",
+            "secondary": "#76574e",
+            "surface-olive-soft": "#D0CCB1",
+            "border-subtle": "#D4B9AE",
+            "surface-bright": "#fff8f5",
+            "on-surface": "#211a16",
+            "surface-container-high": "#f4e5de",
+            "surface-raised": "#F8EEE8",
+            "status-success": "#315B45",
+            "tertiary-container": "#422b24",
+            "on-primary-fixed-variant": "#564143",
+            "primary-fixed": "#fadbdd",
+            "surface-peach": "#E5D0C5",
+            "inverse-on-surface": "#fdeee7",
+            "focus-ring": "#65413D",
+            "secondary-fixed": "#ffdbd0",
+            "secondary-fixed-dim": "#e6beb2",
+            "on-surface-variant": "#4f4445",
+            "on-secondary-fixed": "#2b160f",
+            "error": "#ba1a1a",
+            "surface-lilac-soft": "#D8C2D0",
+            "on-error-container": "#93000a",
+            "primary": "#281819",
+            "surface-container": "#faebe4",
+            "on-primary-fixed": "#281719",
+            "on-secondary": "#ffffff",
+            "on-secondary-container": "#795a50",
+            "inverse-primary": "#ddbfc2",
+            "on-primary-container": "#ad9295",
+            "tertiary-fixed-dim": "#e3bfb4",
+            "surface-container-highest": "#eee0d9",
+            "on-tertiary": "#ffffff",
+            "surface-clay-soft": "#E6C8B8",
+            "on-primary": "#ffffff",
+            "on-tertiary-fixed-variant": "#5a4139",
+            "surface-variant": "#eee0d9",
+            "surface": "#fff8f5",
+            "tertiary": "#2b1710",
+            "status-error": "#8A3034",
+            "on-tertiary-container": "#b29187",
+            "surface-dim": "#e6d7d0",
+            "surface-canvas": "#F2E3DC",
+            "secondary-container": "#fdd4c8",
+            "outline": "#807475",
+            "surface-blue-soft": "#CDD0D2",
+            "primary-container": "#3f2c2e",
+            "text-inverse": "#FFF7F2",
+            "text-primary": "#3F2C2E",
+            "tertiary-fixed": "#ffdbd0",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary-fixed": "#2a1610",
+            "error-container": "#ffdad6"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter-tablet": "1.25rem",
+            "margin-mobile": "1.5rem",
+            "space-xs": "0.25rem",
+            "space-xl": "2rem",
+            "gutter": "1.5rem",
+            "margin": "2.5rem",
+            "margin-tablet": "2rem",
+            "space-md": "1rem",
+            "space-sm": "0.5rem",
+            "space-lg": "1.5rem",
+            "gutter-mobile": "1rem"
+          },
+          "fontFamily": {
+            "display-xl-mobile": ["Lora"],
+            "eyebrow": ["Inter"],
+            "headline-md": ["Lora"],
+            "body-md": ["Inter"],
+            "label-md": ["Inter"],
+            "body-sm": ["Inter"],
+            "display-lg-mobile": ["Lora"],
+            "headline-xl": ["Lora"],
+            "headline-lg": ["Lora"],
+            "display-xl": ["Lora"],
+            "display-lg": ["Lora"],
+            "body-lg": ["Inter"]
+          },
+          "fontSize": {
+            "display-xl-mobile": ["40px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "eyebrow": ["12px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "600" }],
+            "headline-md": ["20px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "body-md": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
+            "body-sm": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "display-lg-mobile": ["32px", { "lineHeight": "38px", "fontWeight": "600" }],
+            "headline-xl": ["32px", { "lineHeight": "38px", "fontWeight": "600" }],
+            "headline-lg": ["24px", { "lineHeight": "30px", "fontWeight": "600" }],
+            "display-xl": ["56px", { "lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "display-lg": ["44px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-outlined.fill {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+<body class="bg-surface-canvas text-text-primary antialiased selection:bg-surface-clay-soft selection:text-text-primary min-h-screen flex flex-col">
+<!-- TOP APP BAR -->
+<header class="sticky top-0 z-50 bg-surface-canvas border-b border-border-subtle/80">
+<div class="flex justify-between items-center w-full px-space-lg md:px-margin max-w-7xl mx-auto py-space-md">
+<!-- Brand Logo & Tagline -->
+<a class="flex items-center gap-3 group transition-transform active:scale-95 duration-150" href="#">
+<img alt="Kadam Foundation circular footprint emblem logo" class="w-12 h-12 object-contain rounded-full shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrdxg_8d_HLYZB7dPTh_YTMyqZM6rW_TS7U2oZ_BAxCkHbOe08ySBZ50RANbDWCfQU7G8IbVapcNiZwaZaH3cVuIkgmB8h9XAvokuD4fuJFoYT-D9E9XS7Dm56wumIVrb4W1WzsGyJNL4OYyGqWWIG1lG_fQndilb2eqD9d1zzMTgvbgL5J3Y_UkYZUkhNh9pQG0aiJC-5jri4qWhz2vENqCg0bu3LRYrbUXoDh6WyiOVidgS0SbhcOrE2pWK83TJTUA"/>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary font-bold tracking-tight">Kadam Foundation</span>
+<span class="font-eyebrow text-[11px] text-text-secondary tracking-wider font-semibold">Young Steps Towards the Nation</span>
+</div>
+</a>
+<!-- Desktop Navigation Links (Semantic Lock: 'Contact' is Active) -->
+<nav class="hidden md:flex items-center gap-6 lg:gap-8">
+<a class="text-text-secondary font-medium hover:text-primary transition-colors text-label-md font-label-md" href="#">Home</a>
+<a class="text-text-secondary font-medium hover:text-primary transition-colors text-label-md font-label-md" href="#">About</a>
+<a class="text-text-secondary font-medium hover:text-primary transition-colors text-label-md font-label-md" href="#">Programs</a>
+<a class="text-text-secondary font-medium hover:text-primary transition-colors text-label-md font-label-md" href="#">Stories</a>
+<a class="text-text-secondary font-medium hover:text-primary transition-colors text-label-md font-label-md" href="#">Our Team</a>
+<a class="text-text-secondary font-medium hover:text-primary transition-colors text-label-md font-label-md" href="#">Volunteer</a>
+<!-- Active Nav Item -->
+<a class="text-primary font-semibold border-b-2 border-primary pb-1 text-label-md font-label-md" href="#">Contact</a>
+</nav>
+<!-- Trailing Action -->
+<div class="flex items-center gap-4">
+<a class="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-primary-container text-text-inverse font-label-md text-label-md font-medium hover:bg-action-hover transition-colors shadow-sm active:scale-95 duration-150" href="#">
+          Donate
+        </a>
+</div>
+</div>
+</header>
+<!-- MAIN CANVAS -->
+<main class="flex-grow">
+<!-- HERO SECTION -->
+<section class="w-full px-space-lg md:px-margin max-w-7xl mx-auto pt-12 md:pt-16 pb-12">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-peach/70 border border-border-subtle mb-6">
+<span class="w-2 h-2 rounded-full bg-status-success animate-pulse"></span>
+<span class="font-eyebrow text-eyebrow text-text-primary tracking-widest uppercase">GET IN TOUCH • GRASSROOTS DIALOGUE &amp; OUTREACH</span>
+</div>
+<h1 class="font-display-xl text-display-xl md:text-display-xl font-bold text-primary mb-6 tracking-tight">
+          Let’s Connect
+        </h1>
+<p class="font-body-lg text-body-lg text-text-secondary mb-8 leading-relaxed">
+          Whether you represent a collegiate partner, community youth group, local panchayat, or prospective volunteer, direct conversations fuel our work. Reach out directly through our verified operational desks.
+        </p>
+<!-- Availability Status Bar -->
+<div class="flex items-center gap-3 p-4 rounded-xl bg-surface-raised border border-border-subtle text-text-secondary">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="schedule">schedule</span>
+<p class="font-body-sm text-body-sm text-primary font-medium">
+<span class="font-semibold text-primary">Verified response window:</span> Monday to Saturday, 10:00 AM – 6:00 PM IST.
+          </p>
+</div>
+</div>
+</section>
+<!-- DIRECT CONTACT CHANNELS (HERO SHOWCASE CARDS) -->
+<section class="w-full px-space-lg md:px-margin max-w-7xl mx-auto pb-16">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Helpline Card -->
+<div class="bg-surface-raised rounded-[22px] p-8 border border-border-subtle flex flex-col justify-between hover:shadow-sm transition-all duration-200">
+<div>
+<div class="w-12 h-12 rounded-full bg-surface-clay-soft flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-2xl" data-icon="call">call</span>
+</div>
+<span class="font-eyebrow text-eyebrow text-text-secondary uppercase tracking-wider block mb-1">Direct Voice Desk</span>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-3">Direct Voice Helpline</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mb-6 leading-relaxed">
+              For general queries, community alerts, emergency field assistance, and pod coordinator support.
+            </p>
+<div class="p-3.5 rounded-lg bg-surface-canvas/80 border border-border-subtle mb-6">
+<span class="font-label-md text-label-md text-primary font-semibold block tracking-tight">
+                +91 [Placeholder: Official Office Phone Number]
+              </span>
+</div>
+</div>
+<a class="inline-flex items-center justify-center gap-2 w-full py-3.5 px-5 rounded-full border border-primary text-primary font-label-md text-label-md font-medium hover:bg-surface-peach transition-colors active:scale-95 duration-150" href="tel:#">
+<span class="material-symbols-outlined text-lg" data-icon="phone_forwarded">phone_forwarded</span>
+<span>Call Our Desk</span>
+</a>
+</div>
+<!-- WhatsApp Desk Card (Hero Spotlight) -->
+<div class="bg-surface-peach rounded-[22px] p-8 border border-border-subtle flex flex-col justify-between shadow-sm relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-primary text-text-inverse px-4 py-1 rounded-bl-xl font-eyebrow text-[10px] tracking-wider uppercase font-semibold">
+            Fastest Channel
+          </div>
+<div>
+<div class="w-12 h-12 rounded-full bg-surface-raised flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-2xl" data-icon="forum">forum</span>
+</div>
+<span class="font-eyebrow text-eyebrow text-text-secondary uppercase tracking-wider block mb-1">Rapid Messaging</span>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-3">Instant WhatsApp Chat</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mb-6 leading-relaxed">
+              Quickest channel for youth volunteers, pod updates, meeting dispatches, and urgent field messages.
+            </p>
+<div class="p-3.5 rounded-lg bg-surface-raised border border-border-subtle mb-6">
+<span class="font-label-md text-label-md text-primary font-semibold block tracking-tight">
+                +91 [Placeholder: Official WhatsApp Desk Link]
+              </span>
+</div>
+</div>
+<a class="inline-flex items-center justify-center gap-2 w-full py-3.5 px-5 rounded-full bg-primary-container text-text-inverse font-label-md text-label-md font-medium hover:bg-action-hover transition-colors shadow-sm active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+<span>Chat on WhatsApp</span>
+</a>
+</div>
+<!-- Official Email Desks Card -->
+<div class="bg-surface-raised rounded-[22px] p-8 border border-border-subtle flex flex-col justify-between hover:shadow-sm transition-all duration-200">
+<div>
+<div class="w-12 h-12 rounded-full bg-surface-blue-soft flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-2xl" data-icon="mail">mail</span>
+</div>
+<span class="font-eyebrow text-eyebrow text-text-secondary uppercase tracking-wider block mb-1">Formal Correspondence</span>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-3">Official Email Correspondence</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mb-6 leading-relaxed">
+              Formal documentation, institutional partnership proposals, research clearances, and governance queries.
+            </p>
+<div class="p-3.5 rounded-lg bg-surface-canvas/80 border border-border-subtle mb-6">
+<span class="font-label-md text-label-md text-primary font-semibold block tracking-tight">
+                contact@[Placeholder:kadamfoundation.org]
+              </span>
+</div>
+</div>
+<a class="inline-flex items-center justify-center gap-2 w-full py-3.5 px-5 rounded-full border border-primary text-primary font-label-md text-label-md font-medium hover:bg-surface-peach transition-colors active:scale-95 duration-150" href="mailto:contact@placeholder">
+<span class="material-symbols-outlined text-lg" data-icon="send">send</span>
+<span>Send an Email</span>
+</a>
+</div>
+</div>
+</section>
+<!-- VISIT US & FIELD SECRETARIAT (EDITORIAL 2-COLUMN) -->
+<section class="w-full px-space-lg md:px-margin max-w-7xl mx-auto pb-20">
+<div class="bg-surface-raised rounded-[24px] border border-border-subtle overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12">
+<!-- Left Column: Details -->
+<div class="lg:col-span-7 p-8 md:p-12 flex flex-col justify-between">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-clay-soft text-text-primary mb-6">
+<span class="material-symbols-outlined text-sm" data-icon="pin_drop">pin_drop</span>
+<span class="font-eyebrow text-eyebrow tracking-widest uppercase">REGISTERED SECRETARIAT &amp; HUB</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold mb-6">
+                National Field Secretariat
+              </h2>
+<div class="space-y-6 text-text-secondary">
+<div class="flex items-start gap-3.5">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="domain">domain</span>
+<div>
+<h4 class="font-label-md text-label-md font-semibold text-primary">Registered Address</h4>
+<p class="font-body-sm text-body-sm mt-0.5 leading-relaxed">
+                      Kadam Foundation Registered Office: [Placeholder: Official Registered Address, Sector / Street, New Delhi, India - Pin Code]
+                    </p>
+</div>
+</div>
+<div class="flex items-start gap-3.5">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="hourglass_top">hourglass_top</span>
+<div>
+<h4 class="font-label-md text-label-md font-semibold text-primary">Operational Hours</h4>
+<p class="font-body-sm text-body-sm mt-0.5 leading-relaxed">
+                      Monday – Saturday, 10:00 AM to 6:00 PM (Prior appointment recommended for field coordination meetings).
+                    </p>
+</div>
+</div>
+<div class="flex items-start gap-3.5">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="directions_subway">directions_subway</span>
+<div>
+<h4 class="font-label-md text-label-md font-semibold text-primary">Public Transit Guidance</h4>
+<p class="font-body-sm text-body-sm mt-0.5 leading-relaxed">
+                      [Placeholder: Nearest Metro Station / Landmark guidance will be provided upon verification].
+                    </p>
+</div>
+</div>
+</div>
+<!-- Safeguarding Disclaimer Box -->
+<div class="mt-8 p-4 rounded-xl bg-surface-canvas border border-border-subtle flex items-start gap-3">
+<span class="material-symbols-outlined text-status-warning mt-0.5" data-icon="shield">shield</span>
+<p class="font-body-sm text-[13px] leading-relaxed text-text-secondary">
+<strong class="text-primary font-semibold">Trust &amp; Safety Notice:</strong> To ensure safeguarding of student volunteers and beneficiaries, walk-in visits to active learning pods require prior chapter registration and security clearance.
+                </p>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-border-subtle flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-text-secondary">Coordinate visits directly with desk officers.</span>
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-semibold hover:underline" href="#">
+<span>View Visitor Protocols</span>
+<span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Right Column: Interactive Styled Map Placeholder -->
+<div class="lg:col-span-5 bg-surface-peach p-8 flex flex-col justify-between items-center text-center relative border-t lg:border-t-0 lg:border-l border-border-subtle min-h-[380px]">
+<!-- Decorative Map Grid Simulation -->
+<div class="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(#3F2C2E_1px,transparent_1px)] [background-size:16px_16px]"></div>
+<div class="relative z-10 w-full flex justify-end">
+<span class="px-3 py-1 bg-surface-raised rounded-full text-[11px] font-eyebrow font-medium text-text-secondary border border-border-subtle">
+                Sector Map v2.4
+              </span>
+</div>
+<div class="relative z-10 my-auto px-4">
+<div class="w-16 h-16 rounded-full bg-surface-raised mx-auto mb-4 flex items-center justify-center text-primary shadow-sm border border-border-subtle">
+<span class="material-symbols-outlined text-3xl text-status-error" data-icon="location_on">location_on</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Secretariat Location</h3>
+<p class="font-body-sm text-body-sm text-text-secondary max-w-sm mx-auto mb-6">
+                [Placeholder: Interactive OpenStreetMap / Google Map Integration — Awaiting Official Geographic Coordinates]
+              </p>
+<a class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary-container text-text-inverse font-label-md text-label-md font-medium hover:bg-action-hover transition-colors shadow-sm" href="#">
+<span>Open in Google Maps</span>
+<span class="material-symbols-outlined text-sm" data-icon="north_east">north_east</span>
+</a>
+</div>
+<div class="relative z-10 text-xs font-eyebrow text-text-secondary/80">
+              Geo-verified field coordinates verified under registered bylaws
+            </div>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTACT BY PURPOSE (ORGANIZED ROUTING MATRIX) -->
+<section class="w-full px-space-lg md:px-margin max-w-7xl mx-auto pb-20">
+<div class="text-left mb-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-olive-soft/60 border border-border-subtle mb-4">
+<span class="font-eyebrow text-eyebrow text-primary tracking-widest uppercase">Functional Pod Desks</span>
+</div>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary font-bold mb-3">
+          Direct Channels by Purpose
+        </h2>
+<p class="font-body-md text-body-md text-text-secondary max-w-2xl">
+          Connect directly with the specialized functional team best equipped to assist your request without administrative delays.
+        </p>
+</div>
+<!-- Matrix Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Pod 1 -->
+<div class="bg-surface-raised rounded-[20px] p-6 border border-border-subtle flex flex-col justify-between hover:border-primary/40 transition-colors">
+<div>
+<div class="w-10 h-10 rounded-full bg-surface-clay-soft flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined text-xl" data-icon="diversity_3">diversity_3</span>
+</div>
+<span class="font-eyebrow text-[11px] text-text-secondary tracking-wider uppercase block mb-1">Volunteering &amp; Pod Admissions</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Volunteer Coordination Desk</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mb-4 leading-relaxed">
+              Pod inductions, chapter onboarding, college credits, attendance queries, and student mentor certificates.
+            </p>
+<div class="text-xs font-mono bg-surface-canvas p-2.5 rounded-lg border border-border-subtle text-primary mb-4 break-all">
+              volunteer@[Placeholder:kadamfoundation.org]
+            </div>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-semibold hover:text-action-hover group" href="mailto:volunteer@placeholder">
+<span>Email Volunteer Desk</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-0.5 transition-transform" data-icon="north_east">north_east</span>
+</a>
+</div>
+<!-- Pod 2 -->
+<div class="bg-surface-raised rounded-[20px] p-6 border border-border-subtle flex flex-col justify-between hover:border-primary/40 transition-colors">
+<div>
+<div class="w-10 h-10 rounded-full bg-surface-olive-soft flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined text-xl" data-icon="menu_book">menu_book</span>
+</div>
+<span class="font-eyebrow text-[11px] text-text-secondary tracking-wider uppercase block mb-1">Programs &amp; Learning Pods</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Program Directorate (Shiksha &amp; Samanvay)</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mb-4 leading-relaxed">
+              Pod curriculum, university chapter alliances, learning materials, stationery drives, and syllabus integration.
+            </p>
+<div class="text-xs font-mono bg-surface-canvas p-2.5 rounded-lg border border-border-subtle text-primary mb-4 break-all">
+              programs@[Placeholder:kadamfoundation.org]
+            </div>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-semibold hover:text-action-hover group" href="mailto:programs@placeholder">
+<span>Connect with Programs</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-0.5 transition-transform" data-icon="north_east">north_east</span>
+</a>
+</div>
+<!-- Pod 3 -->
+<div class="bg-surface-raised rounded-[20px] p-6 border border-border-subtle flex flex-col justify-between hover:border-primary/40 transition-colors">
+<div>
+<div class="w-10 h-10 rounded-full bg-surface-peach flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined text-xl" data-icon="handshake">handshake</span>
+</div>
+<span class="font-eyebrow text-[11px] text-text-secondary tracking-wider uppercase block mb-1">Corporate &amp; Philanthropy</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Sponsorships &amp; CSR Alliances</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mb-4 leading-relaxed">
+              Corporate CSR partnerships, seed grants, statutory audit reports, library kits, and foundation endorsements.
+            </p>
+<div class="text-xs font-mono bg-surface-canvas p-2.5 rounded-lg border border-border-subtle text-primary mb-4 break-all">
+              partnerships@[Placeholder:kadamfoundation.org]
+            </div>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-semibold hover:text-action-hover group" href="mailto:partnerships@placeholder">
+<span>Inquire About Partnerships</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-0.5 transition-transform" data-icon="north_east">north_east</span>
+</a>
+</div>
+<!-- Pod 4 -->
+<div class="bg-surface-raised rounded-[20px] p-6 border border-border-subtle flex flex-col justify-between hover:border-primary/40 transition-colors">
+<div>
+<div class="w-10 h-10 rounded-full bg-surface-blue-soft flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined text-xl" data-icon="campaign">campaign</span>
+</div>
+<span class="font-eyebrow text-[11px] text-text-secondary tracking-wider uppercase block mb-1">Dispatches &amp; Press</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Press &amp; Grassroots Storytelling</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mb-4 leading-relaxed">
+              Press kits, photo journalism permissions, ethical child safeguarding clearances, and university media visits.
+            </p>
+<div class="text-xs font-mono bg-surface-canvas p-2.5 rounded-lg border border-border-subtle text-primary mb-4 break-all">
+              media@[Placeholder:kadamfoundation.org]
+            </div>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-semibold hover:text-action-hover group" href="mailto:media@placeholder">
+<span>Media Inquiries</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-0.5 transition-transform" data-icon="north_east">north_east</span>
+</a>
+</div>
+<!-- Pod 5 -->
+<div class="bg-surface-raised rounded-[20px] p-6 border border-border-subtle flex flex-col justify-between hover:border-primary/40 transition-colors lg:col-span-2">
+<div>
+<div class="w-10 h-10 rounded-full bg-surface-lilac-soft flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined text-xl" data-icon="balance">balance</span>
+</div>
+<span class="font-eyebrow text-[11px] text-text-secondary tracking-wider uppercase block mb-1">Ombudsman &amp; Ethics</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Grievance &amp; Advisory Council</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mb-4 leading-relaxed">
+              Institutional governance oversight, compliance under the Societies Registration Act, internal ombudsman complaints, and community feedback directly monitored by senior trustees.
+            </p>
+<div class="text-xs font-mono bg-surface-canvas p-2.5 rounded-lg border border-border-subtle text-primary mb-4 inline-block">
+              governance@[Placeholder:kadamfoundation.org]
+            </div>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-semibold hover:text-action-hover group mt-2" href="mailto:governance@placeholder">
+<span>Contact Governance Office</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-0.5 transition-transform" data-icon="north_east">north_east</span>
+</a>
+</div>
+</div>
+</section>
+<!-- OFFICIAL SOCIAL MEDIA ECOSYSTEM -->
+<section class="w-full px-space-lg md:px-margin max-w-7xl mx-auto pb-20">
+<div class="text-left mb-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-peach/80 border border-border-subtle mb-4">
+<span class="font-eyebrow text-eyebrow text-primary tracking-widest uppercase">COMMUNITY PULSE</span>
+</div>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary font-bold mb-3">
+          Follow Our Footprints Online
+        </h2>
+<p class="font-body-md text-body-md text-text-secondary max-w-2xl">
+          Engage with live field logs, weekend pod highlights, student stories, and official announcements across verified channels.
+        </p>
+</div>
+<!-- Social Channels Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+<!-- Instagram -->
+<a class="bg-surface-raised p-6 rounded-[18px] border border-border-subtle hover:border-primary transition-all group flex flex-col justify-between" href="#">
+<div class="flex items-center justify-between mb-4">
+<span class="font-headline-md text-headline-md text-primary font-bold">Instagram</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-0.5 transition-transform" data-icon="north_east">north_east</span>
+</div>
+<div class="text-xs font-mono text-primary font-medium mb-2">
+            @[Placeholder:kadam_foundation]
+          </div>
+<p class="font-body-sm text-body-sm text-text-secondary">
+            Weekly photo dispatches, field moments, student reels, and volunteer weekend takeovers.
+          </p>
+</a>
+<!-- YouTube -->
+<a class="bg-surface-raised p-6 rounded-[18px] border border-border-subtle hover:border-primary transition-all group flex flex-col justify-between" href="#">
+<div class="flex items-center justify-between mb-4">
+<span class="font-headline-md text-headline-md text-primary font-bold">YouTube</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-0.5 transition-transform" data-icon="north_east">north_east</span>
+</div>
+<div class="text-xs font-mono text-primary font-medium mb-2">
+            [Placeholder: Kadam Foundation Official]
+          </div>
+<p class="font-body-sm text-body-sm text-text-secondary">
+            Mini-documentaries, educator training keynotes, and youth leadership panel discussions.
+          </p>
+</a>
+<!-- LinkedIn -->
+<a class="bg-surface-raised p-6 rounded-[18px] border border-border-subtle hover:border-primary transition-all group flex flex-col justify-between" href="#">
+<div class="flex items-center justify-between mb-4">
+<span class="font-headline-md text-headline-md text-primary font-bold">LinkedIn</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-0.5 transition-transform" data-icon="north_east">north_east</span>
+</div>
+<div class="text-xs font-mono text-primary font-medium mb-2">
+            [Placeholder: Kadam Foundation Youth Collective]
+          </div>
+<p class="font-body-sm text-body-sm text-text-secondary">
+            Fellowship recruitment drives, collegiate partnerships, and institutional research reports.
+          </p>
+</a>
+<!-- Facebook -->
+<a class="bg-surface-raised p-6 rounded-[18px] border border-border-subtle hover:border-primary transition-all group flex flex-col justify-between" href="#">
+<div class="flex items-center justify-between mb-4">
+<span class="font-headline-md text-headline-md text-primary font-bold">Facebook</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-0.5 transition-transform" data-icon="north_east">north_east</span>
+</div>
+<div class="text-xs font-mono text-primary font-medium mb-2">
+            [Placeholder: Kadam Foundation India]
+          </div>
+<p class="font-body-sm text-body-sm text-text-secondary">
+            Community townhall livestreams, parent-teacher pod forums, and regional chapter notes.
+          </p>
+</a>
+<!-- Telegram Broadcast -->
+<a class="bg-surface-raised p-6 rounded-[18px] border border-border-subtle hover:border-primary transition-all group flex flex-col justify-between" href="#">
+<div class="flex items-center justify-between mb-4">
+<span class="font-headline-md text-headline-md text-primary font-bold">Telegram Broadcast</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-0.5 transition-transform" data-icon="north_east">north_east</span>
+</div>
+<div class="text-xs font-mono text-primary font-medium mb-2">
+            [Placeholder: Kadam Volunteers Broadcast]
+          </div>
+<p class="font-body-sm text-body-sm text-text-secondary">
+            Real-time volunteer alerts, urgent weekend supply calls, and immediate field updates.
+          </p>
+</a>
+<!-- X (Twitter) -->
+<a class="bg-surface-raised p-6 rounded-[18px] border border-border-subtle hover:border-primary transition-all group flex flex-col justify-between" href="#">
+<div class="flex items-center justify-between mb-4">
+<span class="font-headline-md text-headline-md text-primary font-bold">X (formerly Twitter)</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-0.5 transition-transform" data-icon="north_east">north_east</span>
+</div>
+<div class="text-xs font-mono text-primary font-medium mb-2">
+            @[Placeholder:kadam_foundation]
+          </div>
+<p class="font-body-sm text-body-sm text-text-secondary">
+            Civic advocacy statements, public policy commentary, and local municipal outreach tags.
+          </p>
+</a>
+</div>
+</section>
+<!-- TRANSPARENT OPERATIONS & FAQ CALLOUT (WARM CLAY BANNER) -->
+<section class="w-full px-space-lg md:px-margin max-w-7xl mx-auto pb-24">
+<div class="bg-surface-clay-soft rounded-[24px] p-8 md:p-12 border border-border-subtle relative overflow-hidden">
+<div class="max-w-3xl">
+<span class="font-eyebrow text-eyebrow text-text-primary tracking-widest uppercase block mb-3 font-semibold">
+            Institutional Accountability
+          </span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold mb-4">
+            Have questions about our financial transparency, 80G tax exemptions, or how your donation is spent?
+          </h2>
+<p class="font-body-md text-body-md text-text-primary mb-8 leading-relaxed">
+            As a youth-led nonprofit, our financial integrity and compliance documents are published open-access every quarter. We welcome community audits and institutional review.
+          </p>
+<div class="flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-primary-container text-text-inverse font-label-md text-label-md font-medium hover:bg-action-hover transition-colors shadow-sm" href="#">
+<span class="material-symbols-outlined text-base" data-icon="description">description</span>
+<span>View Financial Transparency &amp; Audit Reports</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-primary text-primary font-label-md text-label-md font-medium hover:bg-surface-raised transition-colors" href="#">
+<span class="material-symbols-outlined text-base" data-icon="help_outline">help_outline</span>
+<span>Explore Frequently Asked Questions</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- GLOBAL FOOTER -->
+<footer class="bg-surface-clay-soft border-t border-border-subtle w-full">
+<div class="w-full px-space-lg md:px-margin py-space-xl max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
+<!-- Col 1: Brand & Disclaimer -->
+<div class="md:col-span-5">
+<div class="flex items-center gap-3 mb-4">
+<img alt="Kadam Foundation circular footprint emblem logo" class="w-12 h-12 object-contain rounded-full shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrdxg_8d_HLYZB7dPTh_YTMyqZM6rW_TS7U2oZ_BAxCkHbOe08ySBZ50RANbDWCfQU7G8IbVapcNiZwaZaH3cVuIkgmB8h9XAvokuD4fuJFoYT-D9E9XS7Dm56wumIVrb4W1WzsGyJNL4OYyGqWWIG1lG_fQndilb2eqD9d1zzMTgvbgL5J3Y_UkYZUkhNh9pQG0aiJC-5jri4qWhz2vENqCg0bu3LRYrbUXoDh6WyiOVidgS0SbhcOrE2pWK83TJTUA"/>
+<div>
+<span class="font-headline-md text-headline-md text-primary font-bold block">Kadam Foundation</span>
+<span class="font-eyebrow text-[11px] text-text-secondary tracking-wider font-semibold">Young Steps Towards the Nation</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary max-w-sm leading-relaxed mb-4">
+            A registered youth-led non-profit collective organizing learning pods, volunteer coalitions, and community development frameworks across India.
+          </p>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-surface-canvas/60 border border-border-subtle text-[12px] font-mono text-text-secondary">
+            Regd: Under Societies Registration Act XXI of 1860
+          </div>
+</div>
+<!-- Col 2: Navigation Links -->
+<div class="md:col-span-3">
+<h4 class="font-label-md text-label-md font-semibold text-primary mb-4 tracking-wider uppercase">Focus &amp; Governance</h4>
+<ul class="space-y-2.5">
+<li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="#">Focus Areas</a></li>
+<li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="#">Financial Transparency</a></li>
+<li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="#">Annual Reports</a></li>
+<li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="#">Volunteer Portal</a></li>
+</ul>
+</div>
+<!-- Col 3: Newsletter Dispatches Bar (Only Allowed Form per spec) -->
+<div class="md:col-span-4">
+<h4 class="font-label-md text-label-md font-semibold text-primary mb-2 tracking-wider uppercase">Field Dispatches</h4>
+<p class="font-body-sm text-body-sm text-text-secondary mb-4 leading-relaxed">
+            Subscribe to our unvarnished monthly newsletter sharing student stories and field telemetry.
+          </p>
+<form class="flex items-center gap-2" onsubmit="event.preventDefault();">
+<input class="w-full px-4 py-2.5 text-sm bg-surface-raised border border-border-subtle rounded-lg text-primary placeholder:text-text-secondary/70 focus:outline-none focus:ring-2 focus:ring-focus-ring" placeholder="Your email address" required="" type="email"/>
+<button class="px-5 py-2.5 bg-primary-container text-text-inverse font-label-md text-label-md font-medium rounded-lg hover:bg-action-hover transition-colors whitespace-nowrap active:scale-95 duration-150" type="submit">
+              Join
+            </button>
+</form>
+<span class="block mt-2 text-[11px] text-text-secondary">No spam. Only authentic grassroots chronicles.</span>
+</div>
+</div>
+<!-- Bottom Links & Legal -->
+<div class="pt-8 border-t border-border-subtle flex flex-col md:flex-row items-center justify-between gap-4">
+<p class="font-body-sm text-body-sm text-text-secondary text-center md:text-left">
+          © 2024 Kadam Foundation. A registered youth-led nonprofit organization. All rights reserved.
+        </p>
+<div class="flex items-center gap-6">
+<a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

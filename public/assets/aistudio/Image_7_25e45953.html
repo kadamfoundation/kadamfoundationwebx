@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Programs, Our Impact — Kadam Foundation</title>
+<!-- Google Fonts: Lora (Editorial Serif) & Inter (Clean Body/Controls) -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Lora:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary-container": "#3f2c2e",
+            "surface-container-high": "#f4e5de",
+            "background": "#fff8f5",
+            "inverse-primary": "#ddbfc2",
+            "outline-variant": "#d2c3c4",
+            "on-error-container": "#93000a",
+            "surface-blue-soft": "#CDD0D2",
+            "inverse-surface": "#372f2a",
+            "secondary-fixed-dim": "#e6beb2",
+            "on-surface-variant": "#4f4445",
+            "error": "#ba1a1a",
+            "surface-canvas": "#F2E3DC",
+            "tertiary-fixed-dim": "#e3bfb4",
+            "on-secondary-fixed": "#2b160f",
+            "text-primary": "#3F2C2E",
+            "surface-dim": "#e6d7d0",
+            "text-inverse": "#FFF7F2",
+            "secondary-fixed": "#ffdbd0",
+            "action-hover": "#2F2022",
+            "tertiary-fixed": "#ffdbd0",
+            "tertiary-container": "#422b24",
+            "on-tertiary-container": "#b29187",
+            "secondary-container": "#fdd4c8",
+            "primary": "#281819",
+            "on-error": "#ffffff",
+            "on-surface": "#211a16",
+            "primary-fixed-dim": "#ddbfc2",
+            "surface-container-highest": "#eee0d9",
+            "surface-container-lowest": "#ffffff",
+            "text-secondary": "#6F514A",
+            "surface-bright": "#fff8f5",
+            "surface-peach": "#E5D0C5",
+            "on-tertiary-fixed": "#2a1610",
+            "surface": "#fff8f5",
+            "surface-clay-soft": "#E6C8B8",
+            "status-error": "#8A3034",
+            "on-primary": "#ffffff",
+            "on-primary-fixed-variant": "#564143",
+            "status-warning": "#76511C",
+            "surface-variant": "#eee0d9",
+            "surface-container-low": "#fff1ea",
+            "surface-raised": "#F8EEE8",
+            "error-container": "#ffdad6",
+            "on-secondary-fixed-variant": "#5c4037",
+            "status-success": "#315B45",
+            "primary-fixed": "#fadbdd",
+            "focus-ring": "#65413D",
+            "on-primary-container": "#ad9295",
+            "on-secondary": "#ffffff",
+            "on-background": "#211a16",
+            "on-tertiary": "#ffffff",
+            "on-secondary-container": "#795a50",
+            "surface-tint": "#70595b",
+            "on-primary-fixed": "#281719",
+            "surface-lilac-soft": "#D8C2D0",
+            "on-tertiary-fixed-variant": "#5a4139",
+            "border-subtle": "#D4B9AE",
+            "surface-container": "#faebe4",
+            "inverse-on-surface": "#fdeee7",
+            "surface-olive-soft": "#D0CCB1",
+            "tertiary": "#2b1710",
+            "secondary": "#76574e",
+            "outline": "#807475"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin-mobile": "1.5rem",
+            "margin": "2.5rem",
+            "gutter-tablet": "1.25rem",
+            "space-xl": "2rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem",
+            "margin-tablet": "2rem",
+            "space-md": "1rem",
+            "space-sm": "0.5rem",
+            "gutter": "1.5rem",
+            "gutter-mobile": "1rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Lora"],
+            "display-xl-mobile": ["Lora"],
+            "headline-xl": ["Lora"],
+            "body-sm": ["Inter"],
+            "display-lg-mobile": ["Lora"],
+            "display-xl": ["Lora"],
+            "body-lg": ["Inter"],
+            "eyebrow": ["Inter"],
+            "label-md": ["Inter"],
+            "body-md": ["Inter"],
+            "headline-md": ["Lora"],
+            "display-lg": ["Lora"]
+          },
+          "fontSize": {
+            "headline-lg": ["24px", { "lineHeight": "30px", "fontWeight": "600" }],
+            "display-xl-mobile": ["40px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-xl": ["32px", { "lineHeight": "38px", "fontWeight": "600" }],
+            "body-sm": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "display-lg-mobile": ["32px", { "lineHeight": "38px", "fontWeight": "600" }],
+            "display-xl": ["56px", { "lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "eyebrow": ["12px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "600" }],
+            "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
+            "body-md": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "headline-md": ["20px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "display-lg": ["44px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-surface-canvas text-text-primary antialiased selection:bg-surface-clay-soft selection:text-text-primary font-body-md text-body-md">
+<!-- TOP APP BAR / NAVIGATION (Exact Shared Component implementation) -->
+<header class="w-full bg-surface-canvas border-b border-border-subtle sticky top-0 z-50 transition-colors">
+<div class="flex justify-between items-center w-full px-space-lg md:px-margin max-w-7xl mx-auto py-space-md">
+<!-- Brand Anchor -->
+<a class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-focus-ring rounded-lg py-1" href="#">
+<img alt="Kadam Foundation circular footprint emblem logo" class="w-10 h-10 object-contain rounded-full border border-border-subtle bg-surface-clay-soft" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwYLx1YZ6zop3PKFSNbd-BUHj9mqCASHnItL35g0ZejjXfl0-YbaFkCHjunkH_J0T863YHhaYhNsT0B9cAACBD12WRLJ5n8AtP1gVBclDASgJm_xM1q4Xa-vjcIA2bAODLnzRJtlp2tqRQGAhfhKWgSyU8UbkLS7vGr6w5-cyHkZeJDGC0Iq9s-_qqTZhBO2kKNDUGvoPqkPmxISw8DwCzcMRYqXlP3dVbqfSdmmEbTXI9OH12KVylPOTio3HA10Cr2Q"/>
+<span class="font-headline-md text-headline-md text-primary font-bold tracking-tight">Kadam Foundation</span>
+</a>
+<!-- Desktop Navigation Links (Responsive pivot: hidden on mobile) -->
+<nav class="hidden md:flex items-center space-x-6 lg:space-x-8">
+<a class="text-text-secondary font-medium hover:text-primary transition-colors text-label-md font-label-md" href="#">Home</a>
+<a class="text-text-secondary font-medium hover:text-primary transition-colors text-label-md font-label-md" href="#">About</a>
+<!-- Active Tab: Programs -->
+<a class="text-primary font-semibold border-b-2 border-primary pb-1 text-label-md font-label-md" href="#">Programs</a>
+<a class="text-text-secondary font-medium hover:text-primary transition-colors text-label-md font-label-md" href="#">Stories</a>
+<a class="text-text-secondary font-medium hover:text-primary transition-colors text-label-md font-label-md" href="#">Our Team</a>
+<a class="text-text-secondary font-medium hover:text-primary transition-colors text-label-md font-label-md" href="#">Volunteer</a>
+<a class="text-text-secondary font-medium hover:text-primary transition-colors text-label-md font-label-md" href="#">Contact</a>
+</nav>
+<!-- Trailing Primary Action -->
+<div class="flex items-center gap-3">
+<a class="inline-flex items-center justify-center bg-primary-container text-text-inverse px-6 py-2.5 rounded-full text-label-md font-label-md font-medium hover:bg-action-hover transition-transform active:scale-95 duration-150 focus:outline-none focus:ring-2 focus:ring-focus-ring shadow-sm" href="#donate">
+<span>Donate</span>
+<span class="material-symbols-outlined ml-1.5 text-[18px]">favorite</span>
+</a>
+</div>
+</div>
+</header>
+<main>
+<!-- HERO SECTION -->
+<section class="w-full pt-12 md:pt-20 pb-12 border-b border-border-subtle">
+<div class="max-w-7xl mx-auto px-space-lg md:px-margin">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-2 mb-4 px-3 py-1 rounded-full bg-surface-raised border border-border-subtle">
+<span class="w-2 h-2 rounded-full bg-status-success"></span>
+<span class="text-eyebrow font-eyebrow text-text-secondary tracking-widest uppercase">COMMUNITY-LED INITIATIVES</span>
+</div>
+<h1 class="text-display-lg md:text-display-xl font-display-xl text-primary mb-6 leading-tight">
+            Our Programs, Our Impact
+          </h1>
+<p class="text-body-lg font-body-lg text-text-secondary leading-relaxed">
+            How youth mobilization and grassroots solidarity transform local communities through targeted, empathy-driven community pods. We build sustained civic architecture that bridges historical inequities and puts frontline ownership into young hands.
+          </p>
+</div>
+<!-- Quick Program Jump Bar / Category Pill filter -->
+<div class="mt-10 pt-6 border-t border-border-subtle/60 flex flex-wrap items-center gap-3">
+<span class="text-label-md font-label-md text-text-secondary mr-2 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">filter_alt</span> Jump to Pod:
+          </span>
+<a class="px-4 py-2 rounded-full bg-surface-raised hover:bg-surface-peach text-text-primary border border-border-subtle text-label-md font-label-md transition-colors flex items-center gap-2" href="#project-shiksha">
+<span class="w-2 h-2 rounded-full bg-amber-700"></span>
+            Project Shiksha
+          </a>
+<a class="px-4 py-2 rounded-full bg-surface-raised hover:bg-surface-blue-soft text-text-primary border border-border-subtle text-label-md font-label-md transition-colors flex items-center gap-2" href="#project-samanvay">
+<span class="w-2 h-2 rounded-full bg-slate-600"></span>
+            Project Samanvay
+          </a>
+<a class="px-4 py-2 rounded-full bg-surface-raised hover:bg-surface-lilac-soft text-text-primary border border-border-subtle text-label-md font-label-md transition-colors flex items-center gap-2" href="#heal-with-kadam">
+<span class="w-2 h-2 rounded-full bg-purple-700"></span>
+            Heal with Kadam
+          </a>
+<a class="px-4 py-2 rounded-full bg-surface-raised hover:bg-surface-clay-soft text-text-primary border border-border-subtle text-label-md font-label-md transition-colors flex items-center gap-2" href="#women-empowerment">
+<span class="w-2 h-2 rounded-full bg-amber-900"></span>
+            Women Empowerment
+          </a>
+</div>
+</div>
+</section>
+<!-- PROGRAM 1: PROJECT SHIKSHA -->
+<section class="w-full py-16 md:py-24 border-b border-border-subtle" id="project-shiksha">
+<div class="max-w-7xl mx-auto px-space-lg md:px-margin">
+<div class="bg-surface-raised rounded-[22px] border border-border-subtle p-6 md:p-12 overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<!-- Content Column -->
+<div class="lg:col-span-7 flex flex-col justify-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-peach text-text-primary border border-border-subtle text-eyebrow font-eyebrow w-max mb-4">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>EDUCATION &amp; CHILD LITERACY</span>
+</div>
+<h2 class="text-headline-xl md:text-display-lg-mobile font-headline-xl text-primary mb-3">Project Shiksha</h2>
+<p class="text-body-md font-body-md text-text-secondary mb-6 leading-relaxed">
+                Teaching children in underserved urban settlements and informal communities. Our volunteer educators build resilient learning environments right where children live, unlocking their innate curiosity while keeping schools accountable.
+              </p>
+<!-- Core Objectives -->
+<div class="mb-6">
+<h3 class="text-label-md font-label-md uppercase tracking-wider text-text-primary font-semibold mb-3">Core Objectives</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+<div class="flex items-start gap-2.5 bg-surface-canvas/60 p-3 rounded-lg border border-border-subtle/50">
+<span class="material-symbols-outlined text-text-primary text-[20px] mt-0.5">check_circle</span>
+<span class="text-body-sm font-body-sm text-text-primary">Bridge foundational literacy &amp; arithmetic gaps</span>
+</div>
+<div class="flex items-start gap-2.5 bg-surface-canvas/60 p-3 rounded-lg border border-border-subtle/50">
+<span class="material-symbols-outlined text-text-primary text-[20px] mt-0.5">check_circle</span>
+<span class="text-body-sm font-body-sm text-text-primary">Cultivate daily regular study habits</span>
+</div>
+<div class="flex items-start gap-2.5 bg-surface-canvas/60 p-3 rounded-lg border border-border-subtle/50">
+<span class="material-symbols-outlined text-text-primary text-[20px] mt-0.5">check_circle</span>
+<span class="text-body-sm font-body-sm text-text-primary">Distribute essential student learning kits</span>
+</div>
+<div class="flex items-start gap-2.5 bg-surface-canvas/60 p-3 rounded-lg border border-border-subtle/50">
+<span class="material-symbols-outlined text-text-primary text-[20px] mt-0.5">check_circle</span>
+<span class="text-body-sm font-body-sm text-text-primary">Prevent secondary school dropout cycles</span>
+</div>
+</div>
+</div>
+<!-- Key Activities -->
+<div class="mb-8 border-t border-border-subtle/60 pt-4">
+<h3 class="text-label-md font-label-md uppercase tracking-wider text-text-primary font-semibold mb-2">Key Activities in the Pod</h3>
+<p class="text-body-sm font-body-sm text-text-secondary leading-relaxed">
+                  Weekend learning camps, remedial reading and math circles, student stationery drives, and quarterly community parent-teacher dialogues.
+                </p>
+</div>
+<!-- CTA Controls -->
+<div class="flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center justify-center bg-primary-container text-text-inverse px-6 py-3 rounded-full text-label-md font-label-md font-medium hover:bg-action-hover transition-transform active:scale-95 duration-150" href="#volunteer">
+<span>Volunteer to Teach</span>
+<span class="material-symbols-outlined ml-2 text-[18px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center bg-transparent border border-primary-container text-primary-container px-6 py-3 rounded-full text-label-md font-label-md font-medium hover:bg-surface-peach transition-colors" href="#support-shiksha">
+<span>Support Shiksha Learning Pods</span>
+</a>
+</div>
+</div>
+<!-- Image Column -->
+<div class="lg:col-span-5 order-first lg:order-last">
+<div class="relative rounded-[18px] overflow-hidden border border-border-subtle aspect-[4/3] lg:aspect-[5/6] bg-surface-clay-soft">
+<img class="w-full h-full object-cover" data-alt="Warm documentary photography capturing a dedicated young Indian college volunteer sitting cross-legged beneath a shaded banyan tree surrounded by eager elementary schoolchildren in a sunlit Delhi settlement. The children hold colorful slate notebooks while engaged in an interactive reading circle. The scene is bathed in golden natural morning light with soft terracotta earth tones and genuine empathetic smiles." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLI9fW_M4ygQEs1rxl57gS1MpWvWX-a03jN1sRR_7U00r0lKz1URhbyH0_XS5HJ3g5uyEeZQ_8U8GW4rWtUXvt8ZwfjlIRplvKJ9YokdXPKWrlpW0sDW2SgS3ac98rbbsLtJFLczzBlxBSa5f3R0DodPbkq1Bxh-HK77fzIfwOtlZBg8m0wfLoSW4KJQMrx8Dur4O53J8MxDETjBVaRnRykoAF1QgxapC3aGXWpKrFrDM9ZX0TYdAj"/>
+<div class="absolute bottom-4 left-4 right-4 p-3 bg-surface-raised/95 backdrop-blur-sm rounded-lg border border-border-subtle flex items-center justify-between">
+<div>
+<p class="text-label-md font-label-md font-semibold text-text-primary">12 Active Pods</p>
+<p class="text-body-sm font-body-sm text-text-secondary">420+ Children supported weekly</p>
+</div>
+<span class="material-symbols-outlined text-text-secondary text-[24px]">school</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PROGRAM 2: PROJECT SAMANVAY -->
+<section class="w-full py-16 md:py-24 border-b border-border-subtle bg-surface-canvas" id="project-samanvay">
+<div class="max-w-7xl mx-auto px-space-lg md:px-margin">
+<div class="bg-surface-blue-soft/35 rounded-[22px] border border-border-subtle p-6 md:p-12 overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<!-- Image Column (Alternating) -->
+<div class="lg:col-span-5">
+<div class="relative rounded-[18px] overflow-hidden border border-border-subtle aspect-[4/3] lg:aspect-[5/6] bg-surface-blue-soft">
+<img class="w-full h-full object-cover" data-alt="An energetic youth civic fellowship workshop inside a community hall with high ceilings. A collaborative group of young college students and local neighborhood elders stand together around a large butcher-paper map of their district, mapping community water resources and public transit points with markers and sticky notes. Natural daylight streams through open clerestory windows highlighting expressions of focused cooperation in warm muted earth and soft slate hues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXpyEc1s7-pzYis0684rdd7s0X_vwf5mB38eIGj9lVO_h5FJKDMWEFdSW-hB902Fo_eF8fwq7IBir4BXGL75KQQJkoa-pU9mUwfZ7IzLqoeQOGGJVoUyPEicDlTKvM6NwQQcEng5lUpZ_pJz_BdVfjZFbZZ4jb6YYIitZ2j0Za5dJptEOg5WK8VkMOvUSRK9S7fWwt1aNeJTH1j9fhSrCtpQKfW21taS0uHx1CLiqSk3MyBo9T1ImL"/>
+<div class="absolute bottom-4 left-4 right-4 p-3 bg-surface-raised/95 backdrop-blur-sm rounded-lg border border-border-subtle flex items-center justify-between">
+<div>
+<p class="text-label-md font-label-md font-semibold text-text-primary">18 Campus Chapters</p>
+<p class="text-body-sm font-body-sm text-text-secondary">Cross-institutional fellowship</p>
+</div>
+<span class="material-symbols-outlined text-text-secondary text-[24px]">groups</span>
+</div>
+</div>
+</div>
+<!-- Content Column -->
+<div class="lg:col-span-7 flex flex-col justify-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-raised text-text-primary border border-border-subtle text-eyebrow font-eyebrow w-max mb-4">
+<span class="material-symbols-outlined text-[16px]">diversity_3</span>
+<span>YOUTH LEADERSHIP &amp; CIVIC ENGAGEMENT</span>
+</div>
+<h2 class="text-headline-xl md:text-display-lg-mobile font-headline-xl text-primary mb-3">Project Samanvay</h2>
+<p class="text-body-md font-body-md text-text-secondary mb-6 leading-relaxed">
+                Connecting youth across educational institutions with local communities through structured orientation, workshops, networking, and collaborative grassroots development. We replace performative volunteering with long-term empathetic accountability.
+              </p>
+<!-- Core Objectives -->
+<div class="mb-6">
+<h3 class="text-label-md font-label-md uppercase tracking-wider text-text-primary font-semibold mb-3">Core Objectives</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+<div class="flex items-start gap-2.5 bg-surface-raised/80 p-3 rounded-lg border border-border-subtle/50">
+<span class="material-symbols-outlined text-text-primary text-[20px] mt-0.5">check_circle</span>
+<span class="text-body-sm font-body-sm text-text-primary">Foster deep youth civic empathy &amp; agency</span>
+</div>
+<div class="flex items-start gap-2.5 bg-surface-raised/80 p-3 rounded-lg border border-border-subtle/50">
+<span class="material-symbols-outlined text-text-primary text-[20px] mt-0.5">check_circle</span>
+<span class="text-body-sm font-body-sm text-text-primary">Dismantle academic-community ivory towers</span>
+</div>
+<div class="flex items-start gap-2.5 bg-surface-raised/80 p-3 rounded-lg border border-border-subtle/50">
+<span class="material-symbols-outlined text-text-primary text-[20px] mt-0.5">check_circle</span>
+<span class="text-body-sm font-body-sm text-text-primary">Cultivate frontline problem solvers</span>
+</div>
+<div class="flex items-start gap-2.5 bg-surface-raised/80 p-3 rounded-lg border border-border-subtle/50">
+<span class="material-symbols-outlined text-text-primary text-[20px] mt-0.5">check_circle</span>
+<span class="text-body-sm font-body-sm text-text-primary">Build sustained collegiate fellowship pods</span>
+</div>
+</div>
+</div>
+<!-- Key Activities -->
+<div class="mb-8 border-t border-border-subtle/60 pt-4">
+<h3 class="text-label-md font-label-md uppercase tracking-wider text-text-primary font-semibold mb-2">Key Activities in the Pod</h3>
+<p class="text-body-sm font-body-sm text-text-secondary leading-relaxed">
+                  Inter-collegiate orientation bootcamps, immersive community field weekends, grassroots fellowship circles, and collaborative social action hackathons.
+                </p>
+</div>
+<!-- CTA Controls -->
+<div class="flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center justify-center bg-primary-container text-text-inverse px-6 py-3 rounded-full text-label-md font-label-md font-medium hover:bg-action-hover transition-transform active:scale-95 duration-150" href="#join-pod">
+<span>Join Collegiate Pod</span>
+<span class="material-symbols-outlined ml-2 text-[18px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center bg-transparent border border-primary-container text-primary-container px-6 py-3 rounded-full text-label-md font-label-md font-medium hover:bg-surface-raised transition-colors" href="#partner">
+<span>Partner With Us</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PROGRAM 3: HEAL WITH KADAM -->
+<section class="w-full py-16 md:py-24 border-b border-border-subtle" id="heal-with-kadam">
+<div class="max-w-7xl mx-auto px-space-lg md:px-margin">
+<div class="bg-surface-lilac-soft/30 rounded-[22px] border border-border-subtle p-6 md:p-12">
+<div class="max-w-4xl mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-raised text-text-primary border border-border-subtle text-eyebrow font-eyebrow mb-4">
+<span class="material-symbols-outlined text-[16px]">self_improvement</span>
+<span>EMOTIONAL WELLBEING &amp; LISTENING CIRCLES</span>
+</div>
+<h2 class="text-headline-xl md:text-display-lg font-headline-xl text-primary mb-3">Heal with Kadam</h2>
+<p class="text-body-md font-body-md text-text-secondary leading-relaxed">
+                Compassionate peer-listening and emotional support spaces for youth and community members experiencing distress, academic pressure, or isolation.
+              </p>
+</div>
+<!-- Ethical Disclaimer Banner (MANDATORY REQUIREMENT) -->
+<div class="bg-surface-raised border border-border-subtle rounded-xl p-4 md:p-5 mb-10 flex items-start gap-4 shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[26px] mt-0.5 shrink-0">info</span>
+<div>
+<p class="text-label-md font-label-md font-semibold text-text-primary mb-1">Peer Listening &amp; Ethical Boundary Statement</p>
+<p class="text-body-sm font-body-sm text-text-secondary leading-relaxed">
+                  Heal with Kadam is an empathetic community initiative providing non-judgmental peer listening and emotional first-aid. <strong>This initiative is explicitly not a substitute for clinical psychiatric care, formal therapy, or medical diagnosis.</strong> We maintain direct escalation channels to certified mental healthcare professionals and distress hotlines when advanced support is needed.
+                </p>
+</div>
+</div>
+<!-- 2-Column Bento: Objectives & Activities -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+<!-- Column 1: Objectives -->
+<div class="bg-surface-raised/90 p-6 rounded-xl border border-border-subtle flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-4 text-text-primary">
+<span class="material-symbols-outlined text-[22px]">psychology</span>
+<h3 class="text-headline-md font-headline-md">Core Objectives</h3>
+</div>
+<ul class="space-y-3">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-1 shrink-0">favorite</span>
+<span class="text-body-md font-body-md text-text-primary">Create safe, stigma-free listening spaces for vulnerable youth</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-1 shrink-0">favorite</span>
+<span class="text-body-md font-body-md text-text-primary">Encourage honest expression of anxieties without judgment</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-1 shrink-0">favorite</span>
+<span class="text-body-md font-body-md text-text-primary">Cultivate empathetic community solidarity &amp; mutual care</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Column 2: Key Activities -->
+<div class="bg-surface-raised/90 p-6 rounded-xl border border-border-subtle flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-4 text-text-primary">
+<span class="material-symbols-outlined text-[22px]">forum</span>
+<h3 class="text-headline-md font-headline-md">Key Activities</h3>
+</div>
+<ul class="space-y-3">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-1 shrink-0">spa</span>
+<span class="text-body-md font-body-md text-text-primary">Bi-weekly guided peer-listening circles (online &amp; physical)</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-1 shrink-0">spa</span>
+<span class="text-body-md font-body-md text-text-primary">Stress-management and campus decompression workshops</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-1 shrink-0">spa</span>
+<span class="text-body-md font-body-md text-text-primary">Mental wellness awareness and emotional literacy forums</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- CTA Controls -->
+<div class="flex flex-wrap items-center justify-center gap-4">
+<a class="inline-flex items-center justify-center bg-primary-container text-text-inverse px-7 py-3 rounded-full text-label-md font-label-md font-medium hover:bg-action-hover transition-transform active:scale-95 duration-150" href="#attend-circle">
+<span>Attend a Listening Circle</span>
+<span class="material-symbols-outlined ml-2 text-[18px]">calendar_month</span>
+</a>
+<a class="inline-flex items-center justify-center bg-transparent border border-primary-container text-primary-container px-7 py-3 rounded-full text-label-md font-label-md font-medium hover:bg-surface-raised transition-colors" href="#peer-volunteer">
+<span>Join as a Peer Volunteer</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PROGRAM 4: WOMEN EMPOWERMENT -->
+<section class="w-full py-16 md:py-24 border-b border-border-subtle bg-surface-canvas" id="women-empowerment">
+<div class="max-w-7xl mx-auto px-space-lg md:px-margin">
+<div class="bg-surface-clay-soft/40 rounded-[22px] border border-border-subtle p-6 md:p-12 overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<!-- Content Column -->
+<div class="lg:col-span-7 flex flex-col justify-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-raised text-text-primary border border-border-subtle text-eyebrow font-eyebrow w-max mb-4">
+<span class="material-symbols-outlined text-[16px]">handshake</span>
+<span>SELF-RELIANCE &amp; DIGNITY</span>
+</div>
+<h2 class="text-headline-xl md:text-display-lg-mobile font-headline-xl text-primary mb-3">Women Empowerment</h2>
+<p class="text-body-md font-body-md text-text-secondary mb-6 leading-relaxed">
+                Supporting underprivileged women through targeted empowerment and self-reliance initiatives in peri-urban clusters. We co-create dignified livelihoods that put financial autonomy and household decision-making directly into women's hands.
+              </p>
+<!-- Core Objectives -->
+<div class="mb-6">
+<h3 class="text-label-md font-label-md uppercase tracking-wider text-text-primary font-semibold mb-3">Core Objectives</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+<div class="flex items-start gap-2.5 bg-surface-raised/80 p-3 rounded-lg border border-border-subtle/50">
+<span class="material-symbols-outlined text-text-primary text-[20px] mt-0.5">check_circle</span>
+<span class="text-body-sm font-body-sm text-text-primary">Build vocational craftsmanship &amp; confidence</span>
+</div>
+<div class="flex items-start gap-2.5 bg-surface-raised/80 p-3 rounded-lg border border-border-subtle/50">
+<span class="material-symbols-outlined text-text-primary text-[20px] mt-0.5">check_circle</span>
+<span class="text-body-sm font-body-sm text-text-primary">Facilitate digital &amp; basic banking literacy</span>
+</div>
+<div class="flex items-start gap-2.5 bg-surface-raised/80 p-3 rounded-lg border border-border-subtle/50">
+<span class="material-symbols-outlined text-text-primary text-[20px] mt-0.5">check_circle</span>
+<span class="text-body-sm font-body-sm text-text-primary">Foster neighborhood mutual-aid pods</span>
+</div>
+<div class="flex items-start gap-2.5 bg-surface-raised/80 p-3 rounded-lg border border-border-subtle/50">
+<span class="material-symbols-outlined text-text-primary text-[20px] mt-0.5">check_circle</span>
+<span class="text-body-sm font-body-sm text-text-primary">Enhance family economic resilience</span>
+</div>
+</div>
+</div>
+<!-- Key Activities -->
+<div class="mb-8 border-t border-border-subtle/60 pt-4">
+<h3 class="text-label-md font-label-md uppercase tracking-wider text-text-primary font-semibold mb-2">Key Activities in the Pod</h3>
+<p class="text-body-sm font-body-sm text-text-secondary leading-relaxed">
+                  Practical vocational and handicraft workshops, basic financial numeracy classes, menstrual hygiene awareness drives, and cooperative savings self-help pods.
+                </p>
+</div>
+<!-- CTA Controls -->
+<div class="flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center justify-center bg-primary-container text-text-inverse px-6 py-3 rounded-full text-label-md font-label-md font-medium hover:bg-action-hover transition-transform active:scale-95 duration-150" href="#support-women">
+<span>Support Women Changemakers</span>
+<span class="material-symbols-outlined ml-2 text-[18px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center bg-transparent border border-primary-container text-primary-container px-6 py-3 rounded-full text-label-md font-label-md font-medium hover:bg-surface-raised transition-colors" href="#volunteer-mentor">
+<span>Volunteer as a Mentor</span>
+</a>
+</div>
+</div>
+<!-- Image Column -->
+<div class="lg:col-span-5 order-first lg:order-last">
+<div class="relative rounded-[18px] overflow-hidden border border-border-subtle aspect-[4/3] lg:aspect-[5/6] bg-surface-clay-soft">
+<img class="w-full h-full object-cover" data-alt="Editorial portrait of three women artisans collaborating in a sunlit community workshop in an informal peri-urban neighborhood. They are weaving vibrant sustainable textiles and handcrafting eco-friendly jute bags with quiet dignity and skill. The atmosphere feels authentic, empowering, and warm with rich terracotta textures, natural linen, and warm afternoon light highlighting their craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxN88Qbfl0ryzi-ptPO5HpeTZmJVIN2KIIuS07eHzHwoAKek__QcFQcgfhjMMd-RNzrhA09lw-UpG7Z34UW9WKIsJBCMsf7ebWBKOMOiq_VlI8YSLEakpTlOyHqWSG21NXmCCM2sTMrZ6zefgTij9Bw8Ayem1xU3GaiNI54JHAqpBAvVxGVZ3Suf7nBQNvjjiY1zeTMcNMNTansxyIVqYlHqwOf5cCVZxy9nWr12rkM3VVs7Q7xrrD"/>
+<div class="absolute bottom-4 left-4 right-4 p-3 bg-surface-raised/95 backdrop-blur-sm rounded-lg border border-border-subtle flex items-center justify-between">
+<div>
+<p class="text-label-md font-label-md font-semibold text-text-primary">160+ Women</p>
+<p class="text-body-sm font-body-sm text-text-secondary">Trained across 5 community pods</p>
+</div>
+<span class="material-symbols-outlined text-text-secondary text-[24px]">workspace_premium</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- GET INVOLVED CTA SECTION -->
+<section class="w-full py-16 md:py-24 bg-surface-peach/50 border-b border-border-subtle">
+<div class="max-w-7xl mx-auto px-space-lg md:px-margin">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="text-eyebrow font-eyebrow text-text-secondary tracking-widest uppercase mb-2 block">TAKE MEANINGFUL ACTION</span>
+<h2 class="text-headline-xl md:text-display-lg font-headline-xl text-primary mb-4">Be a Part of the Change</h2>
+<p class="text-body-md font-body-md text-text-secondary leading-relaxed">
+            Real impact happens through consistent presence. Choose the pathway that aligns with your time, skills, and solidarity.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Pathway 1: Volunteer -->
+<div class="bg-surface-raised rounded-[20px] p-8 border border-border-subtle flex flex-col justify-between hover:shadow-sm transition-all">
+<div>
+<div class="w-12 h-12 rounded-full bg-surface-clay-soft flex items-center justify-center text-text-primary mb-6">
+<span class="material-symbols-outlined text-[24px]">person_raised_hand</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary mb-2">Volunteer in a Program</h3>
+<p class="text-body-sm font-body-sm text-text-secondary mb-6 leading-relaxed">
+                Commit 2 to 4 hours over weekends teaching students, organizing civic dialogues, or guiding peer circles.
+              </p>
+</div>
+<a class="inline-flex items-center justify-center bg-primary-container text-text-inverse px-6 py-3 rounded-full text-label-md font-label-md font-medium hover:bg-action-hover transition-colors w-full" href="#volunteer">
+<span>Apply as Volunteer</span>
+<span class="material-symbols-outlined ml-2 text-[18px]">east</span>
+</a>
+</div>
+<!-- Pathway 2: Explore Partnership -->
+<div class="bg-surface-raised rounded-[20px] p-8 border border-border-subtle flex flex-col justify-between hover:shadow-sm transition-all">
+<div>
+<div class="w-12 h-12 rounded-full bg-surface-blue-soft flex items-center justify-center text-text-primary mb-6">
+<span class="material-symbols-outlined text-[24px]">corporate_fare</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary mb-2">Explore Partnership</h3>
+<p class="text-body-sm font-body-sm text-text-secondary mb-6 leading-relaxed">
+                Connect your collegiate society, NGO pod, or CSR initiative with established community operational channels.
+              </p>
+</div>
+<a class="inline-flex items-center justify-center bg-primary-container text-text-inverse px-6 py-3 rounded-full text-label-md font-label-md font-medium hover:bg-action-hover transition-colors w-full" href="#partner">
+<span>Connect With Us</span>
+<span class="material-symbols-outlined ml-2 text-[18px]">east</span>
+</a>
+</div>
+<!-- Pathway 3: Donate to a Pod -->
+<div class="bg-surface-raised rounded-[20px] p-8 border border-border-subtle flex flex-col justify-between hover:shadow-sm transition-all">
+<div>
+<div class="w-12 h-12 rounded-full bg-surface-lilac-soft flex items-center justify-center text-text-primary mb-6">
+<span class="material-symbols-outlined text-[24px]">volunteer_activism</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary mb-2">Donate to a Pod</h3>
+<p class="text-body-sm font-body-sm text-text-secondary mb-6 leading-relaxed">
+                Directly fund learning materials, reading library pods, or vocational supplies with complete financial reporting.
+              </p>
+</div>
+<a class="inline-flex items-center justify-center bg-primary-container text-text-inverse px-6 py-3 rounded-full text-label-md font-label-md font-medium hover:bg-action-hover transition-colors w-full" href="#donate">
+<span>Make a Contribution</span>
+<span class="material-symbols-outlined ml-2 text-[18px]">favorite</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER (Exact Shared Component implementation) -->
+<footer class="bg-surface-clay-soft border-t border-border-subtle">
+<div class="w-full px-space-lg md:px-margin py-space-xl max-w-7xl mx-auto">
+<!-- Top Grid: Brand & Newsletter -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 pb-12 border-b border-border-subtle">
+<!-- Brand & Description -->
+<div class="md:col-span-6 lg:col-span-5">
+<div class="flex items-center gap-3 mb-4">
+<img alt="Kadam Foundation circular footprint emblem logo" class="w-10 h-10 object-contain rounded-full border border-border-subtle bg-surface-raised" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwYLx1YZ6zop3PKFSNbd-BUHj9mqCASHnItL35g0ZejjXfl0-YbaFkCHjunkH_J0T863YHhaYhNsT0B9cAACBD12WRLJ5n8AtP1gVBclDASgJm_xM1q4Xa-vjcIA2bAODLnzRJtlp2tqRQGAhfhKWgSyU8UbkLS7vGr6w5-cyHkZeJDGC0Iq9s-_qqTZhBO2kKNDUGvoPqkPmxISw8DwCzcMRYqXlP3dVbqfSdmmEbTXI9OH12KVylPOTio3HA10Cr2Q"/>
+<span class="font-headline-md text-headline-md text-primary font-bold">Kadam Foundation</span>
+</div>
+<p class="text-body-sm font-body-sm text-text-secondary max-w-sm mb-4 leading-relaxed">
+            A registered youth-led non-profit collective driving grassroots education, collegiate civic engagement, emotional wellbeing circles, and dignified livelihoods across local communities.
+          </p>
+<div class="flex items-center gap-3 text-text-primary">
+<a aria-label="Social Link" class="w-9 h-9 rounded-full bg-surface-raised border border-border-subtle flex items-center justify-center hover:bg-primary-container hover:text-text-inverse transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</a>
+<a aria-label="Mail Link" class="w-9 h-9 rounded-full bg-surface-raised border border-border-subtle flex items-center justify-center hover:bg-primary-container hover:text-text-inverse transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</a>
+<a aria-label="Community Hub" class="w-9 h-9 rounded-full bg-surface-raised border border-border-subtle flex items-center justify-center hover:bg-primary-container hover:text-text-inverse transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">hub</span>
+</a>
+</div>
+</div>
+<!-- Links Grid -->
+<div class="md:col-span-6 lg:col-span-3">
+<h4 class="text-label-md font-label-md uppercase tracking-wider text-text-primary font-semibold mb-4">Quick Links</h4>
+<ul class="space-y-2.5">
+<li><a class="text-text-secondary hover:text-primary transition-colors text-body-sm font-body-sm" href="#">About Us</a></li>
+<li><a class="text-text-secondary hover:text-primary transition-colors text-body-sm font-body-sm" href="#">Focus Areas</a></li>
+<li><a class="text-text-secondary hover:text-primary transition-colors text-body-sm font-body-sm" href="#">Financial Transparency</a></li>
+<li><a class="text-text-secondary hover:text-primary transition-colors text-body-sm font-body-sm" href="#">Annual Reports</a></li>
+<li><a class="text-text-secondary hover:text-primary transition-colors text-body-sm font-body-sm" href="#">Volunteer Portal</a></li>
+</ul>
+</div>
+<!-- Newsletter Signup -->
+<div class="md:col-span-12 lg:col-span-4">
+<h4 class="text-label-md font-label-md uppercase tracking-wider text-text-primary font-semibold mb-2">Ground Chronicles Newsletter</h4>
+<p class="text-body-sm font-body-sm text-text-secondary mb-4">
+            Receive monthly verified field notes, community stories, and volunteer openings directly in your inbox.
+          </p>
+<form class="flex flex-col sm:flex-row gap-2" onsubmit="event.preventDefault();">
+<input class="w-full px-4 py-2.5 rounded-lg bg-surface-raised border border-border-subtle text-body-sm font-body-sm text-text-primary placeholder:text-text-secondary/70 focus:outline-none focus:ring-2 focus:ring-focus-ring focus:border-text-primary" placeholder="Your email address" required="" type="email"/>
+<button class="px-5 py-2.5 rounded-full bg-primary-container text-text-inverse text-label-md font-label-md font-medium hover:bg-action-hover transition-colors shrink-0" type="submit">
+              Subscribe
+            </button>
+</form>
+</div>
+</div>
+<!-- Bottom Bar & Copyright -->
+<div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+<p class="text-body-sm font-body-sm text-text-secondary text-center md:text-left">
+          © 2024 Kadam Foundation. A registered youth-led nonprofit organization. All rights reserved.
+        </p>
+<div class="flex items-center gap-6">
+<a class="text-body-sm font-body-sm text-text-secondary hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-body-sm font-body-sm text-text-secondary hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

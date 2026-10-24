@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Kadam Foundation | Youth-Led Nonprofit Organization</title>
+<!-- Google Fonts: Lora & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Lora:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with Forms and Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration verbatim from Design System -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary-container": "#ad9295",
+            "secondary-container": "#fdd4c8",
+            "surface-raised": "#F8EEE8",
+            "text-inverse": "#FFF7F2",
+            "on-primary-fixed": "#281719",
+            "surface": "#fff8f5",
+            "surface-peach": "#E5D0C5",
+            "on-secondary-fixed-variant": "#5c4037",
+            "tertiary-container": "#422b24",
+            "inverse-primary": "#ddbfc2",
+            "on-primary-fixed-variant": "#564143",
+            "tertiary-fixed-dim": "#e3bfb4",
+            "surface-olive-soft": "#D0CCB1",
+            "inverse-on-surface": "#fdeee7",
+            "on-surface": "#211a16",
+            "on-tertiary": "#ffffff",
+            "status-success": "#315B45",
+            "surface-bright": "#fff8f5",
+            "action-hover": "#2F2022",
+            "surface-clay-soft": "#E6C8B8",
+            "surface-variant": "#eee0d9",
+            "outline-variant": "#d2c3c4",
+            "surface-container-high": "#f4e5de",
+            "primary-fixed": "#fadbdd",
+            "on-surface-variant": "#4f4445",
+            "on-primary": "#ffffff",
+            "surface-tint": "#70595b",
+            "on-tertiary-fixed": "#2a1610",
+            "on-tertiary-container": "#b29187",
+            "on-tertiary-fixed-variant": "#5a4139",
+            "border-subtle": "#D4B9AE",
+            "secondary": "#76574e",
+            "text-primary": "#3F2C2E",
+            "surface-blue-soft": "#CDD0D2",
+            "secondary-fixed-dim": "#e6beb2",
+            "on-background": "#211a16",
+            "primary": "#281819",
+            "surface-container": "#faebe4",
+            "secondary-fixed": "#ffdbd0",
+            "tertiary-fixed": "#ffdbd0",
+            "on-secondary": "#ffffff",
+            "primary-fixed-dim": "#ddbfc2",
+            "surface-dim": "#e6d7d0",
+            "surface-canvas": "#F2E3DC",
+            "on-secondary-container": "#795a50",
+            "surface-container-low": "#fff1ea",
+            "text-secondary": "#6F514A",
+            "inverse-surface": "#372f2a",
+            "surface-lilac-soft": "#D8C2D0",
+            "background": "#fff8f5",
+            "status-warning": "#76511C",
+            "status-error": "#8A3034",
+            "outline": "#807475",
+            "error-container": "#ffdad6",
+            "surface-container-highest": "#eee0d9",
+            "tertiary": "#2b1710",
+            "error": "#ba1a1a",
+            "on-error": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "primary-container": "#3f2c2e",
+            "on-secondary-fixed": "#2b160f",
+            "focus-ring": "#65413D",
+            "on-error-container": "#93000a"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter-mobile": "1rem",
+            "space-xs": "0.25rem",
+            "margin-mobile": "1.5rem",
+            "gutter-tablet": "1.25rem",
+            "gutter": "1.5rem",
+            "margin-tablet": "2rem",
+            "space-xl": "2rem",
+            "space-md": "1rem",
+            "margin": "2.5rem",
+            "space-sm": "0.5rem",
+            "space-lg": "1.5rem"
+          },
+          "fontFamily": {
+            "label-md": ["Inter"],
+            "display-lg": ["Lora"],
+            "display-xl": ["Lora"],
+            "body-md": ["Inter"],
+            "headline-lg": ["Lora"],
+            "body-lg": ["Inter"],
+            "headline-xl": ["Lora"],
+            "display-lg-mobile": ["Lora"],
+            "headline-md": ["Lora"],
+            "body-sm": ["Inter"],
+            "display-xl-mobile": ["Lora"],
+            "eyebrow": ["Inter"]
+          },
+          "fontSize": {
+            "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
+            "display-lg": ["44px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "display-xl": ["56px", { "lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-md": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "headline-lg": ["24px", { "lineHeight": "30px", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "headline-xl": ["32px", { "lineHeight": "38px", "fontWeight": "600" }],
+            "display-lg-mobile": ["32px", { "lineHeight": "38px", "fontWeight": "600" }],
+            "headline-md": ["20px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "body-sm": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "display-xl-mobile": ["40px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "eyebrow": ["12px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-surface-canvas text-text-primary font-body-md antialiased selection:bg-surface-peach selection:text-text-primary">
+<!-- 1. TopNavBar (Shared Component JSON Blueprint) -->
+<header class="w-full bg-surface-canvas border-b border-border-subtle sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-space-lg md:px-margin max-w-7xl mx-auto py-space-md">
+<!-- Brand Logo Area -->
+<a class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-focus-ring rounded-lg" href="#">
+<img alt="Kadam Foundation circular footprint emblem logo" class="w-10 h-10 rounded-full object-cover border border-border-subtle shadow-sm transition-transform duration-150 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC64C9ipm7lvhCYcgCWHBGxDT7nemg7841-A6Tb0tmLopmbV88mIakcb9jlYguFvNZIMGNZyqTZYQc97IMNyvZWSF7rOBV1GS5f1rf7N1NDjbjR_ggj9DoV_yuHQrXJSKagDPU8opiJMJg-b5fnSPC2S14ibDZ1TNL4zk-F5-QpurI3wNwpgRHLoBORUDOCx7Gx9Bq7pY6A8AkKrUS5_F-HRhwMCHyyT3dkuxwuVdvAVbQKxambVBRl0Bam_yZdC8QFBQ"/>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary font-bold tracking-tight leading-none">Kadam Foundation</span>
+<span class="font-eyebrow text-eyebrow text-text-secondary tracking-wider mt-0.5">YOUTH-LED NONPROFIT</span>
+</div>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center space-x-6">
+<a class="text-text-secondary font-label-md text-label-md hover:text-primary transition-colors" href="#">Home</a>
+<!-- ACTIVE STATE: About -->
+<a class="text-primary font-semibold border-b-2 border-primary pb-1 font-label-md text-label-md" href="#">About</a>
+<a class="text-text-secondary font-label-md text-label-md hover:text-primary transition-colors" href="#">Programs</a>
+<a class="text-text-secondary font-label-md text-label-md hover:text-primary transition-colors" href="#">Stories</a>
+<a class="text-text-secondary font-label-md text-label-md hover:text-primary transition-colors" href="#">Our Team</a>
+<a class="text-text-secondary font-label-md text-label-md hover:text-primary transition-colors" href="#">Volunteer</a>
+<a class="text-text-secondary font-label-md text-label-md hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<!-- Trailing Action Button -->
+<div class="flex items-center gap-3">
+<a class="bg-primary-container text-text-inverse font-label-md text-label-md font-semibold px-6 py-2.5 rounded-full transition-transform active:scale-95 duration-150 hover:bg-action-hover focus:outline-none focus:ring-2 focus:ring-focus-ring flex items-center gap-1.5 shadow-sm" href="#">
+<span>Donate</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</a>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="w-full">
+<!-- 2. Hero Section -->
+<section class="max-w-7xl mx-auto px-space-lg md:px-margin pt-12 md:pt-16 pb-16 md:pb-20">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+<!-- Hero Text -->
+<div class="lg:col-span-7 flex flex-col items-start space-y-6">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-raised border border-border-subtle shadow-sm">
+<span class="material-symbols-outlined text-primary text-base">footprint</span>
+<span class="font-eyebrow text-eyebrow text-text-secondary">ABOUT KADAM FOUNDATION • YOUTH-LED NONPROFIT</span>
+</div>
+<h1 class="font-display-lg-mobile md:font-display-xl text-display-lg-mobile md:text-display-xl text-text-primary tracking-tight">
+            Young Steps Towards a Better Tomorrow
+          </h1>
+<p class="font-body-lg text-body-lg text-text-secondary max-w-2xl leading-relaxed">
+            Kadam Foundation mobilizes collective youth leadership to spark sustainable grassroots change across marginalized communities and underserved regions in India. We bridge empathy with civic action, proving that collegiate energy and community trust can dismantle systemic vulnerabilities step by step.
+          </p>
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="bg-primary-container text-text-inverse font-label-md text-label-md font-semibold px-6 py-3 rounded-full hover:bg-action-hover transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-focus-ring flex items-center gap-2 group" href="#approach">
+<span>Explore Our Approach</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</a>
+<a class="bg-transparent border border-border-subtle text-text-primary font-label-md text-label-md font-semibold px-6 py-3 rounded-full hover:bg-surface-raised transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-focus-ring" href="#story">
+              Read Our Story
+            </a>
+</div>
+<div class="flex items-center gap-4 pt-4 text-text-secondary font-label-md text-label-md">
+<div class="flex -space-x-2">
+<span class="w-8 h-8 rounded-full bg-surface-clay-soft border-2 border-surface-canvas flex items-center justify-center font-bold text-xs text-text-primary">300+</span>
+<span class="w-8 h-8 rounded-full bg-surface-olive-soft border-2 border-surface-canvas flex items-center justify-center font-bold text-xs text-text-primary">50</span>
+<span class="w-8 h-8 rounded-full bg-surface-lilac-soft border-2 border-surface-canvas flex items-center justify-center font-bold text-xs text-text-primary">1k</span>
+</div>
+<span>Ground-level youth network across Indian universities</span>
+</div>
+</div>
+<!-- Hero Visual Frame -->
+<div class="lg:col-span-5">
+<div class="relative rounded-3xl overflow-hidden border border-border-subtle bg-surface-raised p-2 shadow-sm">
+<div class="rounded-2xl overflow-hidden relative aspect-[4/5] bg-surface-clay-soft">
+<img class="w-full h-full object-cover" data-alt="A warm, authentic editorial documentary photograph showing young Indian youth volunteers collaborating warmly with village elders and young students under a banyan tree. The scene is illuminated by soft late-afternoon golden sunlight with a warm terracotta and sun-baked peach palette. The mood is empathetic, respectful, and deeply grounded in grassroots community service." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj9UkuaNxxsHujBCt0zT0HkowXeWSuTV8Frwr5o0o6pQ-Dp708jbU6I2G3nD_C9H0liwbIDlR_QdU-ct9dXFDg7ZxgOgtHxjmVErbKK2xgLaOjNwRrMtKhzB69HR6TcGiDJdubNRPlKzjO1LUzTSSqmphVRvG0Dykd-8GeVp8w2Y8P2ZmBWWZuJKqifbi_nT3egjYhPJXDAhpbk7Y5vbxp28TeQSdqFkVizNE7KRBIlt9kN81rmm6p"/>
+<div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-primary/80 via-primary/40 to-transparent p-6 text-text-inverse">
+<span class="font-eyebrow text-eyebrow uppercase tracking-widest text-surface-peach">Grassroots Field Log</span>
+<p class="font-headline-md text-headline-md font-semibold mt-1">Community Fellowship in Action</p>
+<p class="font-body-sm text-body-sm text-surface-raised/90 mt-1">Youth volunteers facilitating decentralized learning circles in rural peri-urban centers.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Our Story Section -->
+<section class="w-full bg-surface-raised border-y border-border-subtle py-16 md:py-24" id="story">
+<div class="max-w-7xl mx-auto px-space-lg md:px-margin">
+<div class="flex flex-col mb-12">
+<span class="font-eyebrow text-eyebrow text-text-secondary uppercase">ORIGIN &amp; JOURNEY</span>
+<h2 class="font-headline-xl text-headline-xl md:font-display-lg md:text-display-lg text-text-primary mt-2">
+            From College Campuses to Community Action
+          </h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Multi-column narrative -->
+<div class="lg:col-span-7 space-y-6">
+<p class="font-body-lg text-body-lg text-text-primary leading-relaxed">
+              Kadam Foundation was ignited by university students who looked past academic theory and saw pressing societal needs in their immediate neighborhoods. What began as emergency relief drives, student-led stationary distributions, and stray animal vaccinations soon crystallized into an enduring grassroots youth movement.
+            </p>
+<p class="font-body-md text-body-md text-text-secondary leading-relaxed">
+              Recognizing that localized communities understand their challenges best, we eschewed top-down paternalism. Instead, we established autonomous youth pods that work alongside village panchayats, informal basti committees, and school heads to build resilient, community-owned solutions.
+            </p>
+<!-- Editorial Timeline / Milestones -->
+<div class="mt-10 space-y-6 border-l-2 border-border-subtle pl-6">
+<div class="relative">
+<span class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-text-primary"></span>
+<div class="flex items-center gap-2">
+<span class="font-headline-md text-headline-md font-semibold text-text-primary">2021: Grassroots Inception</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-medium bg-surface-peach text-text-primary border border-border-subtle">Founder Verified Origin</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">
+                  First cohort of passionate university students mobilized localized flood relief and emergency winter clothing drives in Northern India.
+                </p>
+</div>
+<div class="relative">
+<span class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-secondary"></span>
+<span class="font-headline-md text-headline-md font-semibold text-text-primary">2022: Expanding Beyond Borders</span>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">
+                  Establishment of collegiate volunteer pods spanning 12 higher education institutions, expanding into weekly remedial teaching programs.
+                </p>
+</div>
+<div class="relative">
+<span class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-status-success"></span>
+<span class="font-headline-md text-headline-md font-semibold text-text-primary">2023: Institutional Recognition</span>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">
+                  Formal adoption of the 5-pillar grassroots operational framework and initial formal registry under the Indian Societies Registration Act.
+                </p>
+</div>
+<div class="relative">
+<span class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-primary-container"></span>
+<span class="font-headline-md text-headline-md font-semibold text-text-primary">2024: Nationwide Movement</span>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">
+                  Active footprint crossing 50 cities, delivering integrated interventions across basic literacy, environmental stewardship, and emergency animal rescue.
+                </p>
+</div>
+</div>
+</div>
+<!-- Archival / Fieldwork Visual Card -->
+<div class="lg:col-span-5">
+<div class="bg-surface-canvas rounded-2xl border border-border-subtle p-5 shadow-sm">
+<div class="rounded-xl overflow-hidden aspect-[4/3] bg-surface-clay-soft relative">
+<img class="w-full h-full object-cover" data-alt="A candid photojournalism image depicting Indian university students in simple volunteer t-shirts conducting a community meeting with local women in a village square. Natural warm sunlight filters through earthenware tiles, illuminating notes, sketchpads, and handmade posters. The mood is honest, hopeful, and focused on collective decision-making." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBa7-_BtXkDSCWrYW2EsLCO-oFwI94avcN7JjBhbdCBvumMc6goXJahDnfxACaSgD0CKeJFrDUu6Z2Q4S0_LTOaFSoEoK5T6wtAL7nfmM8FViwNuKSiz05xim4UBQvrJCcZCZc5AamZHGy-5gyj42Cei_EwNlUekA7NriqCTovdSDJA4JTpdw6kxhsgr7AcFPupoHzX4OT6e3sgjyfnLoJH8SUNAFw5SKqiNZUnM2LXTG41z0uDJkP"/>
+<div class="absolute top-3 left-3 bg-primary-container/85 text-text-inverse px-3 py-1 rounded-full text-xs font-mono">
+                  [FIELD ARCHIVE: COMMUNITY OUTREACH CAMPAIGN]
+                </div>
+</div>
+<div class="mt-4">
+<h4 class="font-headline-md text-headline-md font-semibold text-text-primary">Participatory Grassroots Planning</h4>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">
+                  Field volunteers coordinate with local neighborhood representatives before launching ecological sapling drives and student stationery supply pods.
+                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Mission & Vision Section -->
+<section class="max-w-7xl mx-auto px-space-lg md:px-margin py-16 md:py-24">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Panel 1: Our Mission -->
+<div class="bg-surface-raised rounded-2xl border border-border-subtle p-8 md:p-10 shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-full bg-surface-clay-soft border border-border-subtle flex items-center justify-center text-text-primary mb-6">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">volunteer_activism</span>
+</div>
+<span class="font-eyebrow text-eyebrow text-text-secondary uppercase">CORE PURPOSE</span>
+<h3 class="font-headline-xl text-headline-xl text-text-primary mt-1 mb-4">Our Mission</h3>
+<p class="font-body-lg text-body-lg text-text-secondary leading-relaxed">
+              To empower grassroots communities through youth-led initiatives in education, ecological action, and social welfare—building transparent, decentralized models of empathy and self-reliance that foster generational dignity.
+            </p>
+</div>
+<div class="mt-8 pt-6 border-t border-border-subtle/60 flex items-center gap-2 text-text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-status-success text-lg">check_circle</span>
+<span>Empathetic, youth-governed, and participatory</span>
+</div>
+</div>
+<!-- Panel 2: Our Vision -->
+<div class="bg-surface-raised rounded-2xl border border-border-subtle p-8 md:p-10 shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-full bg-surface-peach border border-border-subtle flex items-center justify-center text-text-primary mb-6">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">wb_twilight</span>
+</div>
+<span class="font-eyebrow text-eyebrow text-text-secondary uppercase">HORIZON GOAL</span>
+<h3 class="font-headline-xl text-headline-xl text-text-primary mt-1 mb-4">Our Vision</h3>
+<p class="font-body-lg text-body-lg text-text-secondary leading-relaxed">
+              A resilient, equitable India where every young citizen possesses the agency, resources, and civic platform to uplift their neighborhood and build a dignified future for all, free from systemic neglect and ecological degradation.
+            </p>
+</div>
+<div class="mt-8 pt-6 border-t border-border-subtle/60 flex items-center gap-2 text-text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-status-success text-lg">check_circle</span>
+<span>Nationwide youth empowerment for sustainable progress</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Our Core Values Section -->
+<section class="max-w-7xl mx-auto px-space-lg md:px-margin pb-16 md:pb-24">
+<div class="flex flex-col items-center text-center max-w-2xl mx-auto mb-14">
+<span class="font-eyebrow text-eyebrow text-text-secondary uppercase">GUIDING ETHOS</span>
+<h2 class="font-headline-xl text-headline-xl md:font-display-lg md:text-display-lg text-text-primary mt-2">
+          Values Rooted in Grassroots Dignity
+        </h2>
+<p class="font-body-md text-body-md text-text-secondary mt-3">
+          Our guiding principles keep us firmly tethered to ground realities, preventing youth idealism from detaching from practical community realities.
+        </p>
+</div>
+<!-- 5 Coordinated Cards using pastel surfaces -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- 1. Inclusion -->
+<div class="bg-surface-raised border border-border-subtle rounded-2xl p-7 shadow-sm transition-all hover:shadow-md">
+<div class="w-11 h-11 rounded-xl bg-surface-canvas border border-border-subtle flex items-center justify-center text-text-primary mb-5">
+<span class="material-symbols-outlined text-2xl">diversity_3</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-text-primary font-semibold mb-2">1. Inclusion</h4>
+<p class="font-body-md text-body-md text-text-secondary">
+            Unconditional access for every marginalized group and vulnerable voice. We construct spaces where background or economic status never dictates human value.
+          </p>
+</div>
+<!-- 2. Compassion -->
+<div class="bg-surface-clay-soft border border-border-subtle rounded-2xl p-7 shadow-sm transition-all hover:shadow-md">
+<div class="w-11 h-11 rounded-xl bg-surface-canvas border border-border-subtle flex items-center justify-center text-text-primary mb-5">
+<span class="material-symbols-outlined text-2xl">favorite_border</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-text-primary font-semibold mb-2">2. Compassion</h4>
+<p class="font-body-md text-body-md text-text-primary">
+            Ground-level empathy that listens deeply before acting. We believe genuine aid is born out of shared respect rather than condescending charity.
+          </p>
+</div>
+<!-- 3. Empowerment -->
+<div class="bg-surface-blue-soft border border-border-subtle rounded-2xl p-7 shadow-sm transition-all hover:shadow-md">
+<div class="w-11 h-11 rounded-xl bg-surface-canvas border border-border-subtle flex items-center justify-center text-text-primary mb-5">
+<span class="material-symbols-outlined text-2xl">psychology</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-text-primary font-semibold mb-2">3. Empowerment</h4>
+<p class="font-body-md text-body-md text-text-primary">
+            Equipping youth and communities with lasting skills and autonomous agency. Sustainable transformation occurs when communities steer their own progress.
+          </p>
+</div>
+<!-- 4. Sustainability -->
+<div class="bg-surface-olive-soft border border-border-subtle rounded-2xl p-7 shadow-sm transition-all hover:shadow-md">
+<div class="w-11 h-11 rounded-xl bg-surface-canvas border border-border-subtle flex items-center justify-center text-text-primary mb-5">
+<span class="material-symbols-outlined text-2xl">eco</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-text-primary font-semibold mb-2">4. Sustainability</h4>
+<p class="font-body-md text-body-md text-text-primary">
+            Ecological mindfulness and generational continuity. Every initiative is assessed for environmental longevity and circular resource management.
+          </p>
+</div>
+<!-- 5. Community -->
+<div class="bg-surface-lilac-soft border border-border-subtle rounded-2xl p-7 shadow-sm transition-all hover:shadow-md md:col-span-2 lg:col-span-1">
+<div class="w-11 h-11 rounded-xl bg-surface-canvas border border-border-subtle flex items-center justify-center text-text-primary mb-5">
+<span class="material-symbols-outlined text-2xl">handshake</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-text-primary font-semibold mb-2">5. Community</h4>
+<p class="font-body-md text-body-md text-text-primary">
+            Transparent, collective solidarity that belongs to the people. We remain entirely accountable to the volunteers who labor and the families we stand with.
+          </p>
+</div>
+</div>
+</section>
+<!-- 6. Our Approach Section -->
+<section class="w-full bg-surface-raised border-y border-border-subtle py-16 md:py-24" id="approach">
+<div class="max-w-7xl mx-auto px-space-lg md:px-margin">
+<div class="flex flex-col mb-14">
+<span class="font-eyebrow text-eyebrow text-text-secondary uppercase">HOW WE WORK</span>
+<h2 class="font-headline-xl text-headline-xl md:font-display-lg md:text-display-lg text-text-primary mt-2">
+            A Three-Pillar Methodology for Lasting Change
+          </h2>
+<p class="font-body-lg text-body-lg text-text-secondary max-w-3xl mt-3">
+            Sustainable transformation requires structured continuity. Our operations unite academic inquiry with boots-on-the-ground volunteer mobilization.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Pillar 1 -->
+<div class="bg-surface-canvas border border-border-subtle rounded-2xl p-8 flex flex-col justify-between shadow-sm">
+<div>
+<span class="font-eyebrow text-eyebrow text-text-secondary block mb-3">PILLAR 01</span>
+<h3 class="font-headline-md text-headline-md font-semibold text-text-primary mb-3">Education &amp; Awareness</h3>
+<p class="font-body-md text-body-md text-text-secondary leading-relaxed mb-6">
+                Experiential workshops, evening remedial learning centers, mentorship circles, and foundational skill building for underprivileged children and youth in municipal and peri-urban wards.
+              </p>
+</div>
+<ul class="space-y-2 border-t border-border-subtle pt-4 text-sm text-text-primary font-body-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-status-success">check</span>
+<span>Weekend learning camps</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-status-success">check</span>
+<span>Foundational stationery drives</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-status-success">check</span>
+<span>Adolescent digital literacy</span>
+</li>
+</ul>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface-canvas border border-border-subtle rounded-2xl p-8 flex flex-col justify-between shadow-sm">
+<div>
+<span class="font-eyebrow text-eyebrow text-text-secondary block mb-3">PILLAR 02</span>
+<h3 class="font-headline-md text-headline-md font-semibold text-text-primary mb-3">Youth Participation</h3>
+<p class="font-body-md text-body-md text-text-secondary leading-relaxed mb-6">
+                Collegiate chapters, localized fellowship pods, and active youth leadership circles giving young changemakers real civic ownership and actionable governance experience.
+              </p>
+</div>
+<ul class="space-y-2 border-t border-border-subtle pt-4 text-sm text-text-primary font-body-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-status-success">check</span>
+<span>Campus fellowship networks</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-status-success">check</span>
+<span>Civic leadership bootcamps</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-status-success">check</span>
+<span>Decentralized pod autonomy</span>
+</li>
+</ul>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface-canvas border border-border-subtle rounded-2xl p-8 flex flex-col justify-between shadow-sm">
+<div>
+<span class="font-eyebrow text-eyebrow text-text-secondary block mb-3">PILLAR 03</span>
+<h3 class="font-headline-md text-headline-md font-semibold text-text-primary mb-3">Community Action</h3>
+<p class="font-body-md text-body-md text-text-secondary leading-relaxed mb-6">
+                On-ground direct drives, ecological tree-planting cleanups, animal welfare emergency interventions, winter blanket distributions, and women's self-reliance solidarity circles.
+              </p>
+</div>
+<ul class="space-y-2 border-t border-border-subtle pt-4 text-sm text-text-primary font-body-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-status-success">check</span>
+<span>Direct frontline relief</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-status-success">check</span>
+<span>Stray feeding &amp; medical triage</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-status-success">check</span>
+<span>Urban sapling afforestation</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Our Impact Band (Deep Clay Section) -->
+<section class="max-w-7xl mx-auto px-space-lg md:px-margin my-12">
+<div class="bg-[#8F6E64] text-text-inverse rounded-3xl p-8 md:p-14 shadow-md border border-border-subtle">
+<div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-12">
+<span class="font-eyebrow text-eyebrow text-surface-peach uppercase tracking-widest">VERIFIED GRASSROOTS FOOTPRINT</span>
+<h2 class="font-headline-xl text-headline-xl md:font-display-lg md:text-display-lg text-text-inverse mt-2">
+            Accountability and Grounded Outcomes
+          </h2>
+<p class="font-body-md text-body-md text-surface-raised/90 mt-3">
+            Every statistic represents a face, a family, or an urban ecosystem touched by youth solidarity. We maintain founder-confirmed metrics verified by ground logs.
+          </p>
+</div>
+<!-- 3 Bold Metric Callouts in large Lora Numerals -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-surface-peach/20">
+<div class="pt-6 md:pt-0 md:px-6">
+<span class="font-display-xl text-display-xl text-surface-peach font-bold block mb-1">300+</span>
+<span class="font-headline-md text-headline-md text-text-inverse font-semibold block mb-2">Active Volunteers</span>
+<p class="font-body-sm text-body-sm text-surface-raised/80">Across collegiate chapters, regional coordinator councils, and local city hubs.</p>
+</div>
+<div class="pt-6 md:pt-0 md:px-6">
+<span class="font-display-xl text-display-xl text-surface-peach font-bold block mb-1">50</span>
+<span class="font-headline-md text-headline-md text-text-inverse font-semibold block mb-2">Cities Reached</span>
+<p class="font-body-sm text-body-sm text-surface-raised/80">Grassroots mobilization, municipal drives, and youth engagement clusters in India.</p>
+</div>
+<div class="pt-6 md:pt-0 md:px-6">
+<span class="font-display-xl text-display-xl text-surface-peach font-bold block mb-1">1,000+</span>
+<span class="font-headline-md text-headline-md text-text-inverse font-semibold block mb-2">Lives Impacted</span>
+<p class="font-body-sm text-body-sm text-surface-raised/80">Direct beneficiaries of child education, emergency relief, and community welfare programs.</p>
+</div>
+</div>
+<!-- Trust and Transparency Note -->
+<div class="mt-12 pt-8 border-t border-surface-peach/20 text-center flex flex-col md:flex-row items-center justify-center gap-3 text-surface-raised/90 text-sm">
+<span class="material-symbols-outlined text-surface-peach text-base">verified</span>
+<span class="font-body-sm">
+            Independent 2024 Grassroots Audit • Founder Verified Registry. We track every volunteer hour and community intervention with full financial and operational transparency.
+          </span>
+</div>
+</div>
+</section>
+<!-- 8. Leadership & Team Section -->
+<section class="max-w-7xl mx-auto px-space-lg md:px-margin py-16 md:py-20">
+<div class="flex flex-col mb-12">
+<span class="font-eyebrow text-eyebrow text-text-secondary uppercase">OUR LEADERSHIP</span>
+<h2 class="font-headline-xl text-headline-xl md:font-display-lg md:text-display-lg text-text-primary mt-2">
+          Stewards of the Vision
+        </h2>
+<p class="font-body-md text-body-md text-text-secondary max-w-2xl mt-2">
+          Guided by youth leaders, community organizers, and advisory mentors dedicated to collective impact and operational integrity.
+        </p>
+</div>
+<!-- Profile Grid (4 clean cards with placeholders clearly marked as pending founder verification) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="bg-surface-raised border border-border-subtle rounded-2xl p-5 shadow-sm flex flex-col">
+<div class="rounded-xl overflow-hidden aspect-square bg-surface-clay-soft mb-4 relative">
+<img class="w-full h-full object-cover" data-alt="A dignified, warm black and white portrait of an Indian youth activist leader dressed in simple handloom attire, captured against a clean neutral paper background with soft ambient studio lighting. The expression is thoughtful, empathetic, and resolved." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBISA6UzUF5Xsr511cvVbQXwzw3gX1xidbQN22XuPzisVQd-HdCnRhtE9J5a4EfEmM3UwDS7BkooyUcc-oydFfpw4ek688o6ve61cH2Su6vazeEjejO_bgJaXyatEdZlUkYojIApfq_Aaw9Y_qkpX96Zds61LN--Y3TMTLrRShuaxCm_jajtrATvsK8q-NIWIy40ahpVvJg2_WS8gw7ju9AnPkXM3OvN6dMAP2kxOxyAdnepySahCB_"/>
+<div class="absolute bottom-2 left-2 bg-primary-container/90 text-text-inverse px-2 py-0.5 rounded text-[10px] font-mono">
+              [CONFIRMED ROLE]
+            </div>
+</div>
+<span class="font-eyebrow text-eyebrow text-text-secondary uppercase">LEADERSHIP COUNCIL</span>
+<h4 class="font-headline-md text-headline-md text-text-primary font-semibold mt-1">Founder &amp; Executive Director</h4>
+<p class="font-body-sm text-body-sm text-text-secondary mt-2 flex-grow">
+            [Placeholder: Founder Profile awaiting final bio confirmation for public archive]. Steers overall strategic direction and youth mobilization partnerships.
+          </p>
+<div class="mt-4 pt-3 border-t border-border-subtle/60 text-xs text-text-secondary flex items-center justify-between">
+<span>Executive Committee</span>
+<span class="material-symbols-outlined text-sm">badge</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-raised border border-border-subtle rounded-2xl p-5 shadow-sm flex flex-col">
+<div class="rounded-xl overflow-hidden aspect-square bg-surface-peach mb-4 relative">
+<img class="w-full h-full object-cover" data-alt="A natural documentary portrait of a young Indian woman community organizer holding field clipboards outdoors in a sunlit courtyard. Warm natural daylight with a soft terracotta wash background. The portrait conveys approachable authority and ground-level energy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRSo0uA7MsNWwwk-y2j_C4ydh_wxUjFmnGUfd7aFQPesQmoiiKPWJpq0sl4Zk_9eqtqzp7g06GfJ5C3P3_hL3BaluBZtNbe8BSyYDv59oYW9tQk-3nUze1SLiOK1Zi5i3mTUwyAzWob46r-7k3OvO3nH7u2C-dJcawk_PWFistUez7JE22tso9EB2i8XruIAZXsY-iFIDLItYMbUy1-SrBpHXObuyPrCQvusl6j0shpJ5XOtOBos6B"/>
+<div class="absolute bottom-2 left-2 bg-primary-container/90 text-text-inverse px-2 py-0.5 rounded text-[10px] font-mono">
+              [EDITORIAL ROLE]
+            </div>
+</div>
+<span class="font-eyebrow text-eyebrow text-text-secondary uppercase">OPERATIONS</span>
+<h4 class="font-headline-md text-headline-md text-text-primary font-semibold mt-1">Head of Grassroots Operations</h4>
+<p class="font-body-sm text-body-sm text-text-secondary mt-2 flex-grow">
+            [Placeholder: Regional Chapter Director]. Coordinates 50 city pods, volunteer safety standards, and regional supply chain logistics during emergency relief.
+          </p>
+<div class="mt-4 pt-3 border-t border-border-subtle/60 text-xs text-text-secondary flex items-center justify-between">
+<span>Field Management</span>
+<span class="material-symbols-outlined text-sm">hub</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-raised border border-border-subtle rounded-2xl p-5 shadow-sm flex flex-col">
+<div class="rounded-xl overflow-hidden aspect-square bg-surface-olive-soft mb-4 relative">
+<img class="w-full h-full object-cover" data-alt="An authentic headshot of a collegiate youth educator smiling warmly, standing in an outdoor community library space with books visible in the soft background blur. Soft natural light, warm beige tones, and a genuine, inspiring presence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnnzyIWpRme9XVHSSDV1hU5by1teP9EQZc8AS7RM_IlIT7x-7zls9MkyX8z0EZ4OfDpVlWsFoT291yYaMCFgUy5c6mxWvmDALo9mompefMHB48qP-QPV1vOX07BA810sGAByksm77Hg9JpXXpdOBuAp8-ECg9QS2sn6ocy_1ks5yRjzZtBdX08xg9Uho9T04T_jIC3n5T1XfW8FqNPyZCCVY_Zi6xzNOsA1BWJjVGXtc_XoOL1NCCZ"/>
+<div class="absolute bottom-2 left-2 bg-primary-container/90 text-text-inverse px-2 py-0.5 rounded text-[10px] font-mono">
+              [EDITORIAL ROLE]
+            </div>
+</div>
+<span class="font-eyebrow text-eyebrow text-text-secondary uppercase">PROGRAMS</span>
+<h4 class="font-headline-md text-headline-md text-text-primary font-semibold mt-1">Director of Community Programs</h4>
+<p class="font-body-sm text-body-sm text-text-secondary mt-2 flex-grow">
+            [Placeholder: Education &amp; Women Welfare Lead]. Curates the literacy curriculum and monitors holistic community metrics across informal education centers.
+          </p>
+<div class="mt-4 pt-3 border-t border-border-subtle/60 text-xs text-text-secondary flex items-center justify-between">
+<span>Curriculum &amp; Impact</span>
+<span class="material-symbols-outlined text-sm">auto_stories</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-raised border border-border-subtle rounded-2xl p-5 shadow-sm flex flex-col">
+<div class="rounded-xl overflow-hidden aspect-square bg-surface-lilac-soft mb-4 relative">
+<img class="w-full h-full object-cover" data-alt="A portrait of a senior Indian mentor and legal advisor in an office setting surrounded by architectural and social research books. Warm neutral lighting, thoughtful and reassuring demeanor, emphasizing governance and institutional guidance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJZ9fLQBASafb3d09dOYq-_4WyIeakitI12Lkh1dLLYE0Nzl3sdzPHD1hW6KVQ4YI53oamL2w_DBC6c-rfqVlaKy46ZbxVbxfAezNg0vHlS75MOH0dIzkL3QWW67m4KjUVcX7Amzf3ptHFpeInTReRVn5lgcgqc0X_JSw1aD6dmNUiP8l81Yps4th_Pvwj-cWiWqNepfml3MGUaXbwdp2b0MNHJXJO50So1_W8NcCrm1yBexA-tnDN"/>
+<div class="absolute bottom-2 left-2 bg-primary-container/90 text-text-inverse px-2 py-0.5 rounded text-[10px] font-mono">
+              [GOVERNANCE]
+            </div>
+</div>
+<span class="font-eyebrow text-eyebrow text-text-secondary uppercase">ADVISORY</span>
+<h4 class="font-headline-md text-headline-md text-text-primary font-semibold mt-1">Advisory Mentor &amp; Governance</h4>
+<p class="font-body-sm text-body-sm text-text-secondary mt-2 flex-grow">
+            [Placeholder: Civic Strategy &amp; Legal Advisor]. Provides institutional oversight, compliance auditing, and long-term legal sustainability mentorship.
+          </p>
+<div class="mt-4 pt-3 border-t border-border-subtle/60 text-xs text-text-secondary flex items-center justify-between">
+<span>Governance Council</span>
+<span class="material-symbols-outlined text-sm">gavel</span>
+</div>
+</div>
+</div>
+<!-- Transparency Notice -->
+<div class="mt-8 p-4 rounded-xl bg-surface-raised border border-border-subtle flex items-center gap-3 text-text-secondary text-sm">
+<span class="material-symbols-outlined text-primary text-base">info</span>
+<span>Notice: Full governance council and coordinator registry available in our annual transparency report and registered society filings.</span>
+</div>
+</section>
+<!-- 9. Participation CTA Section -->
+<section class="w-full bg-surface-peach/50 border-t border-border-subtle py-16 md:py-24">
+<div class="max-w-7xl mx-auto px-space-lg md:px-margin">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="font-eyebrow text-eyebrow text-text-secondary uppercase">GET INVOLVED</span>
+<h2 class="font-headline-xl text-headline-xl md:font-display-lg md:text-display-lg text-text-primary mt-2">
+            Be a Part of the Change
+          </h2>
+<p class="font-body-lg text-body-lg text-text-secondary mt-3">
+            Whether through your time as a youth volunteer, community partnerships, or financial solidarity, every step helps build a resilient nation.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Pathway 1: Volunteer -->
+<div class="bg-surface-raised rounded-2xl border border-border-subtle p-8 flex flex-col justify-between shadow-sm">
+<div>
+<div class="w-10 h-10 rounded-full bg-surface-clay-soft flex items-center justify-center text-text-primary mb-4">
+<span class="material-symbols-outlined text-xl">groups</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-semibold text-text-primary mb-2">Volunteer</h3>
+<p class="font-body-md text-body-md text-text-secondary mb-6">
+                Join upcoming grassroots drives and collegiate fellowship chapters. Lend your voice, hours, and passion to frontline projects.
+              </p>
+</div>
+<a class="bg-primary-container text-text-inverse font-label-md text-label-md font-semibold px-6 py-3 rounded-full hover:bg-action-hover transition-colors text-center shadow-sm" href="#">
+              Join as Volunteer
+            </a>
+</div>
+<!-- Pathway 2: Explore Programs -->
+<div class="bg-surface-raised rounded-2xl border border-border-subtle p-8 flex flex-col justify-between shadow-sm">
+<div>
+<div class="w-10 h-10 rounded-full bg-surface-blue-soft flex items-center justify-center text-text-primary mb-4">
+<span class="material-symbols-outlined text-xl">menu_book</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-semibold text-text-primary mb-2">Explore Programs</h3>
+<p class="font-body-md text-body-md text-text-secondary mb-6">
+                Learn more about our 5 focus pillars, on-ground educational syllabus, and localized village interventions.
+              </p>
+</div>
+<a class="bg-transparent border border-text-primary text-text-primary font-label-md text-label-md font-semibold px-6 py-3 rounded-full hover:bg-surface-canvas transition-colors text-center" href="#">
+              Explore Programs
+            </a>
+</div>
+<!-- Pathway 3: Donate -->
+<div class="bg-surface-raised rounded-2xl border border-border-subtle p-8 flex flex-col justify-between shadow-sm">
+<div>
+<div class="w-10 h-10 rounded-full bg-surface-olive-soft flex items-center justify-center text-text-primary mb-4">
+<span class="material-symbols-outlined text-xl">payments</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-semibold text-text-primary mb-2">Donate</h3>
+<p class="font-body-md text-body-md text-text-secondary mb-6">
+                Support student stationery kits, rescue medicine, and sapling drives with 100% transparent tracking and digital receipts.
+              </p>
+</div>
+<a class="bg-primary-container text-text-inverse font-label-md text-label-md font-semibold px-6 py-3 rounded-full hover:bg-action-hover transition-colors text-center shadow-sm" href="#">
+              Make a Donation
+            </a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- 10. Footer (Shared Component JSON Blueprint) -->
+<footer class="w-full bg-surface-clay-soft border-t border-border-subtle">
+<div class="w-full px-space-lg md:px-margin py-space-xl max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-border-subtle">
+<!-- Brand Info -->
+<div class="md:col-span-4 space-y-4">
+<div class="flex items-center gap-3">
+<img alt="Kadam Foundation circular footprint emblem logo" class="w-10 h-10 rounded-full object-cover border border-border-subtle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC64C9ipm7lvhCYcgCWHBGxDT7nemg7841-A6Tb0tmLopmbV88mIakcb9jlYguFvNZIMGNZyqTZYQc97IMNyvZWSF7rOBV1GS5f1rf7N1NDjbjR_ggj9DoV_yuHQrXJSKagDPU8opiJMJg-b5fnSPC2S14ibDZ1TNL4zk-F5-QpurI3wNwpgRHLoBORUDOCx7Gx9Bq7pY6A8AkKrUS5_F-HRhwMCHyyT3dkuxwuVdvAVbQKxambVBRl0Bam_yZdC8QFBQ"/>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary font-bold">Kadam Foundation</span>
+<span class="font-eyebrow text-eyebrow text-text-secondary">YOUTH-LED NONPROFIT</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary max-w-sm">
+            A registered youth-led nonprofit organization building decentralized grassroots pathways in education, animal welfare, and ecological regeneration across India.
+          </p>
+<div class="text-xs text-text-secondary font-mono pt-1">
+            REGISTRATION: GOVERNED UNDER INDIAN SOCIETIES REGISTRATION ACT
+          </div>
+</div>
+<!-- Org Links Column -->
+<div class="md:col-span-2 space-y-3">
+<span class="font-label-md text-label-md font-semibold text-primary block">Organization</span>
+<ul class="space-y-2 font-body-sm text-body-sm">
+<li><a class="text-text-secondary hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="text-text-secondary hover:text-primary transition-colors" href="#">Focus Areas</a></li>
+<li><a class="text-text-secondary hover:text-primary transition-colors" href="#">Financial Transparency</a></li>
+<li><a class="text-text-secondary hover:text-primary transition-colors" href="#">Annual Reports</a></li>
+</ul>
+</div>
+<!-- Get Involved Column -->
+<div class="md:col-span-2 space-y-3">
+<span class="font-label-md text-label-md font-semibold text-primary block">Get Involved</span>
+<ul class="space-y-2 font-body-sm text-body-sm">
+<li><a class="text-text-secondary hover:text-primary transition-colors" href="#">Volunteer Portal</a></li>
+<li><a class="text-text-secondary hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-text-secondary hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="text-text-secondary hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<!-- Newsletter Subscription Box -->
+<div class="md:col-span-4 space-y-3">
+<span class="font-label-md text-label-md font-semibold text-primary block">Stay Connected</span>
+<p class="font-body-sm text-body-sm text-text-secondary">
+            Receive monthly grassroots field logs and verified progress digests directly from our university pods.
+          </p>
+<form class="flex gap-2 pt-1" onsubmit="event.preventDefault();">
+<input class="bg-surface-raised border border-border-subtle rounded-lg px-3.5 py-2 text-sm text-text-primary placeholder:text-text-secondary/60 focus:ring-1 focus:ring-focus-ring focus:border-focus-ring w-full" placeholder="Enter your email address" required="" type="email"/>
+<button class="bg-primary-container text-text-inverse font-label-md text-label-md font-semibold px-4 py-2 rounded-lg hover:bg-action-hover transition-colors shrink-0" type="submit">
+              Subscribe
+            </button>
+</form>
+</div>
+</div>
+<!-- Copyright & Bottom Bar -->
+<div class="pt-6 flex flex-col md:flex-row items-center justify-between text-xs text-text-secondary gap-3">
+<p class="font-body-sm text-body-sm">
+          © 2024 Kadam Foundation. A registered youth-led nonprofit organization. All rights reserved.
+        </p>
+<div class="flex items-center gap-4">
+<span class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-status-success inline-block"></span>
+            Verified Grassroots Operations
+          </span>
+<span>•</span>
+<a class="hover:text-primary transition-colors" href="#">Annual Audit 2024</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
