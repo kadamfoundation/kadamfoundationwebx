@@ -3,9 +3,11 @@ import Icon from '@/components/Icon';
 import { SOCIAL_LINKS } from '@/lib/site-config';
 
 const FOOTER_LINKS = [
+  { href: '/partners', label: 'Partners' },
   { href: '/about', label: 'About' },
   { href: '/programs', label: 'Programs' },
   { href: '/stories', label: 'Stories' },
+  { href: '/gallery', label: 'Gallery' },
   { href: '/contact', label: 'Contact' },
 ];
 

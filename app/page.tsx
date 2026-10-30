@@ -1,7 +1,8 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import Icon from '@/components/Icon';
 import ImagePlaceholder from '@/components/ImagePlaceholder';
-import { CONTACT_INFO } from '@/lib/site-config';
+import { CONTACT_INFO, VOLUNTEER_FORM_URL } from '@/lib/site-config';
 import { CITY_TEAMS } from '@/lib/team-data';
 
 export default function HomePage() {
@@ -11,7 +12,7 @@ export default function HomePage() {
     <section className="relative pt-12 pb-16 md:py-20 px-space-lg md:px-margin max-w-7xl mx-auto overflow-hidden">
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
     
-    <div className="lg:col-span-7 flex flex-col items-start space-y-6">
+    <div className="lg:col-span-5 flex flex-col items-start space-y-6">
     <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-raised border border-border-subtle shadow-sm">
     <Icon name="spa" className="text-[16px] text-text-secondary" />
     <span className="font-eyebrow text-eyebrow tracking-widest text-text-primary uppercase font-semibold">Youth-Led Nonprofit Organization</span>
@@ -28,10 +29,10 @@ export default function HomePage() {
                   Join Our Mission
                   <Icon name="arrow_forward" className="text-[18px]" />
     </a>
-    <a className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-transparent border border-text-primary text-text-primary font-label-md text-label-md hover:bg-surface-raised transition-all duration-150 active:scale-95 focus:ring-2 focus:ring-focus-ring" href="#stories">
+    <Link className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-transparent border border-text-primary text-text-primary font-label-md text-label-md hover:bg-surface-raised transition-all duration-150 active:scale-95 focus:ring-2 focus:ring-focus-ring" href="/stories">
     <Icon name="play_circle" className="text-[20px]" />
                   Watch Our Story
-                </a>
+                </Link>
     </div>
     
     <div className="w-full pt-8 mt-2 border-t border-border-subtle">
@@ -52,9 +53,9 @@ export default function HomePage() {
     </div>
     </div>
     
-    <div className="lg:col-span-5 relative">
+    <div className="lg:col-span-7 relative">
     <div className="relative rounded-[22px] overflow-hidden border border-border-subtle shadow-sm bg-surface-raised p-2">
-    <div className="rounded-[18px] overflow-hidden aspect-[3/2] relative">
+    <div className="rounded-[18px] overflow-hidden aspect-[4/3] relative">
     <Image
       src="/images/homepage/home-page-main-photo.jpg"
       alt="Kadam Foundation education drive collage showing learning activities and children"
@@ -323,7 +324,7 @@ export default function HomePage() {
                   </p>
     </div>
     <div className="pt-8">
-    <a className="w-full inline-flex items-center justify-center px-6 py-3 rounded-full bg-[#3F2C2E] text-text-inverse font-label-md text-label-md hover:bg-[#2F2022] transition-colors focus:ring-2 focus:ring-focus-ring" href="#contact">
+    <a className="w-full inline-flex items-center justify-center px-6 py-3 rounded-full bg-[#3F2C2E] text-text-inverse font-label-md text-label-md hover:bg-[#2F2022] transition-colors focus:ring-2 focus:ring-focus-ring" href={VOLUNTEER_FORM_URL} rel="noopener noreferrer" target="_blank">
                     Register as Volunteer
                   </a>
     </div>
@@ -340,7 +341,7 @@ export default function HomePage() {
                   </p>
     </div>
     <div className="pt-8">
-    <a className="w-full inline-flex items-center justify-center px-6 py-3 rounded-full bg-[#8F6E64] text-text-inverse font-label-md text-label-md hover:bg-[#76574e] transition-colors focus:ring-2 focus:ring-focus-ring" href="#donate">
+    <a className="w-full inline-flex items-center justify-center px-6 py-3 rounded-full bg-[#8F6E64] text-text-inverse font-label-md text-label-md hover:bg-[#76574e] transition-colors focus:ring-2 focus:ring-focus-ring" href="/donate">
                     Support Our Work
                   </a>
     </div>

@@ -12,6 +12,9 @@ export const CONTACT_INFO = {
   mapUrl: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(officeAddress)}`,
 } as const;
 
+export const VOLUNTEER_FORM_URL =
+  'https://docs.google.com/forms/d/1-l3HVO-69njgjSf1OWg5QoJVSxAQDIRNYBchCZS7At8/edit?usp=sharing_eil_se_dm&ts=6ad799a4';
+
 type SocialLink = {
   name: string;
   href: string;
@@ -24,4 +27,5 @@ export const SOCIAL_LINKS = [
   { name: 'WhatsApp', href: CONTACT_INFO.whatsappUrl, icon: 'whatsapp' },
   { name: 'X', href: 'https://x.com/kadamfoundatioX', icon: 'x' },
   { name: 'Facebook', href: 'https://www.facebook.com/share/1GVsWwrdJW/', icon: 'facebook' },
+  { name: 'Instagram', href: 'https://www.instagram.com/kadamfoundation_?xtok=MWgxdGowZjZibWt5', icon: 'instagram' },
 ] satisfies readonly SocialLink[];

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Icon from '@/components/Icon';
+import { CONTACT_INFO, VOLUNTEER_FORM_URL } from '@/lib/site-config';
 import Image from 'next/image';
 
 export default function VolunteerPage() {
@@ -657,7 +658,7 @@ export default function VolunteerPage() {
           </div>
         </div>
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-          <a className="inline-flex items-center justify-center font-label-md text-label-md font-semibold bg-primary text-text-inverse h-14 px-8 rounded-full hover:bg-action-hover transition-all active:scale-95 shadow-sm group focus:outline-none focus:ring-2 focus:ring-focus-ring" href="https://docs.google.com/forms/d/1-l3HVO-69njgjSf1OWg5QoJVSxAQDIRNYBchCZS7At8/edit?usp=sharing_eil_se_dm&ts=6ad799a4" rel="noopener noreferrer" target="_blank">
+          <a className="inline-flex items-center justify-center font-label-md text-label-md font-semibold bg-primary text-text-inverse h-14 px-8 rounded-full hover:bg-action-hover transition-all active:scale-95 shadow-sm group focus:outline-none focus:ring-2 focus:ring-focus-ring" href={VOLUNTEER_FORM_URL} rel="noopener noreferrer" target="_blank">
             Open Official Registration Form ↗{' '}
             <Icon name="open_in_new" className="material-symbols-outlined ml-2 text-[20px] transition-transform duration-150 group-hover:translate-x-1" />
           </a>
@@ -669,13 +670,13 @@ export default function VolunteerPage() {
           </span>
           <span className="flex items-center gap-1.5">
             <Icon name="support_agent" className="material-symbols-outlined text-[18px] text-text-primary" />
-            {' '}Inquiries: volunteer@kadamfoundation.org
+            {' '}Inquiries: <a className="underline" href={CONTACT_INFO.emailHref}>{CONTACT_INFO.email}</a>
           </span>
         </div>
       </div>
     </div>
   </section>
-  <section className="py-16 md:py-20 bg-surface-raised border-t border-border-subtle">
+  <section className="py-16 md:py-20 bg-surface-raised border-t border-border-subtle" id="code-of-conduct">
     <div className="max-w-7xl mx-auto px-space-lg md:px-margin">
       <div className="max-w-3xl mb-12">
         <div className="inline-block px-3 py-1 rounded-full bg-surface-peach text-text-primary font-eyebrow text-eyebrow tracking-wider uppercase mb-3">
@@ -867,7 +868,7 @@ export default function VolunteerPage() {
       </div>
     </div>
   </section>
-  <section className="py-16 md:py-24 bg-surface-raised border-t border-border-subtle">
+  <section className="py-16 md:py-24 bg-surface-raised border-t border-border-subtle" id="faq">
     <div className="max-w-4xl mx-auto px-space-lg md:px-margin">
       <div className="text-center max-w-2xl mx-auto mb-12">
         <div className="inline-block px-3 py-1 rounded-full bg-surface-peach text-text-primary font-eyebrow text-eyebrow tracking-wider uppercase mb-3">
@@ -966,7 +967,7 @@ export default function VolunteerPage() {
           Register as a Volunteer ↗{' '}
           <Icon name="north_east" className="material-symbols-outlined ml-2 text-[20px] transition-transform duration-150 group-hover:translate-x-1" />
         </a>
-        <a className="inline-flex items-center justify-center font-label-md text-label-md font-semibold bg-surface-raised border border-text-primary text-text-primary h-14 px-8 rounded-full hover:bg-surface-peach transition-colors focus:outline-none focus:ring-2 focus:ring-focus-ring" href="#">
+        <a className="inline-flex items-center justify-center font-label-md text-label-md font-semibold bg-surface-raised border border-text-primary text-text-primary h-14 px-8 rounded-full hover:bg-surface-peach transition-colors focus:outline-none focus:ring-2 focus:ring-focus-ring" href="/programs">
           View All Focus Areas
         </a>
       </div>

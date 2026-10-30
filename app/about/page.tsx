@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Icon from '@/components/Icon';
+import { VOLUNTEER_FORM_URL } from '@/lib/site-config';
 
 export default function AboutPage() {
   return (
@@ -66,7 +67,7 @@ export default function AboutPage() {
     
     <div className="lg:col-span-7 space-y-6">
     <p className="font-body-lg text-body-lg text-text-primary leading-relaxed">
-                  On 20 March 2020, I saw children near my home searching for food in a dustbin. I went downstairs and brought them food from my own home. When I asked if they went to school, they told me they did not.
+                  On 20 March 2020, I saw children near my home searching for food in a dustbin. I brought food from our home and spoke with them. When I asked whether they went to school, they told me they did not.
                 </p>
     <blockquote className="rounded-xl border-l-4 border-primary-container bg-surface-canvas p-5">
     <p className="font-headline-md text-headline-md font-semibold text-text-primary">
@@ -80,7 +81,7 @@ export default function AboutPage() {
                 </p>
     </blockquote>
     <p className="font-body-md text-body-md text-text-secondary leading-relaxed">
-                  I was a schoolgirl myself, with no organisation, team, funding, or roadmap. But I could not let that encounter become just a memory. On 21 March 2020, Kadam began.
+                  I was a schoolgirl myself, with no organisation, team, funding, or roadmap. I could not let that encounter become just a memory. On 21 March 2020, I began teaching the children in our veranda. That small classroom became the first step in Kadam Foundation’s journey.
                 </p>
     
     <div className="mt-8 space-y-6 border-l-2 border-border-subtle pl-6">
@@ -88,15 +89,22 @@ export default function AboutPage() {
     <span className="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-text-primary"></span>
     <span className="font-headline-md text-headline-md font-semibold text-text-primary">21 March 2020: Barande Wali Kaksha</span>
     <p className="font-body-sm text-body-sm text-text-secondary mt-1">
-                      I started a classroom in our veranda with 10 children. We began with the space and resources we had.
+                      Barande Wali Kaksha began as a classroom in our veranda with 10 children, using the space and resources we had.
                     </p>
     </div>
     <div className="relative">
     <span className="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-secondary"></span>
     <span className="font-headline-md text-headline-md font-semibold text-text-primary">2022: Beyond the Original Veranda</span>
     <p className="font-body-sm text-body-sm text-text-secondary mt-1">
-                      I moved away from the original location and began thinking about children in other communities. Kadam gradually expanded beyond Bhopal as volunteers and others joined the effort.
+      After I moved away from the original location, I began thinking about children in other communities. Volunteers and people who shared the purpose joined, and Kadam gradually expanded beyond Bhopal.
                     </p>
+    </div>
+    <div className="relative">
+    <span className="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-primary-container"></span>
+    <span className="font-headline-md text-headline-md font-semibold text-text-primary">A Growing Foundation</span>
+    <p className="font-body-sm text-body-sm text-text-secondary mt-1">
+      The veranda classroom grew into a foundation bringing young people together around education, community action, and local leadership. Today, Kadam’s work continues through volunteers and city teams working alongside communities.
+    </p>
     </div>
     </div>
     </div>
@@ -290,7 +298,7 @@ export default function AboutPage() {
     <span className="font-eyebrow text-eyebrow text-text-secondary block mb-3">PILLAR 03</span>
     <h3 className="font-headline-md text-headline-md font-semibold text-text-primary mb-3">Community Action</h3>
     <p className="font-body-md text-body-md text-text-secondary leading-relaxed mb-6">
-                    On-ground direct drives, ecological tree-planting cleanups, animal welfare emergency interventions, winter blanket distributions, and women's self-reliance solidarity circles.
+                    On-ground direct drives, ecological tree-planting cleanups, animal welfare emergency interventions, winter blanket distributions, and women&apos;s self-reliance solidarity circles.
                   </p>
     </div>
     <ul className="space-y-2 border-t border-border-subtle pt-4 text-sm text-text-primary font-body-sm">
@@ -421,7 +429,7 @@ export default function AboutPage() {
                     Join upcoming grassroots drives and collegiate fellowship chapters. Lend your voice, hours, and passion to frontline projects.
                   </p>
     </div>
-    <a className="bg-primary-container text-text-inverse font-label-md text-label-md font-semibold px-6 py-3 rounded-full hover:bg-action-hover transition-colors text-center shadow-sm" href="#">
+    <a className="bg-primary-container text-text-inverse font-label-md text-label-md font-semibold px-6 py-3 rounded-full hover:bg-action-hover transition-colors text-center shadow-sm" href={VOLUNTEER_FORM_URL} rel="noopener noreferrer" target="_blank">
                   Join as Volunteer
                 </a>
     </div>
@@ -436,7 +444,7 @@ export default function AboutPage() {
                     Learn more about our 5 focus pillars, on-ground educational syllabus, and localized village interventions.
                   </p>
     </div>
-    <a className="bg-transparent border border-text-primary text-text-primary font-label-md text-label-md font-semibold px-6 py-3 rounded-full hover:bg-surface-canvas transition-colors text-center" href="#">
+    <a className="bg-transparent border border-text-primary text-text-primary font-label-md text-label-md font-semibold px-6 py-3 rounded-full hover:bg-surface-canvas transition-colors text-center" href="/programs">
                   Explore Programs
                 </a>
     </div>
@@ -451,7 +459,7 @@ export default function AboutPage() {
                     Support student stationery kits, rescue medicine, and sapling drives with 100% transparent tracking and digital receipts.
                   </p>
     </div>
-    <a className="bg-primary-container text-text-inverse font-label-md text-label-md font-semibold px-6 py-3 rounded-full hover:bg-action-hover transition-colors text-center shadow-sm" href="#">
+    <a className="bg-primary-container text-text-inverse font-label-md text-label-md font-semibold px-6 py-3 rounded-full hover:bg-action-hover transition-colors text-center shadow-sm" href="/donate">
                   Make a Donation
                 </a>
     </div>

@@ -344,12 +344,12 @@ export default function DonatePage() {
             Our Commitment to Clean Governance
           </h3>
           <p className="font-body-sm text-body-sm text-text-secondary mt-1.5 max-w-2xl leading-relaxed">
-            Kadam Foundation adheres to independent community audits, periodic financial disclosures, and strict non-profit governance under the Societies Registration Act. We honor the trust of every youth volunteer, parent, and benefactor who walks with us.
+            Kadam SOS Foundation is a Section 8 Company with 12A and 80G certifications. We honor the trust of every youth volunteer, parent, and benefactor who walks with us.
           </p>
         </div>
       </div>
-      <a className="shrink-0 px-5 py-2.5 rounded-full border border-primary text-primary hover:bg-primary hover:text-text-inverse font-label-md text-label-md font-medium transition-all duration-150" href="#">
-        View Financial Transparency Reports
+      <a className="shrink-0 px-5 py-2.5 rounded-full border border-primary text-primary hover:bg-primary hover:text-text-inverse font-label-md text-label-md font-medium transition-all duration-150" href={`${CONTACT_INFO.emailHref}?subject=Financial%20and%20Compliance%20Documents`}>
+        Request Financial &amp; Compliance Documents
       </a>
     </div>
   </section>

@@ -174,7 +174,7 @@ export default function ContactPage() {
             <span className="font-body-sm text-body-sm text-text-secondary">
               Coordinate visits directly with desk officers.
             </span>
-            <a className="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-semibold hover:underline" href="#">
+            <a className="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-semibold hover:underline" href="/volunteer#code-of-conduct">
               <span>
                 View Visitor Protocols
               </span>
@@ -340,7 +340,7 @@ export default function ContactPage() {
             Grievance &amp; Advisory Council
           </h3>
           <p className="font-body-sm text-body-sm text-text-secondary mb-4 leading-relaxed">
-            Institutional governance oversight, compliance under the Societies Registration Act, internal ombudsman complaints, and community feedback directly monitored by senior trustees.
+            Institutional governance oversight, compliance as a Section 8 Company with 12A and 80G certifications, internal ombudsman complaints, and community feedback.
           </p>
           <div className="text-xs font-mono bg-surface-canvas p-2.5 rounded-lg border border-border-subtle text-primary mb-4 inline-block">
             {CONTACT_INFO.email}
@@ -396,19 +396,17 @@ export default function ContactPage() {
           Institutional Accountability
         </span>
         <h2 className="font-headline-xl text-headline-xl text-primary font-bold mb-4">
-          Have questions about our financial transparency, 80G tax exemptions, or how your donation is spent?
+          Have questions about our Section 8 status, 12A and 80G certifications, or how your donation is spent?
         </h2>
         <p className="font-body-md text-body-md text-text-primary mb-8 leading-relaxed">
-          As a youth-led nonprofit, our financial integrity and compliance documents are published open-access every quarter. We welcome community audits and institutional review.
+          Kadam SOS Foundation is a Section 8 Company with 12A and 80G certifications. Downloadable annual reports will be added here when they are ready. For current financial or compliance document requests, contact us directly.
         </p>
         <div className="flex flex-wrap items-center gap-4">
-          <a className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-primary-container text-text-inverse font-label-md text-label-md font-medium hover:bg-action-hover transition-colors shadow-sm" href="#">
+          <a className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-primary-container text-text-inverse font-label-md text-label-md font-medium hover:bg-action-hover transition-colors shadow-sm" href={`${CONTACT_INFO.emailHref}?subject=Financial%20and%20Compliance%20Documents`}>
             <Icon name="description" className="material-symbols-outlined text-base" />
-            <span>
-              View Financial Transparency &amp; Audit Reports
-            </span>
+            <span>Request Financial &amp; Compliance Documents</span>
           </a>
-          <a className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-primary text-primary font-label-md text-label-md font-medium hover:bg-surface-raised transition-colors" href="#">
+          <a className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-primary text-primary font-label-md text-label-md font-medium hover:bg-surface-raised transition-colors" href="/volunteer#faq">
             <Icon name="help_outline" className="material-symbols-outlined text-base" />
             <span>
               Explore Frequently Asked Questions

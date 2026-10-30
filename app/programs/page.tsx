@@ -1,4 +1,5 @@
 import Icon from '@/components/Icon';
+import { CONTACT_INFO, VOLUNTEER_FORM_URL } from '@/lib/site-config';
 import Image from 'next/image';
 
 export default function ProgramsPage() {
@@ -366,7 +367,7 @@ export default function ProgramsPage() {
                     Commit 2 to 4 hours over weekends teaching students, organizing civic dialogues, or guiding peer circles.
                   </p>
     </div>
-    <a className="inline-flex items-center justify-center bg-primary-container text-text-inverse px-6 py-3 rounded-full text-label-md font-label-md font-medium hover:bg-action-hover transition-colors w-full" href="#volunteer">
+    <a className="inline-flex items-center justify-center bg-primary-container text-text-inverse px-6 py-3 rounded-full text-label-md font-label-md font-medium hover:bg-action-hover transition-colors w-full" href={VOLUNTEER_FORM_URL} rel="noopener noreferrer" target="_blank">
     <span>Apply as Volunteer</span>
     <Icon name="east" className="material-symbols-outlined ml-2 text-[18px]" />
     </a>
@@ -382,7 +383,7 @@ export default function ProgramsPage() {
                     Connect your collegiate society, NGO pod, or CSR initiative with established community operational channels.
                   </p>
     </div>
-    <a className="inline-flex items-center justify-center bg-primary-container text-text-inverse px-6 py-3 rounded-full text-label-md font-label-md font-medium hover:bg-action-hover transition-colors w-full" href="#partner">
+    <a className="inline-flex items-center justify-center bg-primary-container text-text-inverse px-6 py-3 rounded-full text-label-md font-label-md font-medium hover:bg-action-hover transition-colors w-full" href={`${CONTACT_INFO.emailHref}?subject=Partnerships`}>
     <span>Connect With Us</span>
     <Icon name="east" className="material-symbols-outlined ml-2 text-[18px]" />
     </a>
@@ -398,7 +399,7 @@ export default function ProgramsPage() {
                     Directly fund learning materials, reading library pods, or vocational supplies with complete financial reporting.
                   </p>
     </div>
-    <a className="inline-flex items-center justify-center bg-primary-container text-text-inverse px-6 py-3 rounded-full text-label-md font-label-md font-medium hover:bg-action-hover transition-colors w-full" href="#donate">
+    <a className="inline-flex items-center justify-center bg-primary-container text-text-inverse px-6 py-3 rounded-full text-label-md font-label-md font-medium hover:bg-action-hover transition-colors w-full" href="/donate">
     <span>Make a Contribution</span>
     <Icon name="favorite" className="material-symbols-outlined ml-2 text-[18px]" />
     </a>

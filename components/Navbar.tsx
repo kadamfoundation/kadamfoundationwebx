@@ -8,9 +8,11 @@ import Icon from '@/components/Icon';
 
 const NAV_LINKS = [
   { href: '/', label: 'Home' },
+  { href: '/partners', label: 'Partners' },
   { href: '/about', label: 'About' },
   { href: '/programs', label: 'Programs' },
   { href: '/stories', label: 'Stories' },
+  { href: '/gallery', label: 'Gallery' },
   { href: '/team', label: 'Our Team' },
   { href: '/volunteer', label: 'Volunteer' },
   { href: '/contact', label: 'Contact' },
@@ -58,7 +60,7 @@ export default function Navbar() {
           </span>
         </Link>
 
-        <nav aria-label="Global Navigation" className="hidden items-center gap-5 md:flex lg:gap-6">
+        <nav aria-label="Global Navigation" className="hidden items-center gap-3 lg:flex xl:gap-5">
           {NAV_LINKS.map(({ href, label }) => {
             const active = href === '/' ? pathname === '/' : pathname.startsWith(href);
             return (
@@ -66,7 +68,7 @@ export default function Navbar() {
                 key={href}
                 href={href}
                 aria-current={active ? 'page' : undefined}
-                className={`relative py-1 text-sm transition-colors ${
+                className={`relative py-1 text-xs transition-colors xl:text-sm ${
                   active
                     ? 'font-bold text-primary after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-primary after:content-[""]'
                     : 'font-medium text-text-secondary hover:text-primary'
@@ -103,7 +105,7 @@ export default function Navbar() {
             onClick={() => setMobileMenuOpen((open) => !open)}
             aria-label="Toggle navigation menu"
             aria-expanded={mobileMenuOpen}
-            className="rounded-lg p-2 text-text-primary transition-colors hover:bg-surface-raised focus:outline-none focus:ring-2 focus:ring-focus-ring md:hidden"
+            className="rounded-lg p-2 text-text-primary transition-colors hover:bg-surface-raised focus:outline-none focus:ring-2 focus:ring-focus-ring lg:hidden"
           >
             <Icon name={mobileMenuOpen ? 'close' : 'menu'} className="text-2xl" />
           </button>
@@ -111,7 +113,7 @@ export default function Navbar() {
       </div>
 
       {mobileMenuOpen && (
-        <div className="border-t border-border-subtle bg-surface-canvas px-space-lg pb-6 pt-3 shadow-lg md:hidden">
+        <div className="border-t border-border-subtle bg-surface-canvas px-space-lg pb-6 pt-3 shadow-lg lg:hidden">
           <nav aria-label="Mobile Navigation" className="flex flex-col gap-1.5 text-sm">
             {NAV_LINKS.map(({ href, label }) => {
               const active = href === '/' ? pathname === '/' : pathname.startsWith(href);
