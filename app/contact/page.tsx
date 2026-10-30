@@ -127,7 +127,7 @@ export default function ContactPage() {
               </span>
             </div>
             <h2 className="font-headline-xl text-headline-xl text-primary font-bold mb-6">
-              National Field Secretariat
+              Office Desk
             </h2>
             <div className="space-y-6 text-text-secondary">
               <div className="flex items-start gap-3.5">

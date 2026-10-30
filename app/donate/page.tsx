@@ -1,22 +1,10 @@
 'use client';
 
-import { useState } from 'react';
+import Image from 'next/image';
 import Icon from '@/components/Icon';
 import { CONTACT_INFO } from '@/lib/site-config';
 
 export default function DonatePage() {
-  const [copied, setCopied] = useState(false);
-
-  const copyVpa = async () => {
-    try {
-      await navigator.clipboard.writeText('kadamfoundation@upi');
-    } catch {
-      // Keep the same visible confirmation behavior if clipboard access is unavailable.
-    }
-    setCopied(true);
-    window.setTimeout(() => setCopied(false), 2500);
-  };
-
   return (
 <main className="flex-grow">
   <section className="py-12 md:py-20 px-space-lg md:px-margin max-w-7xl mx-auto text-center">
@@ -77,55 +65,22 @@ export default function DonatePage() {
   <section className="pb-16 md:pb-24 px-space-lg md:px-margin max-w-7xl mx-auto">
     <div className="bg-surface-raised border border-border-subtle rounded-3xl p-6 md:p-12 shadow-sm">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-        <div className="lg:col-span-5 flex flex-col items-center text-center">
-          <div className="w-full max-w-sm bg-surface-container rounded-2xl border border-border-subtle p-6 relative">
+        <div className="lg:col-span-7 flex flex-col items-center text-center">
+          <div className="w-full max-w-[40rem] bg-surface-container rounded-2xl border border-border-subtle p-6 relative">
             <div className="relative p-4 bg-surface rounded-xl border border-border-subtle/80 flex flex-col items-center justify-center">
-              <div className="w-full flex justify-between items-center mb-3">
+              <div className="w-full flex justify-center items-center mb-3">
                 <span className="text-xs font-mono font-medium text-text-secondary tracking-wider uppercase">
-                  UPI Dynamic Scanner
+                  Official UPI QR
                 </span>
-                <span className="w-2.5 h-2.5 rounded-full bg-status-success animate-pulse" title="Active Scanner Ready"></span>
               </div>
-              <div className="w-56 h-56 bg-surface-canvas rounded-lg p-3 border border-border-subtle relative flex items-center justify-center group overflow-hidden">
-                <svg className="w-full h-full text-primary" fill="none" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
-                  <rect fill="#F8EEE8" height="160" rx="6" width="160"></rect>
-                  <rect fill="#3F2C2E" height="38" rx="4" width="38" x="14" y="14"></rect>
-                  <rect fill="#F8EEE8" height="26" rx="2" width="26" x="20" y="20"></rect>
-                  <rect fill="#3F2C2E" height="16" rx="1.5" width="16" x="25" y="25"></rect>
-                  <rect fill="#3F2C2E" height="38" rx="4" width="38" x="108" y="14"></rect>
-                  <rect fill="#F8EEE8" height="26" rx="2" width="26" x="114" y="20"></rect>
-                  <rect fill="#3F2C2E" height="16" rx="1.5" width="16" x="119" y="25"></rect>
-                  <rect fill="#3F2C2E" height="38" rx="4" width="38" x="14" y="108"></rect>
-                  <rect fill="#F8EEE8" height="26" rx="2" width="26" x="20" y="114"></rect>
-                  <rect fill="#3F2C2E" height="16" rx="1.5" width="16" x="25" y="119"></rect>
-                  <rect fill="#3F2C2E" height="8" rx="1" width="8" x="62" y="16"></rect>
-                  <rect fill="#3F2C2E" height="8" rx="1" width="8" x="74" y="16"></rect>
-                  <rect fill="#3F2C2E" height="8" rx="1" width="10" x="88" y="22"></rect>
-                  <rect fill="#3F2C2E" height="6" rx="1" width="16" x="62" y="30"></rect>
-                  <rect fill="#3F2C2E" height="14" rx="1" width="8" x="84" y="34"></rect>
-                  <rect fill="#3F2C2E" height="8" rx="1" width="12" x="64" y="44"></rect>
-                  <rect fill="#3F2C2E" height="16" rx="1" width="8" x="16" y="62"></rect>
-                  <rect fill="#3F2C2E" height="8" rx="1" width="12" x="30" y="66"></rect>
-                  <rect fill="#3F2C2E" height="10" rx="1" width="8" x="48" y="62"></rect>
-                  <rect fill="#3F2C2E" height="10" rx="1" width="10" x="16" y="86"></rect>
-                  <rect fill="#3F2C2E" height="8" rx="1" width="18" x="34" y="84"></rect>
-                  <rect fill="#3F2C2E" height="6" rx="1" width="14" x="38" y="96"></rect>
-                  <rect fill="#3F2C2E" height="8" rx="1" width="10" x="108" y="62"></rect>
-                  <rect fill="#3F2C2E" height="6" rx="1" width="18" x="126" y="64"></rect>
-                  <rect fill="#3F2C2E" height="10" rx="1" width="16" x="110" y="78"></rect>
-                  <rect fill="#3F2C2E" height="14" rx="1" width="12" x="134" y="76"></rect>
-                  <rect fill="#3F2C2E" height="6" rx="1" width="8" x="108" y="96"></rect>
-                  <rect fill="#3F2C2E" height="8" rx="1" width="12" x="124" y="94"></rect>
-                  <rect fill="#3F2C2E" height="8" rx="1" width="10" x="60" y="112"></rect>
-                  <rect fill="#3F2C2E" height="16" rx="1" width="8" x="76" y="108"></rect>
-                  <rect fill="#3F2C2E" height="8" rx="1" width="12" x="90" y="114"></rect>
-                  <rect fill="#3F2C2E" height="8" rx="1" width="18" x="62" y="132"></rect>
-                  <rect fill="#3F2C2E" height="14" rx="1" width="8" x="88" y="130"></rect>
-                  <rect fill="#3F2C2E" height="8" rx="1" width="14" x="104" y="134"></rect>
-                  <rect fill="#3F2C2E" height="16" rx="1" width="8" x="126" y="124"></rect>
-                  <circle cx="80" cy="80" fill="#FFF8F5" r="18" stroke="#D4B9AE" strokeWidth="1.5"></circle>
-                  <path d="M78 72C78 70.8954 78.8954 70 80 70C81.1046 70 82 70.8954 82 72V76H86C87.1046 76 88 76.8954 88 78C88 79.1046 87.1046 80 86 80H82V84C82 85.1046 81.1046 86 80 86C78.8954 86 78 85.1046 78 84V80H74C72.8954 80 72 79.1046 72 78C72 76.8954 72.8954 76 74 76H78V72Z" fill="#3F2C2E"></path>
-                </svg>
+              <div className="w-full max-w-[560px] aspect-square bg-surface-canvas rounded-lg p-3 border border-border-subtle relative flex items-center justify-center group overflow-hidden">
+                <Image
+                  src="/images/donate/kadam-donation-qr.jpeg"
+                  alt="Kadam Foundation merchant QR code for donations"
+                  fill
+                  sizes="(min-width: 1024px) 560px, calc(100vw - 5rem)"
+                  className="object-contain p-2"
+                />
                 <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <span className="bg-surface px-2.5 py-1 rounded text-xs font-medium text-text-primary border border-border-subtle shadow-sm">
                     Scan with Phone
@@ -133,46 +88,12 @@ export default function DonatePage() {
                 </div>
               </div>
               <p className="font-body-sm text-body-sm text-text-secondary mt-3 italic">
-                [Official Kadam Foundation UPI QR Code Placeholder — Scan to Donate]
+                Scan the official Kadam Foundation QR code to donate.
               </p>
             </div>
-            <div className="mt-4 p-3 bg-surface rounded-xl border border-border-subtle flex items-center justify-between">
-              <div className="text-left">
-                <div className="font-eyebrow text-eyebrow text-text-secondary uppercase">
-                  UPI VPA Handle
-                </div>
-                <div className="font-mono text-sm font-semibold text-primary">
-                  kadamfoundation@upi
-                </div>
-              </div>
-              <button title="Copy UPI ID to clipboard" onClick={copyVpa} className={copied ? "flex items-center gap-1.5 px-3 py-1.5 bg-surface-clay-soft hover:bg-surface-peach text-primary rounded-full text-xs font-semibold transition-colors focus:ring-2 focus:ring-focus-ring bg-status-success text-white" : "flex items-center gap-1.5 px-3 py-1.5 bg-surface-clay-soft hover:bg-surface-peach text-primary rounded-full text-xs font-semibold transition-colors focus:ring-2 focus:ring-focus-ring"}>
-                <Icon name="content_copy" className="material-symbols-outlined text-[16px]" />
-                <span>
-                  {copied ? 'Copied!' : 'Copy'}
-                </span>
-              </button>
-            </div>
-          </div>
-          <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
-            <span className="px-3 py-1 bg-surface-canvas rounded-full text-xs font-medium text-text-secondary border border-border-subtle flex items-center gap-1">
-              <Icon name="smartphone" className="material-symbols-outlined text-[14px]" />
-              {' '}Google Pay
-            </span>
-            <span className="px-3 py-1 bg-surface-canvas rounded-full text-xs font-medium text-text-secondary border border-border-subtle flex items-center gap-1">
-              <Icon name="smartphone" className="material-symbols-outlined text-[14px]" />
-              {' '}PhonePe
-            </span>
-            <span className="px-3 py-1 bg-surface-canvas rounded-full text-xs font-medium text-text-secondary border border-border-subtle flex items-center gap-1">
-              <Icon name="smartphone" className="material-symbols-outlined text-[14px]" />
-              {' '}Paytm
-            </span>
-            <span className="px-3 py-1 bg-surface-canvas rounded-full text-xs font-medium text-text-secondary border border-border-subtle flex items-center gap-1">
-              <Icon name="account_balance" className="material-symbols-outlined text-[14px]" />
-              {' '}BHIM / Any Banking UPI
-            </span>
           </div>
         </div>
-        <div className="lg:col-span-7 space-y-6">
+        <div className="lg:col-span-5 space-y-6">
           <div>
             <div className="font-eyebrow text-eyebrow text-secondary uppercase tracking-wider mb-2">
               Straightforward &amp; Zero Gateway Fees
@@ -207,11 +128,7 @@ export default function DonatePage() {
                   Scan the official Kadam Foundation QR code
                 </h3>
                 <p className="font-body-sm text-body-sm text-text-secondary mt-0.5">
-                  Select ‘Scan QR’ and frame the code displayed here, or alternatively enter the VPA handle{' '}
-                  <span className="font-mono text-primary font-medium">
-                    kadamfoundation@upi
-                  </span>
-                  .
+                  Select “Scan QR” in your UPI app and frame the code displayed here.
                 </p>
               </div>
             </div>

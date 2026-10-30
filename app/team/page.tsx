@@ -10,19 +10,19 @@ function LeadershipProfile({ role, member }: (typeof CENTRAL_LEADERSHIP)[number]
   const name = member.name?.trim();
 
   return (
-    <article className="flex items-center gap-4 rounded-xl border border-border-subtle bg-surface-raised p-5 shadow-sm">
+    <article className="flex flex-col items-center gap-4 rounded-xl border border-border-subtle bg-surface-raised p-5 text-center shadow-sm">
       <div
         aria-label={member.image ? `${role} portrait` : `${role} avatar placeholder`}
-        className="relative flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full border border-border-subtle bg-surface-clay-soft text-text-secondary"
+        className="relative flex h-60 w-60 shrink-0 items-center justify-center overflow-hidden rounded-full border border-border-subtle bg-surface-clay-soft text-text-secondary"
         role="img"
       >
         {member.image ? (
-          <Image src={member.image} alt="" fill sizes="64px" className="object-cover" />
+          <Image src={member.image} alt="" fill sizes="240px" className="object-cover" />
         ) : (
-          <Icon name="diversity_1" className="text-3xl" />
+          <Icon name="diversity_1" className="text-6xl" />
         )}
       </div>
-      <div className="min-w-0">
+      <div className="min-w-0 max-w-full">
         <p className="font-eyebrow text-eyebrow uppercase text-text-secondary">{role}</p>
         <h3 className="mt-1 break-words font-headline-md text-headline-md font-semibold text-text-primary">
           {name || 'Name pending'}

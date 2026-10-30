@@ -1,6 +1,8 @@
+import Image from 'next/image';
 import Icon from '@/components/Icon';
 import ImagePlaceholder from '@/components/ImagePlaceholder';
 import { CONTACT_INFO } from '@/lib/site-config';
+import { CITY_TEAMS } from '@/lib/team-data';
 
 export default function HomePage() {
   return (
@@ -33,10 +35,6 @@ export default function HomePage() {
     </div>
     
     <div className="w-full pt-8 mt-2 border-t border-border-subtle">
-    <div className="flex items-center gap-2 mb-3">
-    <Icon name="verified" className="text-[18px] text-status-success" filled style={{ fontVariationSettings: '\'FILL\' 1' }} />
-    <span className="font-eyebrow text-eyebrow text-text-secondary uppercase">Verified Grassroots Metrics (2024 Audit)</span>
-    </div>
     <div className="grid grid-cols-3 gap-4 sm:gap-8">
     <div>
     <p className="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">300+</p>
@@ -56,16 +54,14 @@ export default function HomePage() {
     
     <div className="lg:col-span-5 relative">
     <div className="relative rounded-[22px] overflow-hidden border border-border-subtle shadow-sm bg-surface-raised p-2">
-    <div className="rounded-[18px] overflow-hidden aspect-[4/5] relative">
-    <ImagePlaceholder alt="Photo placeholder for the homepage community drive; approved Kadam volunteer photograph pending." />
-    <div className="absolute inset-0 bg-gradient-to-t from-[#281819]/60 via-transparent to-transparent"></div>
-    <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-surface-raised/95 backdrop-blur-sm border border-border-subtle">
-    <p className="font-label-md text-label-md text-text-primary font-semibold flex items-center gap-1.5">
-    <Icon name="location_on" className="text-status-success text-[18px]" />
-                      Community Drive • New Delhi
-                    </p>
-    <p className="font-body-sm text-body-sm text-text-secondary mt-0.5">Youth fellows distributing learning resources</p>
-    </div>
+    <div className="rounded-[18px] overflow-hidden aspect-[3/2] relative">
+    <Image
+      src="/images/homepage/home-page-main-photo.jpg"
+      alt="Kadam Foundation education drive collage showing learning activities and children"
+      fill
+      sizes="(min-width: 1024px) 40vw, 100vw"
+      className="object-cover"
+    />
     </div>
     </div>
     
@@ -211,30 +207,20 @@ export default function HomePage() {
                   Making a Difference Across 15 Cities
                 </h2>
     <p className="font-body-lg text-body-lg text-text-inverse/90">
-                  From street-level literacy drives in Delhi to coastal cleanups in Mumbai, our decentralized student network acts where need is immediate and lasting change is possible.
+                  From learning programs in Bhopal to city teams across India, Kadam&apos;s network brings local volunteers together where support is needed.
                 </p>
     
     <div className="pt-2">
-    <p className="font-eyebrow text-eyebrow uppercase text-text-inverse/70 mb-3 tracking-widest">Active Volunteer Hubs [Founder Verified]:</p>
+    <p className="font-eyebrow text-eyebrow uppercase text-text-inverse/70 mb-3 tracking-widest">Operational Cities:</p>
     <div className="flex flex-wrap gap-2">
-    <span className="px-3 py-1 rounded-full bg-white/10 text-white font-body-sm text-body-sm border border-white/20">New Delhi</span>
-    <span className="px-3 py-1 rounded-full bg-white/10 text-white font-body-sm text-body-sm border border-white/20">Noida</span>
-    <span className="px-3 py-1 rounded-full bg-white/10 text-white font-body-sm text-body-sm border border-white/20">Gurugram</span>
-    <span className="px-3 py-1 rounded-full bg-white/10 text-white font-body-sm text-body-sm border border-white/20">Jaipur</span>
-    <span className="px-3 py-1 rounded-full bg-white/10 text-white font-body-sm text-body-sm border border-white/20">Chandigarh</span>
-    <span className="px-3 py-1 rounded-full bg-white/10 text-white font-body-sm text-body-sm border border-white/20">Lucknow</span>
-    <span className="px-3 py-1 rounded-full bg-white/10 text-white font-body-sm text-body-sm border border-white/20">Dehradun</span>
-    <span className="px-3 py-1 rounded-full bg-white/10 text-white font-body-sm text-body-sm border border-white/20">Bengaluru</span>
-    <span className="px-3 py-1 rounded-full bg-white/10 text-white font-body-sm text-body-sm border border-white/20">+ 7 More Regional Hubs</span>
+    {CITY_TEAMS.map((city) => (
+      <span key={city.slug} className="px-3 py-1 rounded-full bg-white/10 text-white font-body-sm text-body-sm border border-white/20">
+        {city.name}
+      </span>
+    ))}
     </div>
     </div>
     
-    <div className="p-4 rounded-xl bg-[#281819]/40 border border-white/20 flex items-start gap-3 mt-6">
-    <Icon name="policy" className="text-[#F2E3DC] text-xl mt-0.5" />
-    <p className="font-body-sm text-body-sm text-text-inverse/90">
-    <strong className="text-white">Strict Transparency Commitment:</strong> Impact metrics are independently verified through our 2024 grassroots audits. All volunteer hours and donor contributions are publicly documented.
-                  </p>
-    </div>
     </div>
     
     <div className="lg:col-span-6">
@@ -247,26 +233,17 @@ export default function HomePage() {
     <span className="px-3 py-1 rounded-full bg-white/20 text-white font-eyebrow text-eyebrow">INDIA HUB MAP</span>
     </div>
     
-    <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-[#3F2C2E]/60 border border-white/15 flex items-center justify-center p-4">
-    <ImagePlaceholder alt="India chapter map placeholder; verified organizational map pending." label="Map pending" className="bg-primary-container text-text-inverse opacity-85" />
-    
-    <div className="absolute inset-0 p-6 flex flex-col justify-between pointer-events-none">
-    <div className="flex justify-end">
-    <div className="bg-[#3F2C2E]/90 border border-border-subtle p-2.5 rounded-lg text-left backdrop-blur-sm shadow-md">
-    <p className="text-xs font-semibold text-white">Central Operations Hub</p>
-    <p className="text-[11px] text-[#E6C8B8]">New Delhi / NCR Region</p>
-    </div>
-    </div>
-    <div className="flex justify-start">
-    <div className="bg-[#3F2C2E]/90 border border-border-subtle p-2.5 rounded-lg text-left backdrop-blur-sm shadow-md">
-    <p className="text-xs font-semibold text-white">Southern Expansion</p>
-    <p className="text-[11px] text-[#CDD0D2]">Karnataka Chapter</p>
-    </div>
-    </div>
-    </div>
+    <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-white border border-white/15">
+    <Image
+      src="/images/homepage/operational-cities-map.jpg"
+      alt="Map graphic showing Kadam Foundation operational cities across India"
+      fill
+      sizes="(min-width: 1024px) 40vw, 100vw"
+      className="object-contain"
+    />
     </div>
     <p className="text-center font-eyebrow text-eyebrow text-text-inverse/70 mt-4 tracking-wider">
-                    [DATA STORE: FOUNDER AUDITED CHAPTER REGISTER 2024]
+                    Operational city map
                   </p>
     </div>
     </div>

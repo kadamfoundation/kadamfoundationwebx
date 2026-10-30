@@ -40,22 +40,26 @@ export const CENTRAL_LEADERSHIP: CentralLeader[] = [
   {
     id: 'founder',
     role: 'Founder',
-    member: { name: 'Prachi Dwivedi' },
+    member: { name: 'Prachi Dwivedi', image: '/images/leadership/founder.jpg' },
   },
   {
     id: 'director-1',
     role: 'Director',
-    member: {},
+    member: { name: 'Dr. Pradeep Dwivedi' },
   },
   {
     id: 'director-2',
     role: 'Director',
-    member: {},
+    member: { name: 'Mrs. Shachi Dwivedi' },
   },
 ];
 
 const CITIES: CityDefinition[] = [
-  { slug: 'bhopal', name: 'Bhopal' },
+  {
+    slug: 'bhopal',
+    name: 'Bhopal',
+    cityHead: { name: 'Rashi Shukla', image: '/images/team/bhopal-city-head.jpg' },
+  },
   { slug: 'indore', name: 'Indore' },
   { slug: 'sehore', name: 'Sehore' },
   { slug: 'rewa', name: 'Rewa' },

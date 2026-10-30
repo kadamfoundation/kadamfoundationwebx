@@ -1,5 +1,5 @@
 import Icon from '@/components/Icon';
-import ImagePlaceholder from '@/components/ImagePlaceholder';
+import Image from 'next/image';
 
 export default function ProgramsPage() {
   return (
@@ -101,14 +101,13 @@ export default function ProgramsPage() {
     
     <div className="lg:col-span-5 order-first lg:order-last">
     <div className="relative rounded-[18px] overflow-hidden border border-border-subtle aspect-[4/3] lg:aspect-[5/6] bg-surface-clay-soft">
-    <ImagePlaceholder alt="Photo placeholder for Project Shiksha; approved learning-pod photograph pending." />
-    <div className="absolute bottom-4 left-4 right-4 p-3 bg-surface-raised/95 backdrop-blur-sm rounded-lg border border-border-subtle flex items-center justify-between">
-    <div>
-    <p className="text-label-md font-label-md font-semibold text-text-primary">12 Active Pods</p>
-    <p className="text-body-sm font-body-sm text-text-secondary">420+ Children supported weekly</p>
-    </div>
-    <Icon name="school" className="material-symbols-outlined text-text-secondary text-[24px]" />
-    </div>
+    <Image
+      src="/images/programs/project-shiksha.jpg"
+      alt="Children gathered for a Project Shiksha learning session"
+      fill
+      sizes="(min-width: 1024px) 40vw, 100vw"
+      className="object-cover"
+    />
     </div>
     </div>
     </div>
@@ -123,14 +122,13 @@ export default function ProgramsPage() {
     
     <div className="lg:col-span-5">
     <div className="relative rounded-[18px] overflow-hidden border border-border-subtle aspect-[4/3] lg:aspect-[5/6] bg-surface-blue-soft">
-    <ImagePlaceholder alt="Photo placeholder for Project Samanvay; approved chapter or community workshop photograph pending." />
-    <div className="absolute bottom-4 left-4 right-4 p-3 bg-surface-raised/95 backdrop-blur-sm rounded-lg border border-border-subtle flex items-center justify-between">
-    <div>
-    <p className="text-label-md font-label-md font-semibold text-text-primary">18 Campus Chapters</p>
-    <p className="text-body-sm font-body-sm text-text-secondary">Cross-institutional fellowship</p>
-    </div>
-    <Icon name="groups" className="material-symbols-outlined text-text-secondary text-[24px]" />
-    </div>
+    <Image
+      src="/images/programs/project-samanvay.jpg"
+      alt="Kadam Foundation team members at a community event"
+      fill
+      sizes="(min-width: 1024px) 40vw, 100vw"
+      className="object-cover"
+    />
     </div>
     </div>
     
@@ -333,14 +331,13 @@ export default function ProgramsPage() {
     
     <div className="lg:col-span-5 order-first lg:order-last">
     <div className="relative rounded-[18px] overflow-hidden border border-border-subtle aspect-[4/3] lg:aspect-[5/6] bg-surface-clay-soft">
-    <ImagePlaceholder alt="Photo placeholder for the Women Empowerment program; approved program photograph pending." />
-    <div className="absolute bottom-4 left-4 right-4 p-3 bg-surface-raised/95 backdrop-blur-sm rounded-lg border border-border-subtle flex items-center justify-between">
-    <div>
-    <p className="text-label-md font-label-md font-semibold text-text-primary">160+ Women</p>
-    <p className="text-body-sm font-body-sm text-text-secondary">Trained across 5 community pods</p>
-    </div>
-    <Icon name="workspace_premium" className="material-symbols-outlined text-text-secondary text-[24px]" />
-    </div>
+    <Image
+      src="/images/programs/women-empowerment.jpg"
+      alt="Women attending a Kadam Foundation empowerment session"
+      fill
+      sizes="(min-width: 1024px) 40vw, 100vw"
+      className="object-cover"
+    />
     </div>
     </div>
     </div>

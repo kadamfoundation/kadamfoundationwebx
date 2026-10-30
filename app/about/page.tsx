@@ -1,5 +1,5 @@
+import Image from 'next/image';
 import Icon from '@/components/Icon';
-import ImagePlaceholder from '@/components/ImagePlaceholder';
 
 export default function AboutPage() {
   return (
@@ -41,12 +41,13 @@ export default function AboutPage() {
     <div className="lg:col-span-5">
     <div className="relative rounded-3xl overflow-hidden border border-border-subtle bg-surface-raised p-2 shadow-sm">
     <div className="rounded-2xl overflow-hidden relative aspect-[4/5] bg-surface-clay-soft">
-    <ImagePlaceholder alt="Photo placeholder for the About hero; approved Kadam community photograph pending." />
-    <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-primary/80 via-primary/40 to-transparent p-6 text-text-inverse">
-    <span className="font-eyebrow text-eyebrow uppercase tracking-widest text-surface-peach">Grassroots Field Log</span>
-    <p className="font-headline-md text-headline-md font-semibold mt-1">Community Fellowship in Action</p>
-    <p className="font-body-sm text-body-sm text-surface-raised/90 mt-1">Youth volunteers facilitating decentralized learning circles in rural peri-urban centers.</p>
-    </div>
+    <Image
+      src="/images/about/about-planning-photo.jpg"
+      alt="Kadam Foundation team gathered for a community planning activity"
+      fill
+      sizes="(min-width: 1024px) 40vw, 100vw"
+      className="object-cover"
+    />
     </div>
     </div>
     </div>
@@ -341,12 +342,6 @@ export default function AboutPage() {
     </div>
     </div>
     
-    <div className="mt-12 pt-8 border-t border-surface-peach/20 text-center flex flex-col md:flex-row items-center justify-center gap-3 text-surface-raised/90 text-sm">
-    <Icon name="verified" className="material-symbols-outlined text-surface-peach text-base" />
-    <span className="font-body-sm">
-                Independent 2024 Grassroots Audit • Founder Verified Registry. We track every volunteer hour and community intervention with full financial and operational transparency.
-              </span>
-    </div>
     </div>
     </section>
     
@@ -363,11 +358,14 @@ export default function AboutPage() {
     
     <div className="mx-auto grid w-full max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
     <article className="bg-surface-raised border border-border-subtle rounded-2xl p-5 shadow-sm">
-    <div className="mb-4 flex aspect-square items-center justify-center rounded-xl bg-surface-clay-soft text-text-secondary" role="img" aria-label="Founder portrait pending">
-    <div className="flex flex-col items-center gap-2">
-    <Icon name="diversity_1" className="text-4xl" />
-    <span className="font-eyebrow text-eyebrow uppercase">Portrait Pending</span>
-    </div>
+    <div className="relative mb-4 aspect-square overflow-hidden rounded-xl bg-surface-clay-soft">
+    <Image
+      src="/images/leadership/founder.jpg"
+      alt="Prachi Dwivedi, Founder of Kadam Foundation"
+      fill
+      sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+      className="object-cover"
+    />
     </div>
     <span className="font-eyebrow text-eyebrow text-text-secondary uppercase">FOUNDER</span>
     <h3 className="font-headline-md text-headline-md text-text-primary font-semibold mt-1">Prachi Dwivedi</h3>
@@ -381,8 +379,8 @@ export default function AboutPage() {
     </div>
     </div>
     <span className="font-eyebrow text-eyebrow text-text-secondary uppercase">DIRECTOR</span>
-    <h3 className="font-headline-md text-headline-md text-text-primary font-semibold mt-1">Director 1 — Name Pending</h3>
-    <p className="mt-2 font-body-sm text-body-sm text-text-secondary">Awaiting official details</p>
+    <h3 className="font-headline-md text-headline-md text-text-primary font-semibold mt-1">Dr. Pradeep Dwivedi</h3>
+    <p className="mt-2 font-body-sm text-body-sm text-text-secondary">Portrait pending</p>
     </article>
 
     <article className="bg-surface-raised border border-border-subtle rounded-2xl p-5 shadow-sm">
@@ -393,15 +391,11 @@ export default function AboutPage() {
     </div>
     </div>
     <span className="font-eyebrow text-eyebrow text-text-secondary uppercase">DIRECTOR</span>
-    <h3 className="font-headline-md text-headline-md text-text-primary font-semibold mt-1">Director 2 — Name Pending</h3>
-    <p className="mt-2 font-body-sm text-body-sm text-text-secondary">Awaiting official details</p>
+    <h3 className="font-headline-md text-headline-md text-text-primary font-semibold mt-1">Mrs. Shachi Dwivedi</h3>
+    <p className="mt-2 font-body-sm text-body-sm text-text-secondary">Portrait pending</p>
     </article>
     </div>
     
-    <div className="mt-8 p-4 rounded-xl bg-surface-raised border border-border-subtle flex items-center gap-3 text-text-secondary text-sm">
-    <Icon name="info" className="material-symbols-outlined text-primary text-base" />
-    <span>Notice: Full governance council and coordinator registry available in our annual transparency report and registered society filings.</span>
-    </div>
     </section>
     
     <section className="w-full bg-surface-peach/50 border-t border-border-subtle py-16 md:py-24">

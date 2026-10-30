@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Icon from '@/components/Icon';
-import ImagePlaceholder from '@/components/ImagePlaceholder';
+import Image from 'next/image';
 
 export default function VolunteerPage() {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -73,23 +73,14 @@ export default function VolunteerPage() {
       <div className="lg:col-span-5 relative">
         <div className="relative rounded-2xl overflow-hidden border border-border-subtle bg-surface-raised shadow-sm p-3">
           <div className="relative rounded-xl overflow-hidden aspect-[4/5] bg-surface-clay-soft">
-            <ImagePlaceholder alt="Photo placeholder for the Volunteer page learning-circle feature; approved Kadam volunteer photograph pending." />
+            <Image
+              src="/images/volunteer/volunteer-page-photo.jpg"
+              alt="Kadam Foundation volunteers meeting with children in a classroom"
+              fill
+              sizes="(min-width: 1024px) 40vw, 100vw"
+              className="object-cover"
+            />
             <div className="absolute inset-0 bg-gradient-to-t from-text-primary/75 via-transparent to-transparent"></div>
-            <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-surface-raised/95 border border-border-subtle backdrop-blur-sm">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-surface-clay-soft flex items-center justify-center text-text-primary">
-                  <Icon name="school" className="material-symbols-outlined text-[22px]" />
-                </div>
-                <div>
-                  <p className="font-label-md text-label-md font-bold text-text-primary">
-                    Project Shiksha — Sector 14 Pod
-                  </p>
-                  <p className="font-body-sm text-body-sm text-text-secondary">
-                    32 students mentored this morning by 4 fellows
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
           <div className="absolute -top-3 -right-3 bg-surface-peach border border-border-subtle px-3 py-1.5 rounded-full shadow-sm flex items-center gap-1.5">
             <span className="w-2 h-2 rounded-full bg-status-success animate-pulse"></span>
@@ -666,13 +657,10 @@ export default function VolunteerPage() {
           </div>
         </div>
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-          <a className="inline-flex items-center justify-center font-label-md text-label-md font-semibold bg-primary text-text-inverse h-14 px-8 rounded-full hover:bg-action-hover transition-all active:scale-95 shadow-sm group focus:outline-none focus:ring-2 focus:ring-focus-ring" href="#" rel="noopener noreferrer" target="_blank">
+          <a className="inline-flex items-center justify-center font-label-md text-label-md font-semibold bg-primary text-text-inverse h-14 px-8 rounded-full hover:bg-action-hover transition-all active:scale-95 shadow-sm group focus:outline-none focus:ring-2 focus:ring-focus-ring" href="https://docs.google.com/forms/d/1-l3HVO-69njgjSf1OWg5QoJVSxAQDIRNYBchCZS7At8/edit?usp=sharing_eil_se_dm&ts=6ad799a4" rel="noopener noreferrer" target="_blank">
             Open Official Registration Form ↗{' '}
             <Icon name="open_in_new" className="material-symbols-outlined ml-2 text-[20px] transition-transform duration-150 group-hover:translate-x-1" />
           </a>
-          <span className="font-body-sm text-body-sm text-text-secondary italic">
-            [Placeholder: Official Google Form URL - Awaiting Chapter Admin Link]
-          </span>
         </div>
         <div className="mt-8 pt-6 border-t border-border-subtle flex flex-wrap items-center gap-6 text-text-secondary font-body-sm text-body-sm">
           <span className="flex items-center gap-1.5">
@@ -696,9 +684,6 @@ export default function VolunteerPage() {
         <h2 className="font-headline-xl md:font-display-lg text-headline-xl md:text-display-lg text-text-primary mb-2">
           Volunteer Code of Conduct &amp; Ground Rules
         </h2>
-        <p className="font-body-sm text-body-sm text-status-error font-medium">
-          [Status: Policy draft awaiting official executive council and legal advisor confirmation]
-        </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="bg-surface-canvas p-6 md:p-8 rounded-2xl border border-border-subtle flex flex-col justify-between">

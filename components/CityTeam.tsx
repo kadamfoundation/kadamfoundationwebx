@@ -6,16 +6,16 @@ function ProfilePlaceholder({ member, role }: { member?: TeamProfile; role: stri
   const name = member?.name?.trim();
 
   return (
-    <article className="flex min-w-0 items-center gap-3 rounded-lg border border-border-subtle bg-surface-raised p-3">
+    <article className="flex min-w-0 items-center gap-4 rounded-lg border border-border-subtle bg-surface-raised p-4">
       <div
         aria-label={member?.image ? `${role} portrait` : `${role} avatar placeholder`}
-        className="relative flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-full border border-border-subtle bg-surface-clay-soft text-text-secondary"
+        className="relative flex h-36 w-36 shrink-0 items-center justify-center overflow-hidden rounded-full border border-border-subtle bg-surface-clay-soft text-text-secondary"
         role="img"
       >
         {member?.image ? (
-          <Image src={member.image} alt="" fill sizes="48px" className="object-cover" />
+          <Image src={member.image} alt="" fill sizes="144px" className="object-cover" />
         ) : (
-          <Icon name="diversity_1" className="text-2xl" />
+          <Icon name="diversity_1" className="text-5xl" />
         )}
       </div>
       <div className="min-w-0">
