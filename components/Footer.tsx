@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import Icon from '@/components/Icon';
+import { SOCIAL_LINKS } from '@/lib/site-config';
 
 const FOOTER_LINKS = [
   { href: '/about', label: 'About' },
@@ -36,6 +38,22 @@ export default function Footer() {
           >
             Donate
           </Link>
+        </nav>
+
+        <nav aria-label="Social Media Links" className="flex items-center gap-1">
+          {SOCIAL_LINKS.map(({ name, href, icon }) => (
+            <a
+              key={name}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Visit Kadam Foundation on ${name}`}
+              title={name}
+              className="rounded-full p-2 text-text-secondary transition-colors hover:bg-surface-canvas hover:text-primary focus:outline-none focus:ring-2 focus:ring-focus-ring"
+            >
+              <Icon name={icon} className="text-xl" />
+            </a>
+          ))}
         </nav>
 
         <p className="text-sm text-text-secondary">

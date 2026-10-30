@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Icon from '@/components/Icon';
+import { CONTACT_INFO } from '@/lib/site-config';
 
 export default function DonatePage() {
   const [copied, setCopied] = useState(false);
@@ -389,18 +390,18 @@ export default function DonatePage() {
           </div>
         </div>
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-          <a className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-primary text-text-inverse font-label-md text-label-md font-semibold hover:bg-action-hover transition-colors" href="mailto:contact@[Placeholder:kadamfoundation.org]?subject=Donation%20Receipt%20Request">
+          <a className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-primary text-text-inverse font-label-md text-label-md font-semibold hover:bg-action-hover transition-colors" href={`${CONTACT_INFO.emailHref}?subject=Donation%20Receipt%20Request`}>
             <Icon name="mail" className="material-symbols-outlined text-[18px]" />
             <span>
-              contact@[Placeholder:kadamfoundation.org]
+              {CONTACT_INFO.email}
             </span>
           </a>
-          <div className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-surface-raised border border-border-subtle text-text-primary font-label-md text-label-md font-medium">
+          <a className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-surface-raised border border-border-subtle text-text-primary font-label-md text-label-md font-medium" href={CONTACT_INFO.whatsappUrl} target="_blank" rel="noopener noreferrer">
             <Icon name="chat" className="material-symbols-outlined text-[18px] text-status-success" filled style={{fontVariationSettings: "'FILL' 1"}} />
             <span>
-              WhatsApp Desk: +91 [Placeholder: Official WhatsApp Desk Link]
+              Join WhatsApp Community
             </span>
-          </div>
+          </a>
         </div>
         <div className="mt-6 flex items-center gap-2 text-xs text-text-secondary">
           <Icon name="schedule" className="material-symbols-outlined text-[16px] text-secondary" />

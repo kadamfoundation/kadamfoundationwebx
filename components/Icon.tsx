@@ -4,13 +4,13 @@ import {
   BookOpen, BookOpenText, Brain, Building, Building2, CalendarCheck, CalendarDays,
   Camera, Check, ChevronDown, ChevronLeft, ChevronRight, CircleCheck, CircleHelp,
   CirclePlay, CircleX, ClipboardList, ClipboardPen, Clock, Copy, ExternalLink,
-  FileText, Flower2, Footprints, Gavel, Globe2, GraduationCap, Hand, HandHeart,
+  Facebook, FileText, Flower2, Footprints, Gavel, Globe2, GraduationCap, Hand, HandHeart,
   Handshake, Headset, Heart, Hourglass, Image, Info, Landmark, Leaf, ListChecks,
-  ListFilter, Lock, Mail, MapPin, Megaphone, Menu, MessageCircle, MessagesSquare,
+  Linkedin, ListFilter, Lock, Mail, MapPin, Megaphone, Menu, MessageCircle, MessagesSquare,
   Mic, Network, PawPrint, Phone, PhoneForwarded, Plus, Puzzle, Quote, ReceiptText,
   Scale, Search, Send, Settings, Shapes, Shield, ShieldCheck, Share2, Smartphone,
   Sparkles, Sunrise, Terminal, Timer, TrainFront, Trash2, Trees, UserRoundPlus,
-  Users, UsersRound, Video, X, Zap, type LucideIcon,
+  Users, UsersRound, Video, X, Youtube, Zap, type LucideIcon,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -24,11 +24,11 @@ const ICONS = {
   close: X, co_present: UsersRound, content_copy: Copy, corporate_fare: Building2,
   delete: Trash2, description: FileText, directions_subway: TrainFront, diversity_1: UsersRound,
   diversity_3: UsersRound, domain: Building, east: ArrowRight, eco: Leaf,
-  event_note: CalendarCheck, expand_more: ChevronDown, extension: Puzzle, favorite: Heart,
+  event_note: CalendarCheck, expand_more: ChevronDown, extension: Puzzle, facebook: Facebook, favorite: Heart,
   favorite_border: Heart, filter_alt: ListFilter, footprint: Footprints, format_quote: Quote,
   forum: MessagesSquare, front_hand: Hand, gavel: Gavel, group_add: UserRoundPlus,
   groups: Users, handshake: Handshake, help_outline: CircleHelp, hourglass_top: Hourglass,
-  hub: Network, image: Image, info: Info, interests: Shapes, location_on: MapPin, lock: Lock,
+  hub: Network, image: Image, info: Info, interests: Shapes, linkedin: Linkedin, location_on: MapPin, lock: Lock,
   mail: Mail, menu: Menu, menu_book: BookOpen, mic: Mic, military_tech: Award,
   nature_people: Trees, nest_eco_leaf: Leaf, north_east: ArrowUpRight, open_in_new: ExternalLink,
   payments: Banknote, person_raised_hand: Hand, pets: PawPrint, phone_forwarded: PhoneForwarded,
@@ -39,7 +39,7 @@ const ICONS = {
   spa: Flower2, stars: Sparkles, summarize: ListChecks, support_agent: Headset,
   swap_horiz: ArrowLeftRight, terminal: Terminal, timer: Timer, verified: BadgeCheck,
   verified_user: ShieldCheck, videocam: Video, volunteer_activism: HandHeart,
-  wb_twilight: Sunrise, workspace_premium: Award,
+  wb_twilight: Sunrise, whatsapp: MessageCircle, workspace_premium: Award, x: X, youtube: Youtube,
 } satisfies Record<string, LucideIcon>;
 
 export type IconName = keyof typeof ICONS;

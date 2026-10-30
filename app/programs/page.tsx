@@ -1,4 +1,5 @@
 import Icon from '@/components/Icon';
+import ImagePlaceholder from '@/components/ImagePlaceholder';
 
 export default function ProgramsPage() {
   return (
@@ -100,7 +101,7 @@ export default function ProgramsPage() {
     
     <div className="lg:col-span-5 order-first lg:order-last">
     <div className="relative rounded-[18px] overflow-hidden border border-border-subtle aspect-[4/3] lg:aspect-[5/6] bg-surface-clay-soft">
-    <img className="w-full h-full object-cover" data-alt="Warm documentary photography capturing a dedicated young Indian college volunteer sitting cross-legged beneath a shaded banyan tree surrounded by eager elementary schoolchildren in a sunlit Delhi settlement. The children hold colorful slate notebooks while engaged in an interactive reading circle. The scene is bathed in golden natural morning light with soft terracotta earth tones and genuine empathetic smiles." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLI9fW_M4ygQEs1rxl57gS1MpWvWX-a03jN1sRR_7U00r0lKz1URhbyH0_XS5HJ3g5uyEeZQ_8U8GW4rWtUXvt8ZwfjlIRplvKJ9YokdXPKWrlpW0sDW2SgS3ac98rbbsLtJFLczzBlxBSa5f3R0DodPbkq1Bxh-HK77fzIfwOtlZBg8m0wfLoSW4KJQMrx8Dur4O53J8MxDETjBVaRnRykoAF1QgxapC3aGXWpKrFrDM9ZX0TYdAj"/>
+    <ImagePlaceholder alt="Photo placeholder for Project Shiksha; approved learning-pod photograph pending." />
     <div className="absolute bottom-4 left-4 right-4 p-3 bg-surface-raised/95 backdrop-blur-sm rounded-lg border border-border-subtle flex items-center justify-between">
     <div>
     <p className="text-label-md font-label-md font-semibold text-text-primary">12 Active Pods</p>
@@ -122,7 +123,7 @@ export default function ProgramsPage() {
     
     <div className="lg:col-span-5">
     <div className="relative rounded-[18px] overflow-hidden border border-border-subtle aspect-[4/3] lg:aspect-[5/6] bg-surface-blue-soft">
-    <img className="w-full h-full object-cover" data-alt="An energetic youth civic fellowship workshop inside a community hall with high ceilings. A collaborative group of young college students and local neighborhood elders stand together around a large butcher-paper map of their district, mapping community water resources and public transit points with markers and sticky notes. Natural daylight streams through open clerestory windows highlighting expressions of focused cooperation in warm muted earth and soft slate hues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXpyEc1s7-pzYis0684rdd7s0X_vwf5mB38eIGj9lVO_h5FJKDMWEFdSW-hB902Fo_eF8fwq7IBir4BXGL75KQQJkoa-pU9mUwfZ7IzLqoeQOGGJVoUyPEicDlTKvM6NwQQcEng5lUpZ_pJz_BdVfjZFbZZ4jb6YYIitZ2j0Za5dJptEOg5WK8VkMOvUSRK9S7fWwt1aNeJTH1j9fhSrCtpQKfW21taS0uHx1CLiqSk3MyBo9T1ImL"/>
+    <ImagePlaceholder alt="Photo placeholder for Project Samanvay; approved chapter or community workshop photograph pending." />
     <div className="absolute bottom-4 left-4 right-4 p-3 bg-surface-raised/95 backdrop-blur-sm rounded-lg border border-border-subtle flex items-center justify-between">
     <div>
     <p className="text-label-md font-label-md font-semibold text-text-primary">18 Campus Chapters</p>
@@ -332,7 +333,7 @@ export default function ProgramsPage() {
     
     <div className="lg:col-span-5 order-first lg:order-last">
     <div className="relative rounded-[18px] overflow-hidden border border-border-subtle aspect-[4/3] lg:aspect-[5/6] bg-surface-clay-soft">
-    <img className="w-full h-full object-cover" data-alt="Editorial portrait of three women artisans collaborating in a sunlit community workshop in an informal peri-urban neighborhood. They are weaving vibrant sustainable textiles and handcrafting eco-friendly jute bags with quiet dignity and skill. The atmosphere feels authentic, empowering, and warm with rich terracotta textures, natural linen, and warm afternoon light highlighting their craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxN88Qbfl0ryzi-ptPO5HpeTZmJVIN2KIIuS07eHzHwoAKek__QcFQcgfhjMMd-RNzrhA09lw-UpG7Z34UW9WKIsJBCMsf7ebWBKOMOiq_VlI8YSLEakpTlOyHqWSG21NXmCCM2sTMrZ6zefgTij9Bw8Ayem1xU3GaiNI54JHAqpBAvVxGVZ3Suf7nBQNvjjiY1zeTMcNMNTansxyIVqYlHqwOf5cCVZxy9nWr12rkM3VVs7Q7xrrD"/>
+    <ImagePlaceholder alt="Photo placeholder for the Women Empowerment program; approved program photograph pending." />
     <div className="absolute bottom-4 left-4 right-4 p-3 bg-surface-raised/95 backdrop-blur-sm rounded-lg border border-border-subtle flex items-center justify-between">
     <div>
     <p className="text-label-md font-label-md font-semibold text-text-primary">160+ Women</p>

@@ -1,4 +1,5 @@
 import Icon from '@/components/Icon';
+import ImagePlaceholder from '@/components/ImagePlaceholder';
 
 export default function AboutPage() {
   return (
@@ -40,7 +41,7 @@ export default function AboutPage() {
     <div className="lg:col-span-5">
     <div className="relative rounded-3xl overflow-hidden border border-border-subtle bg-surface-raised p-2 shadow-sm">
     <div className="rounded-2xl overflow-hidden relative aspect-[4/5] bg-surface-clay-soft">
-    <img className="w-full h-full object-cover" data-alt="A warm, authentic editorial documentary photograph showing young Indian youth volunteers collaborating warmly with village elders and young students under a banyan tree. The scene is illuminated by soft late-afternoon golden sunlight with a warm terracotta and sun-baked peach palette. The mood is empathetic, respectful, and deeply grounded in grassroots community service." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj9UkuaNxxsHujBCt0zT0HkowXeWSuTV8Frwr5o0o6pQ-Dp708jbU6I2G3nD_C9H0liwbIDlR_QdU-ct9dXFDg7ZxgOgtHxjmVErbKK2xgLaOjNwRrMtKhzB69HR6TcGiDJdubNRPlKzjO1LUzTSSqmphVRvG0Dykd-8GeVp8w2Y8P2ZmBWWZuJKqifbi_nT3egjYhPJXDAhpbk7Y5vbxp28TeQSdqFkVizNE7KRBIlt9kN81rmm6p"/>
+    <ImagePlaceholder alt="Photo placeholder for the About hero; approved Kadam community photograph pending." />
     <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-primary/80 via-primary/40 to-transparent p-6 text-text-inverse">
     <span className="font-eyebrow text-eyebrow uppercase tracking-widest text-surface-peach">Grassroots Field Log</span>
     <p className="font-headline-md text-headline-md font-semibold mt-1">Community Fellowship in Action</p>
@@ -57,67 +58,60 @@ export default function AboutPage() {
     <div className="flex flex-col mb-12">
     <span className="font-eyebrow text-eyebrow text-text-secondary uppercase">ORIGIN &amp; JOURNEY</span>
     <h2 className="font-headline-xl text-headline-xl md:font-display-lg md:text-display-lg text-text-primary mt-2">
-                From College Campuses to Community Action
+                Kadam Foundation: One Step That Travelled Miles
               </h2>
     </div>
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
     
     <div className="lg:col-span-7 space-y-6">
     <p className="font-body-lg text-body-lg text-text-primary leading-relaxed">
-                  Kadam Foundation was ignited by university students who looked past academic theory and saw pressing societal needs in their immediate neighborhoods. What began as emergency relief drives, student-led stationary distributions, and stray animal vaccinations soon crystallized into an enduring grassroots youth movement.
+                  On 20 March 2020, I saw children near my home searching for food in a dustbin. I went downstairs and brought them food from my own home. When I asked if they went to school, they told me they did not.
                 </p>
+    <blockquote className="rounded-xl border-l-4 border-primary-container bg-surface-canvas p-5">
+    <p className="font-headline-md text-headline-md font-semibold text-text-primary">
+                  “Didi, bhookh lagi hai. Humne kuch nahi khaya.”
+                </p>
+    <p className="mt-2 font-body-sm text-body-sm italic text-text-secondary">
+                  “Sister, we are hungry. We haven&apos;t eaten anything.”
+                </p>
+    <p className="mt-4 border-t border-border-subtle pt-4 font-body-sm text-body-sm text-text-secondary">
+                  When I asked whether they went to school, they said, “Hum school nahi jaate” — “We don&apos;t go to school.”
+                </p>
+    </blockquote>
     <p className="font-body-md text-body-md text-text-secondary leading-relaxed">
-                  Recognizing that localized communities understand their challenges best, we eschewed top-down paternalism. Instead, we established autonomous youth pods that work alongside village panchayats, informal basti committees, and school heads to build resilient, community-owned solutions.
+                  I was a schoolgirl myself, with no organisation, team, funding, or roadmap. But I could not let that encounter become just a memory. On 21 March 2020, Kadam began.
                 </p>
     
-    <div className="mt-10 space-y-6 border-l-2 border-border-subtle pl-6">
+    <div className="mt-8 space-y-6 border-l-2 border-border-subtle pl-6">
     <div className="relative">
     <span className="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-text-primary"></span>
-    <div className="flex items-center gap-2">
-    <span className="font-headline-md text-headline-md font-semibold text-text-primary">2021: Grassroots Inception</span>
-    <span className="px-2 py-0.5 rounded text-[11px] font-medium bg-surface-peach text-text-primary border border-border-subtle">Founder Verified Origin</span>
-    </div>
+    <span className="font-headline-md text-headline-md font-semibold text-text-primary">21 March 2020: Barande Wali Kaksha</span>
     <p className="font-body-sm text-body-sm text-text-secondary mt-1">
-                      First cohort of passionate university students mobilized localized flood relief and emergency winter clothing drives in Northern India.
+                      I started a classroom in our veranda with 10 children. We began with the space and resources we had.
                     </p>
     </div>
     <div className="relative">
     <span className="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-secondary"></span>
-    <span className="font-headline-md text-headline-md font-semibold text-text-primary">2022: Expanding Beyond Borders</span>
+    <span className="font-headline-md text-headline-md font-semibold text-text-primary">2022: Beyond the Original Veranda</span>
     <p className="font-body-sm text-body-sm text-text-secondary mt-1">
-                      Establishment of collegiate volunteer pods spanning 12 higher education institutions, expanding into weekly remedial teaching programs.
-                    </p>
-    </div>
-    <div className="relative">
-    <span className="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-status-success"></span>
-    <span className="font-headline-md text-headline-md font-semibold text-text-primary">2023: Institutional Recognition</span>
-    <p className="font-body-sm text-body-sm text-text-secondary mt-1">
-                      Formal adoption of the 5-pillar grassroots operational framework and initial formal registry under the Indian Societies Registration Act.
-                    </p>
-    </div>
-    <div className="relative">
-    <span className="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-primary-container"></span>
-    <span className="font-headline-md text-headline-md font-semibold text-text-primary">2024: Nationwide Movement</span>
-    <p className="font-body-sm text-body-sm text-text-secondary mt-1">
-                      Active footprint crossing 50 cities, delivering integrated interventions across basic literacy, environmental stewardship, and emergency animal rescue.
+                      I moved away from the original location and began thinking about children in other communities. Kadam gradually expanded beyond Bhopal as volunteers and others joined the effort.
                     </p>
     </div>
     </div>
     </div>
     
     <div className="lg:col-span-5">
-    <div className="bg-surface-canvas rounded-2xl border border-border-subtle p-5 shadow-sm">
-    <div className="rounded-xl overflow-hidden aspect-[4/3] bg-surface-clay-soft relative">
-    <img className="w-full h-full object-cover" data-alt="A candid photojournalism image depicting Indian university students in simple volunteer t-shirts conducting a community meeting with local women in a village square. Natural warm sunlight filters through earthenware tiles, illuminating notes, sketchpads, and handmade posters. The mood is honest, hopeful, and focused on collective decision-making." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBa7-_BtXkDSCWrYW2EsLCO-oFwI94avcN7JjBhbdCBvumMc6goXJahDnfxACaSgD0CKeJFrDUu6Z2Q4S0_LTOaFSoEoK5T6wtAL7nfmM8FViwNuKSiz05xim4UBQvrJCcZCZc5AamZHGy-5gyj42Cei_EwNlUekA7NriqCTovdSDJA4JTpdw6kxhsgr7AcFPupoHzX4OT6e3sgjyfnLoJH8SUNAFw5SKqiNZUnM2LXTG41z0uDJkP"/>
-    <div className="absolute top-3 left-3 bg-primary-container/85 text-text-inverse px-3 py-1 rounded-full text-xs font-mono">
-                      [FIELD ARCHIVE: COMMUNITY OUTREACH CAMPAIGN]
-                    </div>
-    </div>
-    <div className="mt-4">
-    <h4 className="font-headline-md text-headline-md font-semibold text-text-primary">Participatory Grassroots Planning</h4>
-    <p className="font-body-sm text-body-sm text-text-secondary mt-1">
-                      Field volunteers coordinate with local neighborhood representatives before launching ecological sapling drives and student stationery supply pods.
-                    </p>
+    <div className="clay-grain rounded-2xl border border-border-subtle p-7 text-text-inverse shadow-sm md:p-9">
+    <span className="font-eyebrow text-eyebrow uppercase tracking-widest text-surface-peach">A Small Beginning</span>
+    <p className="mt-5 font-display-lg text-display-lg-mobile md:text-display-lg leading-tight">
+                  “I could not simply stand there and watch.”
+                </p>
+    <p className="mt-5 font-body-md text-body-md text-text-inverse/90">
+                  I started with what I had, where I was: a classroom in our veranda and 10 children ready to learn.
+                </p>
+    <div className="mt-8 border-t border-white/20 pt-5">
+    <p className="font-label-md text-label-md font-semibold">Prachi Dwivedi</p>
+    <p className="mt-1 font-body-sm text-body-sm text-text-inverse/80">Founder &amp; Director</p>
     </div>
     </div>
     </div>
@@ -336,7 +330,7 @@ export default function AboutPage() {
     <p className="font-body-sm text-body-sm text-surface-raised/80">Across collegiate chapters, regional coordinator councils, and local city hubs.</p>
     </div>
     <div className="pt-6 md:pt-0 md:px-6">
-    <span className="font-display-xl text-display-xl text-surface-peach font-bold block mb-1">50</span>
+    <span className="font-display-xl text-display-xl text-surface-peach font-bold block mb-1">15</span>
     <span className="font-headline-md text-headline-md text-text-inverse font-semibold block mb-2">Cities Reached</span>
     <p className="font-body-sm text-body-sm text-surface-raised/80">Grassroots mobilization, municipal drives, and youth engagement clusters in India.</p>
     </div>
@@ -363,83 +357,45 @@ export default function AboutPage() {
               Stewards of the Vision
             </h2>
     <p className="font-body-md text-body-md text-text-secondary max-w-2xl mt-2">
-              Guided by youth leaders, community organizers, and advisory mentors dedicated to collective impact and operational integrity.
+              Central leadership for Kadam Foundation.
             </p>
     </div>
     
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-    
-    <div className="bg-surface-raised border border-border-subtle rounded-2xl p-5 shadow-sm flex flex-col">
-    <div className="rounded-xl overflow-hidden aspect-square bg-surface-clay-soft mb-4 relative">
-    <img className="w-full h-full object-cover" data-alt="A dignified, warm black and white portrait of an Indian youth activist leader dressed in simple handloom attire, captured against a clean neutral paper background with soft ambient studio lighting. The expression is thoughtful, empathetic, and resolved." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBISA6UzUF5Xsr511cvVbQXwzw3gX1xidbQN22XuPzisVQd-HdCnRhtE9J5a4EfEmM3UwDS7BkooyUcc-oydFfpw4ek688o6ve61cH2Su6vazeEjejO_bgJaXyatEdZlUkYojIApfq_Aaw9Y_qkpX96Zds61LN--Y3TMTLrRShuaxCm_jajtrATvsK8q-NIWIy40ahpVvJg2_WS8gw7ju9AnPkXM3OvN6dMAP2kxOxyAdnepySahCB_"/>
-    <div className="absolute bottom-2 left-2 bg-primary-container/90 text-text-inverse px-2 py-0.5 rounded text-[10px] font-mono">
-                  [CONFIRMED ROLE]
-                </div>
-    </div>
-    <span className="font-eyebrow text-eyebrow text-text-secondary uppercase">LEADERSHIP COUNCIL</span>
-    <h4 className="font-headline-md text-headline-md text-text-primary font-semibold mt-1">Founder &amp; Executive Director</h4>
-    <p className="font-body-sm text-body-sm text-text-secondary mt-2 flex-grow">
-                [Placeholder: Founder Profile awaiting final bio confirmation for public archive]. Steers overall strategic direction and youth mobilization partnerships.
-              </p>
-    <div className="mt-4 pt-3 border-t border-border-subtle/60 text-xs text-text-secondary flex items-center justify-between">
-    <span>Executive Committee</span>
-    <Icon name="badge" className="material-symbols-outlined text-sm" />
+    <div className="mx-auto grid w-full max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <article className="bg-surface-raised border border-border-subtle rounded-2xl p-5 shadow-sm">
+    <div className="mb-4 flex aspect-square items-center justify-center rounded-xl bg-surface-clay-soft text-text-secondary" role="img" aria-label="Founder portrait pending">
+    <div className="flex flex-col items-center gap-2">
+    <Icon name="diversity_1" className="text-4xl" />
+    <span className="font-eyebrow text-eyebrow uppercase">Portrait Pending</span>
     </div>
     </div>
-    
-    <div className="bg-surface-raised border border-border-subtle rounded-2xl p-5 shadow-sm flex flex-col">
-    <div className="rounded-xl overflow-hidden aspect-square bg-surface-peach mb-4 relative">
-    <img className="w-full h-full object-cover" data-alt="A natural documentary portrait of a young Indian woman community organizer holding field clipboards outdoors in a sunlit courtyard. Warm natural daylight with a soft terracotta wash background. The portrait conveys approachable authority and ground-level energy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRSo0uA7MsNWwwk-y2j_C4ydh_wxUjFmnGUfd7aFQPesQmoiiKPWJpq0sl4Zk_9eqtqzp7g06GfJ5C3P3_hL3BaluBZtNbe8BSyYDv59oYW9tQk-3nUze1SLiOK1Zi5i3mTUwyAzWob46r-7k3OvO3nH7u2C-dJcawk_PWFistUez7JE22tso9EB2i8XruIAZXsY-iFIDLItYMbUy1-SrBpHXObuyPrCQvusl6j0shpJ5XOtOBos6B"/>
-    <div className="absolute bottom-2 left-2 bg-primary-container/90 text-text-inverse px-2 py-0.5 rounded text-[10px] font-mono">
-                  [EDITORIAL ROLE]
-                </div>
-    </div>
-    <span className="font-eyebrow text-eyebrow text-text-secondary uppercase">OPERATIONS</span>
-    <h4 className="font-headline-md text-headline-md text-text-primary font-semibold mt-1">Head of Grassroots Operations</h4>
-    <p className="font-body-sm text-body-sm text-text-secondary mt-2 flex-grow">
-                [Placeholder: Regional Chapter Director]. Coordinates 50 city pods, volunteer safety standards, and regional supply chain logistics during emergency relief.
-              </p>
-    <div className="mt-4 pt-3 border-t border-border-subtle/60 text-xs text-text-secondary flex items-center justify-between">
-    <span>Field Management</span>
-    <Icon name="hub" className="material-symbols-outlined text-sm" />
+    <span className="font-eyebrow text-eyebrow text-text-secondary uppercase">FOUNDER</span>
+    <h3 className="font-headline-md text-headline-md text-text-primary font-semibold mt-1">Prachi Dwivedi</h3>
+    </article>
+
+    <article className="bg-surface-raised border border-border-subtle rounded-2xl p-5 shadow-sm">
+    <div className="mb-4 flex aspect-square items-center justify-center rounded-xl bg-surface-clay-soft text-text-secondary" role="img" aria-label="Director portrait pending">
+    <div className="flex flex-col items-center gap-2">
+    <Icon name="diversity_1" className="text-4xl" />
+    <span className="font-eyebrow text-eyebrow uppercase">Portrait Pending</span>
     </div>
     </div>
-    
-    <div className="bg-surface-raised border border-border-subtle rounded-2xl p-5 shadow-sm flex flex-col">
-    <div className="rounded-xl overflow-hidden aspect-square bg-surface-olive-soft mb-4 relative">
-    <img className="w-full h-full object-cover" data-alt="An authentic headshot of a collegiate youth educator smiling warmly, standing in an outdoor community library space with books visible in the soft background blur. Soft natural light, warm beige tones, and a genuine, inspiring presence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnnzyIWpRme9XVHSSDV1hU5by1teP9EQZc8AS7RM_IlIT7x-7zls9MkyX8z0EZ4OfDpVlWsFoT291yYaMCFgUy5c6mxWvmDALo9mompefMHB48qP-QPV1vOX07BA810sGAByksm77Hg9JpXXpdOBuAp8-ECg9QS2sn6ocy_1ks5yRjzZtBdX08xg9Uho9T04T_jIC3n5T1XfW8FqNPyZCCVY_Zi6xzNOsA1BWJjVGXtc_XoOL1NCCZ"/>
-    <div className="absolute bottom-2 left-2 bg-primary-container/90 text-text-inverse px-2 py-0.5 rounded text-[10px] font-mono">
-                  [EDITORIAL ROLE]
-                </div>
-    </div>
-    <span className="font-eyebrow text-eyebrow text-text-secondary uppercase">PROGRAMS</span>
-    <h4 className="font-headline-md text-headline-md text-text-primary font-semibold mt-1">Director of Community Programs</h4>
-    <p className="font-body-sm text-body-sm text-text-secondary mt-2 flex-grow">
-                [Placeholder: Education &amp; Women Welfare Lead]. Curates the literacy curriculum and monitors holistic community metrics across informal education centers.
-              </p>
-    <div className="mt-4 pt-3 border-t border-border-subtle/60 text-xs text-text-secondary flex items-center justify-between">
-    <span>Curriculum &amp; Impact</span>
-    <Icon name="auto_stories" className="material-symbols-outlined text-sm" />
+    <span className="font-eyebrow text-eyebrow text-text-secondary uppercase">DIRECTOR</span>
+    <h3 className="font-headline-md text-headline-md text-text-primary font-semibold mt-1">Director 1 — Name Pending</h3>
+    <p className="mt-2 font-body-sm text-body-sm text-text-secondary">Awaiting official details</p>
+    </article>
+
+    <article className="bg-surface-raised border border-border-subtle rounded-2xl p-5 shadow-sm">
+    <div className="mb-4 flex aspect-square items-center justify-center rounded-xl bg-surface-clay-soft text-text-secondary" role="img" aria-label="Director portrait pending">
+    <div className="flex flex-col items-center gap-2">
+    <Icon name="diversity_1" className="text-4xl" />
+    <span className="font-eyebrow text-eyebrow uppercase">Portrait Pending</span>
     </div>
     </div>
-    
-    <div className="bg-surface-raised border border-border-subtle rounded-2xl p-5 shadow-sm flex flex-col">
-    <div className="rounded-xl overflow-hidden aspect-square bg-surface-lilac-soft mb-4 relative">
-    <img className="w-full h-full object-cover" data-alt="A portrait of a senior Indian mentor and legal advisor in an office setting surrounded by architectural and social research books. Warm neutral lighting, thoughtful and reassuring demeanor, emphasizing governance and institutional guidance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJZ9fLQBASafb3d09dOYq-_4WyIeakitI12Lkh1dLLYE0Nzl3sdzPHD1hW6KVQ4YI53oamL2w_DBC6c-rfqVlaKy46ZbxVbxfAezNg0vHlS75MOH0dIzkL3QWW67m4KjUVcX7Amzf3ptHFpeInTReRVn5lgcgqc0X_JSw1aD6dmNUiP8l81Yps4th_Pvwj-cWiWqNepfml3MGUaXbwdp2b0MNHJXJO50So1_W8NcCrm1yBexA-tnDN"/>
-    <div className="absolute bottom-2 left-2 bg-primary-container/90 text-text-inverse px-2 py-0.5 rounded text-[10px] font-mono">
-                  [GOVERNANCE]
-                </div>
-    </div>
-    <span className="font-eyebrow text-eyebrow text-text-secondary uppercase">ADVISORY</span>
-    <h4 className="font-headline-md text-headline-md text-text-primary font-semibold mt-1">Advisory Mentor &amp; Governance</h4>
-    <p className="font-body-sm text-body-sm text-text-secondary mt-2 flex-grow">
-                [Placeholder: Civic Strategy &amp; Legal Advisor]. Provides institutional oversight, compliance auditing, and long-term legal sustainability mentorship.
-              </p>
-    <div className="mt-4 pt-3 border-t border-border-subtle/60 text-xs text-text-secondary flex items-center justify-between">
-    <span>Governance Council</span>
-    <Icon name="gavel" className="material-symbols-outlined text-sm" />
-    </div>
-    </div>
+    <span className="font-eyebrow text-eyebrow text-text-secondary uppercase">DIRECTOR</span>
+    <h3 className="font-headline-md text-headline-md text-text-primary font-semibold mt-1">Director 2 — Name Pending</h3>
+    <p className="mt-2 font-body-sm text-body-sm text-text-secondary">Awaiting official details</p>
+    </article>
     </div>
     
     <div className="mt-8 p-4 rounded-xl bg-surface-raised border border-border-subtle flex items-center gap-3 text-text-secondary text-sm">

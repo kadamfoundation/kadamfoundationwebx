@@ -1,4 +1,6 @@
 import Icon from '@/components/Icon';
+import ImagePlaceholder from '@/components/ImagePlaceholder';
+import { CONTACT_INFO } from '@/lib/site-config';
 
 export default function HomePage() {
   return (
@@ -45,7 +47,7 @@ export default function HomePage() {
     <p className="font-body-sm text-body-sm text-text-secondary">Cities Reached</p>
     </div>
     <div className="border-l border-border-subtle pl-4 sm:pl-8">
-    <p className="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">700+</p>
+    <p className="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">1,000</p>
     <p className="font-body-sm text-body-sm text-text-secondary">Lives Impacted</p>
     </div>
     </div>
@@ -55,7 +57,7 @@ export default function HomePage() {
     <div className="lg:col-span-5 relative">
     <div className="relative rounded-[22px] overflow-hidden border border-border-subtle shadow-sm bg-surface-raised p-2">
     <div className="rounded-[18px] overflow-hidden aspect-[4/5] relative">
-    <img className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="A warm, authentic documentary photograph depicting Indian youth community volunteers in New Delhi conducting an open-air community workshop. Warm golden morning sunlight washes over the tactile terracotta background, highlighting smiling faces, paper notebooks, and vibrant community banners. The atmosphere is grounded, deeply empathetic, and editorial in nature." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBumv0brM_rWdaO4oKzcdRRD4LFhQsUdUDZn1QOxr6mZfR95Jyp7jFsb0qWS9tkkgIfpUuM4hM96d_LmEwT2VzSQ41jm7f94qurvfLH7iRnWJTGA20_G6VhR_r8SvArD-jg7zMejd-1fF_aSvNzX-LgyylC-rZ9pjCKvQp-QcWAYBuoaOmpi0MYssyPigRXyvYj4aBW2bt2zdJhfxOBCGDE2qXtJUB55SkolQ58hBRlwgq-V9bgTB2Y"/>
+    <ImagePlaceholder alt="Photo placeholder for the homepage community drive; approved Kadam volunteer photograph pending." />
     <div className="absolute inset-0 bg-gradient-to-t from-[#281819]/60 via-transparent to-transparent"></div>
     <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-surface-raised/95 backdrop-blur-sm border border-border-subtle">
     <p className="font-label-md text-label-md text-text-primary font-semibold flex items-center gap-1.5">
@@ -246,7 +248,7 @@ export default function HomePage() {
     </div>
     
     <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-[#3F2C2E]/60 border border-white/15 flex items-center justify-center p-4">
-    <img className="w-full h-full object-cover opacity-85" data-alt="A stylized, warm-toned editorial map graphic of India rendered in terracotta, parchment, and charcoal lines. Illuminated node points glow softly across Northern and Western regions representing youth community chapters, connected by delicate dashed lines symbolizing national solidarity." data-location="India" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcrKPvaQV2nV1VuD3d73MdnVWIhd3r-Oqi0RylcEFg22N_-oEzYrwFZaqVP3SUT64dsjHD2Wx9Swm6QPSaAt-U29-sJNVRl2b7MPS6tide8o5P7gAWoIC5qVzw1zWrp5U191Ltlj-v91k0X-ApAIeDgvISg3A2_sh-_ITnGnyYHu9DJSumkkXwQwy--40ZwRvH0__sriVOTWQiaQubDXDqwtgXR8KiijzTFUNLJb1Tem95QkhRVPxQ"/>
+    <ImagePlaceholder alt="India chapter map placeholder; verified organizational map pending." label="Map pending" className="bg-primary-container text-text-inverse opacity-85" />
     
     <div className="absolute inset-0 p-6 flex flex-col justify-between pointer-events-none">
     <div className="flex justify-end">
@@ -289,7 +291,7 @@ export default function HomePage() {
     
     <div className="md:col-span-5">
     <div className="relative rounded-2xl overflow-hidden aspect-square border border-border-subtle bg-surface-clay-soft">
-    <img className="w-full h-full object-cover" data-alt="An authentic, dignified portrait of a young Indian woman community participant smiling warmly outdoors in New Delhi. Dressed in modest everyday attire, the natural soft sunlight highlights her sincere expression, with warm earth tones, clay-textured walls, and soft greenery in the background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9cPGEZSxJ1I1ntlAGdI-hnN1R2ZB58cP1ivhRXt0fLDadwo6KMHy7edPOkH6zpTUYv-SAJgF4_9qRLYKIG-6z-Be20uxbg4OWSSqyJgvXqHr1Z25acpi70UosAYcak0A4V7f1t1IA7K6ZMfEBhtyW6Sl__jVKMWa7Hdp2bR0cM45jnvlK-Ue4OlvE1S2R_XJS0kfwHj0QiNaLDUjUfwaQWVtts-bPWx8CKxrZWANi7_xwKyqpMzqz"/>
+    <ImagePlaceholder alt="Photo placeholder for the community participant story; approved participant image pending." />
     <div className="absolute bottom-3 left-3 bg-[#3F2C2E] text-white px-3 py-1 rounded-full text-xs font-medium">
                     Participant Voice
                   </div>
@@ -378,7 +380,7 @@ export default function HomePage() {
                   </p>
     </div>
     <div className="pt-8">
-    <a className="w-full inline-flex items-center justify-center px-6 py-3 rounded-full bg-transparent border border-text-primary text-text-primary font-label-md text-label-md hover:bg-surface-canvas transition-colors focus:ring-2 focus:ring-focus-ring" href="mailto:contact@kadamfoundation.org">
+    <a className="w-full inline-flex items-center justify-center px-6 py-3 rounded-full bg-transparent border border-text-primary text-text-primary font-label-md text-label-md hover:bg-surface-canvas transition-colors focus:ring-2 focus:ring-focus-ring" href={CONTACT_INFO.emailHref}>
                     Get in Touch
                   </a>
     </div>

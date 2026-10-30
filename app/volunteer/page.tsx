@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Icon from '@/components/Icon';
+import ImagePlaceholder from '@/components/ImagePlaceholder';
 
 export default function VolunteerPage() {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -72,7 +73,7 @@ export default function VolunteerPage() {
       <div className="lg:col-span-5 relative">
         <div className="relative rounded-2xl overflow-hidden border border-border-subtle bg-surface-raised shadow-sm p-3">
           <div className="relative rounded-xl overflow-hidden aspect-[4/5] bg-surface-clay-soft">
-            <img className="w-full h-full object-cover" data-alt="An authentic, warmly lit grassroots photograph of Indian youth volunteers and young children engaged in an interactive weekend open-air learning circle. The setting is a clean, sunny community courtyard with textured terracotta brick walls in warm daylight. Young collegiate facilitators are smiling, sitting on colorful woven floor mats, teaching with handmade illustrated flashcards. The overall aesthetic feels empathetic, tactile, and documentary-style, matching warm peach and clay brand tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4QdWScekR1l2FpQ-tfQ7Ke7Qa3oCTVHA07nPNAt7rF-49S7wZ-Eu2xv-_qRB9uV5ejalD1OvC3Ci6zHLSfUocbsAkgfqqhcumUSEP3EJoaQF1_EEWlU8ivhS8Zo0oWrfz3HOXDSGJcdsnxUKYnamqwGr4JfKdskDI2Q6-C3LnLfq1Je4qhJMALvropKPLCnsm1wQbuHpii6hZ_ZgB2zn7Bd-77VBSyB1Nzea6Ice4pKTd89n3nG3z" />
+            <ImagePlaceholder alt="Photo placeholder for the Volunteer page learning-circle feature; approved Kadam volunteer photograph pending." />
             <div className="absolute inset-0 bg-gradient-to-t from-text-primary/75 via-transparent to-transparent"></div>
             <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-surface-raised/95 border border-border-subtle backdrop-blur-sm">
               <div className="flex items-center gap-3">

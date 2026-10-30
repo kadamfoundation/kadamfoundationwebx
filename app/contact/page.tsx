@@ -1,4 +1,5 @@
 import Icon from '@/components/Icon';
+import { CONTACT_INFO, SOCIAL_LINKS } from '@/lib/site-config';
 
 export default function ContactPage() {
   return (
@@ -18,12 +19,10 @@ export default function ContactPage() {
         Whether you represent a collegiate partner, community youth group, local panchayat, or prospective volunteer, direct conversations fuel our work. Reach out directly through our verified operational desks.
       </p>
       <div className="flex items-center gap-3 p-4 rounded-xl bg-surface-raised border border-border-subtle text-text-secondary">
-        <Icon name="schedule" className="material-symbols-outlined text-primary text-xl" />
+        <Icon name="location_on" className="material-symbols-outlined text-primary text-xl" />
         <p className="font-body-sm text-body-sm text-primary font-medium">
-          <span className="font-semibold text-primary">
-            Verified response window:
-          </span>
-          {' '}Monday to Saturday, 10:00 AM – 6:00 PM IST.
+          <span className="font-semibold text-primary">Office address: </span>
+          {CONTACT_INFO.officeAddress}
         </p>
       </div>
     </div>
@@ -46,11 +45,11 @@ export default function ContactPage() {
           </p>
           <div className="p-3.5 rounded-lg bg-surface-canvas/80 border border-border-subtle mb-6">
             <span className="font-label-md text-label-md text-primary font-semibold block tracking-tight">
-              +91 [Placeholder: Official Office Phone Number]
+              {CONTACT_INFO.phone}
             </span>
           </div>
         </div>
-        <a className="inline-flex items-center justify-center gap-2 w-full py-3.5 px-5 rounded-full border border-primary text-primary font-label-md text-label-md font-medium hover:bg-surface-peach transition-colors active:scale-95 duration-150" href="tel:#">
+        <a className="inline-flex items-center justify-center gap-2 w-full py-3.5 px-5 rounded-full border border-primary text-primary font-label-md text-label-md font-medium hover:bg-surface-peach transition-colors active:scale-95 duration-150" href={CONTACT_INFO.phoneHref}>
           <Icon name="phone_forwarded" className="material-symbols-outlined text-lg" />
           <span>
             Call Our Desk
@@ -69,21 +68,21 @@ export default function ContactPage() {
             Rapid Messaging
           </span>
           <h3 className="font-headline-lg text-headline-lg text-primary mb-3">
-            Instant WhatsApp Chat
+            WhatsApp Community
           </h3>
           <p className="font-body-sm text-body-sm text-text-secondary mb-6 leading-relaxed">
-            Quickest channel for youth volunteers, pod updates, meeting dispatches, and urgent field messages.
+            Join the official Kadam Foundation WhatsApp community.
           </p>
           <div className="p-3.5 rounded-lg bg-surface-raised border border-border-subtle mb-6">
             <span className="font-label-md text-label-md text-primary font-semibold block tracking-tight">
-              +91 [Placeholder: Official WhatsApp Desk Link]
+              Kadam Foundation Community
             </span>
           </div>
         </div>
-        <a className="inline-flex items-center justify-center gap-2 w-full py-3.5 px-5 rounded-full bg-primary-container text-text-inverse font-label-md text-label-md font-medium hover:bg-action-hover transition-colors shadow-sm active:scale-95 duration-150" href="#">
+        <a className="inline-flex items-center justify-center gap-2 w-full py-3.5 px-5 rounded-full bg-primary-container text-text-inverse font-label-md text-label-md font-medium hover:bg-action-hover transition-colors shadow-sm active:scale-95 duration-150" href={CONTACT_INFO.whatsappUrl} target="_blank" rel="noopener noreferrer">
           <Icon name="chat" className="material-symbols-outlined text-lg" />
           <span>
-            Chat on WhatsApp
+            Join WhatsApp Community
           </span>
         </a>
       </div>
@@ -103,11 +102,11 @@ export default function ContactPage() {
           </p>
           <div className="p-3.5 rounded-lg bg-surface-canvas/80 border border-border-subtle mb-6">
             <span className="font-label-md text-label-md text-primary font-semibold block tracking-tight">
-              contact@[Placeholder:kadamfoundation.org]
+              {CONTACT_INFO.email}
             </span>
           </div>
         </div>
-        <a className="inline-flex items-center justify-center gap-2 w-full py-3.5 px-5 rounded-full border border-primary text-primary font-label-md text-label-md font-medium hover:bg-surface-peach transition-colors active:scale-95 duration-150" href="mailto:contact@placeholder">
+        <a className="inline-flex items-center justify-center gap-2 w-full py-3.5 px-5 rounded-full border border-primary text-primary font-label-md text-label-md font-medium hover:bg-surface-peach transition-colors active:scale-95 duration-150" href={CONTACT_INFO.emailHref}>
           <Icon name="send" className="material-symbols-outlined text-lg" />
           <span>
             Send an Email
@@ -135,32 +134,28 @@ export default function ContactPage() {
                 <Icon name="domain" className="material-symbols-outlined text-primary mt-1" />
                 <div>
                   <h4 className="font-label-md text-label-md font-semibold text-primary">
-                    Registered Address
+                    Office Address
                   </h4>
                   <p className="font-body-sm text-body-sm mt-0.5 leading-relaxed">
-                    Kadam Foundation Registered Office: [Placeholder: Official Registered Address, Sector / Street, New Delhi, India - Pin Code]
+                    {CONTACT_INFO.officeAddress}
                   </p>
                 </div>
               </div>
               <div className="flex items-start gap-3.5">
-                <Icon name="hourglass_top" className="material-symbols-outlined text-primary mt-1" />
+                <Icon name="call" className="material-symbols-outlined text-primary mt-1" />
                 <div>
-                  <h4 className="font-label-md text-label-md font-semibold text-primary">
-                    Operational Hours
-                  </h4>
+                  <h4 className="font-label-md text-label-md font-semibold text-primary">Phone</h4>
                   <p className="font-body-sm text-body-sm mt-0.5 leading-relaxed">
-                    Monday – Saturday, 10:00 AM to 6:00 PM (Prior appointment recommended for field coordination meetings).
+                    <a className="hover:underline" href={CONTACT_INFO.phoneHref}>{CONTACT_INFO.phone}</a>
                   </p>
                 </div>
               </div>
               <div className="flex items-start gap-3.5">
-                <Icon name="directions_subway" className="material-symbols-outlined text-primary mt-1" />
+                <Icon name="mail" className="material-symbols-outlined text-primary mt-1" />
                 <div>
-                  <h4 className="font-label-md text-label-md font-semibold text-primary">
-                    Public Transit Guidance
-                  </h4>
+                  <h4 className="font-label-md text-label-md font-semibold text-primary">Email</h4>
                   <p className="font-body-sm text-body-sm mt-0.5 leading-relaxed">
-                    [Placeholder: Nearest Metro Station / Landmark guidance will be provided upon verification].
+                    <a className="break-all hover:underline" href={CONTACT_INFO.emailHref}>{CONTACT_INFO.email}</a>
                   </p>
                 </div>
               </div>
@@ -191,7 +186,7 @@ export default function ContactPage() {
           <div className="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(#3F2C2E_1px,transparent_1px)] [background-size:16px_16px]"></div>
           <div className="relative z-10 w-full flex justify-end">
             <span className="px-3 py-1 bg-surface-raised rounded-full text-[11px] font-eyebrow font-medium text-text-secondary border border-border-subtle">
-              Sector Map v2.4
+              Office Location
             </span>
           </div>
           <div className="relative z-10 my-auto px-4">
@@ -199,12 +194,12 @@ export default function ContactPage() {
               <Icon name="location_on" className="material-symbols-outlined text-3xl text-status-error" />
             </div>
             <h3 className="font-headline-md text-headline-md text-primary mb-2">
-              Secretariat Location
+              Bhopal Office
             </h3>
             <p className="font-body-sm text-body-sm text-text-secondary max-w-sm mx-auto mb-6">
-              [Placeholder: Interactive OpenStreetMap / Google Map Integration — Awaiting Official Geographic Coordinates]
+              {CONTACT_INFO.officeAddress}
             </p>
-            <a className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary-container text-text-inverse font-label-md text-label-md font-medium hover:bg-action-hover transition-colors shadow-sm" href="#">
+            <a className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary-container text-text-inverse font-label-md text-label-md font-medium hover:bg-action-hover transition-colors shadow-sm" href={CONTACT_INFO.mapUrl} target="_blank" rel="noopener noreferrer">
               <span>
                 Open in Google Maps
               </span>
@@ -212,7 +207,7 @@ export default function ContactPage() {
             </a>
           </div>
           <div className="relative z-10 text-xs font-eyebrow text-text-secondary/80">
-            Geo-verified field coordinates verified under registered bylaws
+            Open the supplied office address in Google Maps
           </div>
         </div>
       </div>
@@ -248,10 +243,10 @@ export default function ContactPage() {
             Pod inductions, chapter onboarding, college credits, attendance queries, and student mentor certificates.
           </p>
           <div className="text-xs font-mono bg-surface-canvas p-2.5 rounded-lg border border-border-subtle text-primary mb-4 break-all">
-            volunteer@[Placeholder:kadamfoundation.org]
+            {CONTACT_INFO.email}
           </div>
         </div>
-        <a className="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-semibold hover:text-action-hover group" href="mailto:volunteer@placeholder">
+        <a className="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-semibold hover:text-action-hover group" href={`${CONTACT_INFO.emailHref}?subject=Volunteer%20Coordination`}>
           <span>
             Email Volunteer Desk
           </span>
@@ -273,10 +268,10 @@ export default function ContactPage() {
             Pod curriculum, university chapter alliances, learning materials, stationery drives, and syllabus integration.
           </p>
           <div className="text-xs font-mono bg-surface-canvas p-2.5 rounded-lg border border-border-subtle text-primary mb-4 break-all">
-            programs@[Placeholder:kadamfoundation.org]
+            {CONTACT_INFO.email}
           </div>
         </div>
-        <a className="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-semibold hover:text-action-hover group" href="mailto:programs@placeholder">
+        <a className="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-semibold hover:text-action-hover group" href={`${CONTACT_INFO.emailHref}?subject=Programs`}>
           <span>
             Connect with Programs
           </span>
@@ -298,10 +293,10 @@ export default function ContactPage() {
             Corporate CSR partnerships, seed grants, statutory audit reports, library kits, and foundation endorsements.
           </p>
           <div className="text-xs font-mono bg-surface-canvas p-2.5 rounded-lg border border-border-subtle text-primary mb-4 break-all">
-            partnerships@[Placeholder:kadamfoundation.org]
+            {CONTACT_INFO.email}
           </div>
         </div>
-        <a className="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-semibold hover:text-action-hover group" href="mailto:partnerships@placeholder">
+        <a className="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-semibold hover:text-action-hover group" href={`${CONTACT_INFO.emailHref}?subject=Partnerships`}>
           <span>
             Inquire About Partnerships
           </span>
@@ -323,10 +318,10 @@ export default function ContactPage() {
             Press kits, photo journalism permissions, ethical child safeguarding clearances, and university media visits.
           </p>
           <div className="text-xs font-mono bg-surface-canvas p-2.5 rounded-lg border border-border-subtle text-primary mb-4 break-all">
-            media@[Placeholder:kadamfoundation.org]
+            {CONTACT_INFO.email}
           </div>
         </div>
-        <a className="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-semibold hover:text-action-hover group" href="mailto:media@placeholder">
+        <a className="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-semibold hover:text-action-hover group" href={`${CONTACT_INFO.emailHref}?subject=Media%20Inquiry`}>
           <span>
             Media Inquiries
           </span>
@@ -348,10 +343,10 @@ export default function ContactPage() {
             Institutional governance oversight, compliance under the Societies Registration Act, internal ombudsman complaints, and community feedback directly monitored by senior trustees.
           </p>
           <div className="text-xs font-mono bg-surface-canvas p-2.5 rounded-lg border border-border-subtle text-primary mb-4 inline-block">
-            governance@[Placeholder:kadamfoundation.org]
+            {CONTACT_INFO.email}
           </div>
         </div>
-        <a className="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-semibold hover:text-action-hover group mt-2" href="mailto:governance@placeholder">
+        <a className="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-semibold hover:text-action-hover group mt-2" href={`${CONTACT_INFO.emailHref}?subject=Governance`}>
           <span>
             Contact Governance Office
           </span>
@@ -375,90 +370,23 @@ export default function ContactPage() {
       </p>
     </div>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-      <a className="bg-surface-raised p-6 rounded-[18px] border border-border-subtle hover:border-primary transition-all group flex flex-col justify-between" href="#">
-        <div className="flex items-center justify-between mb-4">
-          <span className="font-headline-md text-headline-md text-primary font-bold">
-            Instagram
-          </span>
-          <Icon name="north_east" className="material-symbols-outlined text-primary group-hover:translate-x-0.5 transition-transform" />
-        </div>
-        <div className="text-xs font-mono text-primary font-medium mb-2">
-          @[Placeholder:kadam_foundation]
-        </div>
-        <p className="font-body-sm text-body-sm text-text-secondary">
-          Weekly photo dispatches, field moments, student reels, and volunteer weekend takeovers.
-        </p>
-      </a>
-      <a className="bg-surface-raised p-6 rounded-[18px] border border-border-subtle hover:border-primary transition-all group flex flex-col justify-between" href="#">
-        <div className="flex items-center justify-between mb-4">
-          <span className="font-headline-md text-headline-md text-primary font-bold">
-            YouTube
-          </span>
-          <Icon name="north_east" className="material-symbols-outlined text-primary group-hover:translate-x-0.5 transition-transform" />
-        </div>
-        <div className="text-xs font-mono text-primary font-medium mb-2">
-          [Placeholder: Kadam Foundation Official]
-        </div>
-        <p className="font-body-sm text-body-sm text-text-secondary">
-          Mini-documentaries, educator training keynotes, and youth leadership panel discussions.
-        </p>
-      </a>
-      <a className="bg-surface-raised p-6 rounded-[18px] border border-border-subtle hover:border-primary transition-all group flex flex-col justify-between" href="#">
-        <div className="flex items-center justify-between mb-4">
-          <span className="font-headline-md text-headline-md text-primary font-bold">
-            LinkedIn
-          </span>
-          <Icon name="north_east" className="material-symbols-outlined text-primary group-hover:translate-x-0.5 transition-transform" />
-        </div>
-        <div className="text-xs font-mono text-primary font-medium mb-2">
-          [Placeholder: Kadam Foundation Youth Collective]
-        </div>
-        <p className="font-body-sm text-body-sm text-text-secondary">
-          Fellowship recruitment drives, collegiate partnerships, and institutional research reports.
-        </p>
-      </a>
-      <a className="bg-surface-raised p-6 rounded-[18px] border border-border-subtle hover:border-primary transition-all group flex flex-col justify-between" href="#">
-        <div className="flex items-center justify-between mb-4">
-          <span className="font-headline-md text-headline-md text-primary font-bold">
-            Facebook
-          </span>
-          <Icon name="north_east" className="material-symbols-outlined text-primary group-hover:translate-x-0.5 transition-transform" />
-        </div>
-        <div className="text-xs font-mono text-primary font-medium mb-2">
-          [Placeholder: Kadam Foundation India]
-        </div>
-        <p className="font-body-sm text-body-sm text-text-secondary">
-          Community townhall livestreams, parent-teacher pod forums, and regional chapter notes.
-        </p>
-      </a>
-      <a className="bg-surface-raised p-6 rounded-[18px] border border-border-subtle hover:border-primary transition-all group flex flex-col justify-between" href="#">
-        <div className="flex items-center justify-between mb-4">
-          <span className="font-headline-md text-headline-md text-primary font-bold">
-            Telegram Broadcast
-          </span>
-          <Icon name="north_east" className="material-symbols-outlined text-primary group-hover:translate-x-0.5 transition-transform" />
-        </div>
-        <div className="text-xs font-mono text-primary font-medium mb-2">
-          [Placeholder: Kadam Volunteers Broadcast]
-        </div>
-        <p className="font-body-sm text-body-sm text-text-secondary">
-          Real-time volunteer alerts, urgent weekend supply calls, and immediate field updates.
-        </p>
-      </a>
-      <a className="bg-surface-raised p-6 rounded-[18px] border border-border-subtle hover:border-primary transition-all group flex flex-col justify-between" href="#">
-        <div className="flex items-center justify-between mb-4">
-          <span className="font-headline-md text-headline-md text-primary font-bold">
-            X (formerly Twitter)
-          </span>
-          <Icon name="north_east" className="material-symbols-outlined text-primary group-hover:translate-x-0.5 transition-transform" />
-        </div>
-        <div className="text-xs font-mono text-primary font-medium mb-2">
-          @[Placeholder:kadam_foundation]
-        </div>
-        <p className="font-body-sm text-body-sm text-text-secondary">
-          Civic advocacy statements, public policy commentary, and local municipal outreach tags.
-        </p>
-      </a>
+      {SOCIAL_LINKS.map(({ name, href, icon }) => (
+        <a
+          key={name}
+          className="bg-surface-raised p-6 rounded-[18px] border border-border-subtle hover:border-primary transition-all group flex flex-col justify-between"
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="flex items-center justify-between mb-4">
+            <span className="font-headline-md text-headline-md text-primary font-bold">{name}</span>
+            <Icon name={icon} className="text-primary group-hover:translate-x-0.5 transition-transform text-xl" />
+          </div>
+          <p className="font-body-sm text-body-sm text-text-secondary">
+            Visit the official Kadam Foundation {name} channel.
+          </p>
+        </a>
+      ))}
     </div>
   </section>
   <section className="w-full px-space-lg md:px-margin max-w-7xl mx-auto pb-24">
