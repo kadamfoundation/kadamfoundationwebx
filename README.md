@@ -1,20 +1,83 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Kadam Foundation
 
-# Run and deploy your AI Studio app
+Kadam Foundation is a youth-led nonprofit organization working at the grassroots to create lasting social impact across India. This project is the public website for the foundation, designed to share its mission, programs, success stories, team, volunteer opportunities, and ways to support the work.
 
-This contains everything you need to run your app locally.
+## About the website
 
-View your app in AI Studio: https://ai.studio/apps/0bb30407-dd3b-4148-96e1-4866b53131e4
+The website presents Kadam Foundation as a community-driven initiative focused on:
 
-## Run Locally
+- Education and child literacy
+- Women empowerment and skill-building
+- Community outreach and volunteer engagement
+- Storytelling and impact reporting
+- Donations and partnership opportunities
 
-**Prerequisites:**  Node.js
+Key sections include:
 
+- Home
+- About
+- Programs
+- Stories
+- Gallery
+- Team
+- Volunteer
+- Donate
+- Contact
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Tech stack
+
+- Next.js 15
+- React 19
+- TypeScript
+- Tailwind CSS
+- Local image and content assets
+
+## Local development
+
+Prerequisites:
+
+- Node.js 18+
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the local development server:
+
+```bash
+npm run dev
+```
+
+Then open http://localhost:3000 in your browser.
+
+## Production build
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+To run the production server:
+
+```bash
+npm run start
+```
+
+## Project structure
+
+```text
+app/              # App routes and page components
+components/       # Reusable UI components
+lib/              # Site configuration and shared data
+public/           # Static public assets
+photos/           # Project image assets
+next.config.ts    # Next.js configuration
+package.json      # Scripts and dependencies
+```
+
+## Notes
+
+This site is a static marketing and community-impact website; no additional API keys are required for normal local development. The repository includes an example environment file for compatibility with AI Studio-style setups, but the frontend itself does not depend on external service credentials to run locally.
