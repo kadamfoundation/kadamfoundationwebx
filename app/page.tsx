@@ -2,8 +2,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Icon from '@/components/Icon';
 import ImpactMetrics from '@/components/ImpactMetrics';
+import JsonLd from '@/components/JsonLd';
 import { CENTRAL_LEADERSHIP, CITY_TEAMS } from '@/lib/team-data';
 import { VOLUNTEER_FORM_URL } from '@/lib/site-config';
+import { organizationStructuredData } from '@/lib/structured-data';
 
 const programs = [
   {
@@ -37,6 +39,7 @@ export default function HomePage() {
 
   return (
     <main>
+      <JsonLd data={organizationStructuredData} />
       <section className="relative isolate min-h-[min(760px,calc(100svh-5rem))] overflow-hidden bg-primary-container text-text-inverse">
         <Image
           src="/images/homepage/kadam-hero.jpg"
@@ -250,10 +253,10 @@ export default function HomePage() {
               ))}
             </div>
             <Link
-              href="/team"
+              href="/founder"
               className="group mt-6 inline-flex items-center gap-2 font-label-md text-label-md font-semibold text-primary"
             >
-              Meet the leadership
+              Read the founder&apos;s story
               <Icon name="arrow_outward" className="text-base transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
             </Link>
           </div>
@@ -266,9 +269,12 @@ export default function HomePage() {
               sizes="(min-width: 1024px) 58vw, 100vw"
               className="editorial-image object-cover object-[center_38%]"
             />
-            <span className="absolute bottom-4 left-4 bg-surface-raised px-4 py-2 font-eyebrow text-eyebrow uppercase tracking-widest text-primary">
+            <Link
+              href="/founder"
+              className="absolute bottom-4 left-4 bg-surface-raised px-4 py-2 font-eyebrow text-eyebrow uppercase tracking-widest text-primary hover:text-secondary"
+            >
               Ms. Prachi Dwivedi · Founder
-            </span>
+            </Link>
           </div>
         </div>
       </section>

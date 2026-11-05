@@ -4,6 +4,7 @@ import { SITE_URL } from '@/lib/seo';
 const publicRoutes = [
   { path: '/', priority: 1 },
   { path: '/about', priority: 0.9 },
+  { path: '/founder', priority: 0.8 },
   { path: '/stories', priority: 0.8 },
   { path: '/partners', priority: 0.7 },
   { path: '/team', priority: 0.7 },

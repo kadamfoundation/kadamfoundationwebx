@@ -44,7 +44,7 @@ export default function TeamPage() {
               )}
             </div>
             <div className="lg:col-span-5 lg:col-start-8">
-              <p className="font-eyebrow text-eyebrow uppercase tracking-[0.18em] text-surface-peach">
+              <p className="font-eyebrow text-eyebrow uppercase tracking-[0.18em] text-primary">
                 Founder
               </p>
               <h2 className="mt-3 font-display-lg text-[clamp(2.2rem,4vw,3.8rem)] font-medium leading-[1.05] text-white">
@@ -56,10 +56,10 @@ export default function TeamPage() {
                 of the foundation&apos;s work.
               </p>
               <a
-                href="/about#story"
+                href="/founder"
                 className="group mt-7 inline-flex items-center gap-2 border-b border-white/50 pb-1 font-label-md text-label-md font-semibold text-white"
               >
-                Read the story
+                Read the founder&apos;s biography
                 <Icon
                   name="arrow_outward"
                   className="text-base transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"

@@ -46,7 +46,7 @@ export default function Footer() {
           ))}
           <Link
             href="/donate"
-            className="text-sm font-semibold text-text-inverse transition-colors hover:text-surface-peach"
+            className="text-sm font-semibold text-text-inverse transition-colors hover:text-primary"
           >
             Donate
           </Link>
