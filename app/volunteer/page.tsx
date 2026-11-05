@@ -937,17 +937,6 @@ export default function VolunteerPage() {
             Yes! Our Technical Backbone, Communications, Design, and Research clusters support hybrid or fully remote schedules. You can contribute to web maintenance, data management, curriculum drafting, or impact reporting from anywhere.
           </div>
         </div>
-        <div className="faq-item border border-border-subtle rounded-xl bg-surface-canvas overflow-hidden transition-colors">
-          <button className="faq-btn w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-focus-ring" aria-expanded={openFaq === 5} onClick={() => setOpenFaq(openFaq === 5 ? null : 5)}>
-            <span className="font-headline-md text-[18px] text-text-primary font-semibold">
-              Is there any registration fee to volunteer?
-            </span>
-            <Icon name="expand_more" className="material-symbols-outlined text-text-secondary transition-transform duration-200 faq-icon" style={{ transform: openFaq === 5 ? 'rotate(180deg)' : 'rotate(0deg)' }} />
-          </button>
-          <div className={openFaq === 5 ? "faq-content px-6 pb-5 pt-1 text-text-secondary font-body-md text-body-md border-t border-border-subtle/50" : "faq-content hidden px-6 pb-5 pt-1 text-text-secondary font-body-md text-body-md border-t border-border-subtle/50"}>
-            Never. Volunteering with Kadam Foundation is 100% free and voluntary. We never charge for onboarding, training kits, or experience certifications.
-          </div>
-        </div>
       </div>
     </div>
   </section>
