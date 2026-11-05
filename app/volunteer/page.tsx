@@ -967,7 +967,7 @@ export default function VolunteerPage() {
           Register as a Volunteer ↗{' '}
           <Icon name="north_east" className="material-symbols-outlined ml-2 text-[20px] transition-transform duration-150 group-hover:translate-x-1" />
         </a>
-        <a className="inline-flex items-center justify-center font-label-md text-label-md font-semibold bg-surface-raised border border-text-primary text-text-primary h-14 px-8 rounded-full hover:bg-surface-peach transition-colors focus:outline-none focus:ring-2 focus:ring-focus-ring" href="/programs">
+        <a className="inline-flex items-center justify-center font-label-md text-label-md font-semibold bg-surface-raised border border-text-primary text-text-primary h-14 px-8 rounded-full hover:bg-surface-peach transition-colors focus:outline-none focus:ring-2 focus:ring-focus-ring" href="/about#our-work">
           View All Focus Areas
         </a>
       </div>

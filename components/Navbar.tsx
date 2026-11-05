@@ -2,15 +2,16 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import Icon from '@/components/Icon';
 import VolunteerDialog from '@/components/VolunteerDialog';
 
 const NAV_LINKS = [
   { href: '/', label: 'Home' },
-  { href: '/about', label: 'About' },
-  { href: '/programs', label: 'Programs' },
-  { href: '/stories', label: 'Stories' },
+  { href: '/about', label: 'About Us' },
+  { href: '/stories', label: 'Stories & Events' },
+  { href: '/partners', label: 'Partnerships' },
   { href: '/team', label: 'Leadership' },
   { href: '/contact', label: 'Contact' },
 ];
@@ -27,11 +28,14 @@ export default function Navbar() {
           href="/"
           className="group flex min-w-0 items-center gap-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-focus-ring"
         >
-          <span
-            aria-hidden="true"
-            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-primary/50 bg-surface-peach text-primary transition-colors group-hover:bg-primary group-hover:text-inverse-primary md:h-12 md:w-12"
-          >
-            <Icon name="footprint" className="text-xl" />
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white md:h-12 md:w-12">
+            <Image
+              src="/images/kadam-logo.jpg"
+              alt=""
+              width={48}
+              height={48}
+              className="h-full w-full object-contain"
+            />
           </span>
           <span className="flex min-w-0 flex-col">
             <span className="truncate font-serif text-base font-bold leading-none tracking-tight text-primary sm:text-lg md:text-xl">

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Icon from '@/components/Icon';
+import ImpactMetrics from '@/components/ImpactMetrics';
 import { CENTRAL_LEADERSHIP, CITY_TEAMS } from '@/lib/team-data';
 import { VOLUNTEER_FORM_URL } from '@/lib/site-config';
 
@@ -10,7 +11,7 @@ const programs = [
     detail: 'Learning support and youth mentorship for children in underserved communities.',
     image: '/images/programs/project-shiksha.jpg',
     imageAlt: 'Children gathered for a Project Shiksha learning session',
-    href: '/programs#project-shiksha',
+    href: '/about#project-shiksha',
     label: 'Project Shiksha',
   },
   {
@@ -18,7 +19,7 @@ const programs = [
     detail: 'Skills, financial literacy, and community learning for women.',
     image: '/images/programs/women-empowerment.jpg',
     imageAlt: 'Women attending a Kadam Foundation empowerment session',
-    href: '/programs#women-empowerment',
+    href: '/about#women-empowerment',
     label: 'Women Empowerment',
   },
   {
@@ -26,7 +27,7 @@ const programs = [
     detail: 'Young people connect with communities through learning and local action.',
     image: '/images/programs/project-samanvay-field-activity.jpg',
     imageAlt: 'Kadam Foundation team members at a community event',
-    href: '/programs#project-samanvay',
+    href: '/about#project-samanvay',
     label: 'Project Samanvay',
   },
 ];
@@ -101,10 +102,10 @@ export default function HomePage() {
               </h2>
             </div>
             <Link
-              href="/programs"
+              href="/about#our-work"
               className="group inline-flex items-center gap-2 self-start border-b border-primary pb-1 font-label-md text-label-md font-semibold text-primary transition-colors hover:text-secondary md:self-auto"
             >
-              Explore all programs
+              Explore our work
               <Icon name="arrow_outward" className="text-base transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
             </Link>
           </div>
@@ -275,7 +276,7 @@ export default function HomePage() {
       <section className="bg-primary-container px-space-lg py-20 text-text-inverse sm:px-margin md:py-28">
         <div className="mx-auto grid max-w-[90rem] gap-10 lg:grid-cols-12 lg:items-center">
           <div className="lg:col-span-5">
-            <p className="font-eyebrow text-eyebrow uppercase tracking-[0.18em] text-surface-peach">
+            <p className="font-eyebrow text-eyebrow uppercase tracking-[0.18em] text-primary">
               A nationwide movement
             </p>
             <h2 className="mt-3 font-display-lg text-[clamp(2.2rem,4vw,3.8rem)] font-medium leading-[1.06] text-white">
@@ -290,7 +291,7 @@ export default function HomePage() {
                   {city.name}
                 </span>
               ))}
-              <span className="font-body-sm text-body-sm text-surface-peach">and more</span>
+              <span className="font-body-sm text-body-sm text-primary">and more</span>
             </div>
             <Link
               href="/team"
@@ -310,6 +311,7 @@ export default function HomePage() {
               className="dark-map-image object-contain p-2 sm:p-5"
             />
           </div>
+          <ImpactMetrics />
         </div>
       </section>
 

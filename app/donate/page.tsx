@@ -15,54 +15,67 @@ export default function DonatePage() {
       </span>
     </div>
     <h1 className="font-display-lg md:font-display-xl text-display-lg-mobile md:text-display-xl text-primary font-semibold max-w-4xl mx-auto leading-tight mb-6">
-      Every Contribution Moves Us Forward
+      Support Kadam Foundation
     </h1>
     <p className="font-body-lg text-body-lg text-text-secondary max-w-2xl mx-auto leading-relaxed mb-10">
-      A heartfelt invitation to sustain Kadam Foundation’s youth-led, decentralized grassroots mission. We channel community solidarity directly to children&apos;s weekend learning pods, civic organizing cohorts, and frontline community circles across informal settlements.
+      Your support helps Kadam Foundation continue its community work in education, women&apos;s empowerment, and youth development. Share your interest through our donation enquiry form, and our team will follow up with next steps.
     </p>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
-      <div className="flex items-center gap-3.5 p-4 rounded-2xl bg-surface-raised border border-border-subtle text-left">
-        <div className="w-10 h-10 rounded-full bg-surface-clay-soft flex items-center justify-center shrink-0 text-primary">
-          <Icon name="handshake" className="material-symbols-outlined text-[20px]" />
-        </div>
-        <div>
-          <h4 className="font-label-md text-label-md font-semibold text-primary">
-            Direct Grassroots Impact
-          </h4>
-          <p className="font-body-sm text-body-sm text-text-secondary">
-            Direct support to frontline settlement pods
-          </p>
-        </div>
+  </section>
+
+  <section className="px-space-lg pb-16 md:px-margin md:pb-20">
+    <div className="mx-auto max-w-4xl">
+      <div className="mb-5 border-l-2 border-primary bg-surface-raised px-5 py-4 md:px-6">
+        <p className="font-label-md text-label-md font-semibold text-primary">
+          This is a donation enquiry form, not an online payment gateway.
+        </p>
+        <p className="mt-2 font-body-sm text-body-sm leading-relaxed text-text-secondary">
+          Submitting this form expresses your interest in supporting Kadam Foundation. Our team will contact you with donation and payment instructions. Your donation is considered complete only after payment is received and verified.
+        </p>
       </div>
-      <div className="flex items-center gap-3.5 p-4 rounded-2xl bg-surface-raised border border-border-subtle text-left">
-        <div className="w-10 h-10 rounded-full bg-surface-olive-soft flex items-center justify-center shrink-0 text-primary">
-          <Icon name="verified_user" className="material-symbols-outlined text-[20px]" />
-        </div>
-        <div>
-          <h4 className="font-label-md text-label-md font-semibold text-primary">
-            Youth &amp; Community Governed
-          </h4>
-          <p className="font-body-sm text-body-sm text-text-secondary">
-            Accountable to student volunteers and parents
-          </p>
-        </div>
+
+      <div className="w-full overflow-hidden border border-border-subtle bg-surface-raised">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSdPDdouVBfm9L55DNl1-JiR1G9MJjnmBZcxqjzhOstSwjzTTQ/viewform?embedded=true"
+          title="Kadam Foundation Donation Enquiry Form"
+          width="100%"
+          height={1850}
+          frameBorder={0}
+          marginHeight={0}
+          marginWidth={0}
+          scrolling="yes"
+          loading="lazy"
+          className="block w-full max-w-full border-0"
+        >
+          Loading…
+        </iframe>
       </div>
-      <div className="flex items-center gap-3.5 p-4 rounded-2xl bg-surface-raised border border-border-subtle text-left">
-        <div className="w-10 h-10 rounded-full bg-surface-lilac-soft flex items-center justify-center shrink-0 text-primary">
-          <Icon name="nest_eco_leaf" className="material-symbols-outlined text-[20px]" />
-        </div>
-        <div>
-          <h4 className="font-label-md text-label-md font-semibold text-primary">
-            Zero Overhead Leaks
-          </h4>
-          <p className="font-body-sm text-body-sm text-text-secondary">
-            100% focused on direct frontline materials
-          </p>
-        </div>
-      </div>
+      <p className="mt-4 text-center font-body-sm text-body-sm text-text-secondary">
+        If the form does not load,{' '}
+        <a
+          href="https://forms.gle/iiCJXcZRd3nfidWQA"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold text-primary underline underline-offset-4 hover:text-secondary"
+        >
+          open the donation enquiry form in a new tab
+        </a>
+        .
+      </p>
     </div>
   </section>
+
   <section className="pb-16 md:pb-24 px-space-lg md:px-margin max-w-7xl mx-auto">
+    <div className="mb-8 max-w-3xl">
+      <p className="font-eyebrow text-eyebrow uppercase tracking-wider text-secondary">
+        Optional direct donation
+      </p>
+      <h2 className="mt-2 font-display-lg text-display-lg-mobile font-semibold text-primary md:text-display-lg">
+        Prefer to donate directly by UPI?
+      </h2>
+      <p className="mt-3 font-body-md text-body-md text-text-secondary">
+        You may use the QR code below instead of submitting an enquiry. This direct payment option is separate from the enquiry form above.
+      </p>
+    </div>
     <div className="bg-surface-raised border border-border-subtle rounded-3xl p-6 md:p-12 shadow-sm">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         <div className="lg:col-span-7 flex flex-col items-center text-center">
@@ -96,13 +109,13 @@ export default function DonatePage() {
         <div className="lg:col-span-5 space-y-6">
           <div>
             <div className="font-eyebrow text-eyebrow text-secondary uppercase tracking-wider mb-2">
-              Straightforward &amp; Zero Gateway Fees
+              Direct UPI option
             </div>
             <h2 className="font-headline-xl text-headline-xl text-primary font-semibold">
-              How to Make Your Contribution
+              Make a Direct Contribution
             </h2>
             <p className="font-body-md text-body-md text-text-secondary mt-2">
-              We purposefully bypass high-fee corporate donation portals. Every rupee or currency unit sent via UPI reaches our operations directly, leaving 100% of your generous support in frontline community hands.
+              To donate directly, scan the official Kadam Foundation QR code and complete your payment through your UPI app. Your donation is complete only after payment is received and verified.
             </p>
           </div>
           <div className="space-y-4">
@@ -344,13 +357,23 @@ export default function DonatePage() {
             Our Commitment to Clean Governance
           </h3>
           <p className="font-body-sm text-body-sm text-text-secondary mt-1.5 max-w-2xl leading-relaxed">
-            Kadam SOS Foundation is a Section 8 Company with 12A and 80G certifications. We honor the trust of every youth volunteer, parent, and benefactor who walks with us.
+            Kadam SOS Foundation is a Section 8 Company with 12A and 80G certifications. Submitting an enquiry does not issue a donation receipt or 80G certificate; please contact the foundation about documentation. Any tax treatment depends on applicable rules.
           </p>
         </div>
       </div>
       <a className="shrink-0 px-5 py-2.5 rounded-full border border-primary text-primary hover:bg-primary hover:text-inverse-primary font-label-md text-label-md font-medium transition-all duration-150" href={`${CONTACT_INFO.emailHref}?subject=Financial%20and%20Compliance%20Documents`}>
         Request Financial &amp; Compliance Documents
       </a>
+    </div>
+  </section>
+  <section className="px-space-lg pb-16 md:px-margin md:pb-20">
+    <div className="mx-auto max-w-4xl border-t border-border-subtle pt-8 text-center">
+      <p className="font-headline-md text-headline-md font-semibold text-primary">
+        Thank you for considering supporting Kadam Foundation.
+      </p>
+      <p className="mt-2 font-body-sm text-body-sm text-text-secondary">
+        We appreciate your interest in walking alongside the communities we serve.
+      </p>
     </div>
   </section>
 </main>

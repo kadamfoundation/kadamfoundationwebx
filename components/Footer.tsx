@@ -1,15 +1,17 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Icon from '@/components/Icon';
 import { SOCIAL_LINKS } from '@/lib/site-config';
 
 const FOOTER_LINKS = [
-  { href: '/partners', label: 'Partners' },
-  { href: '/about', label: 'About' },
-  { href: '/programs', label: 'Programs' },
-  { href: '/stories', label: 'Stories' },
+  { href: '/about', label: 'About Us' },
+  { href: '/stories', label: 'Stories & Events' },
+  { href: '/partners', label: 'Partnerships' },
   { href: '/team', label: 'Leadership' },
   { href: '/volunteer', label: 'Volunteer' },
   { href: '/contact', label: 'Contact' },
+  { href: '/privacy', label: 'Privacy' },
+  { href: '/terms', label: 'Terms' },
 ];
 
 export default function Footer() {
@@ -17,7 +19,14 @@ export default function Footer() {
     <footer className="border-t border-border-subtle bg-primary-container text-text-inverse">
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-6 px-space-lg py-8 md:flex-row md:items-center md:justify-between md:px-margin">
         <div>
-          <Link href="/" className="font-serif text-lg font-bold text-text-inverse">
+          <Link href="/" className="inline-flex items-center gap-3 font-serif text-lg font-bold text-text-inverse">
+            <Image
+              src="/images/kadam-logo.jpg"
+              alt=""
+              width={44}
+              height={44}
+              className="h-11 w-11 rounded-full bg-white object-contain"
+            />
             Kadam Foundation
           </Link>
           <p className="mt-1 text-sm text-text-inverse/70">
@@ -37,7 +46,7 @@ export default function Footer() {
           ))}
           <Link
             href="/donate"
-          className="text-sm font-semibold text-text-inverse transition-colors hover:text-surface-peach"
+            className="text-sm font-semibold text-text-inverse transition-colors hover:text-surface-peach"
           >
             Donate
           </Link>

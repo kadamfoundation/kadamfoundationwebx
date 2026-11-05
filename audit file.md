@@ -31,7 +31,7 @@ Sponsorship & PR --- one or more Coordinators
 Volunteer Management --- one or more Coordinators
 Each department/project reports directly to the City Head. There is no separate In-charge position between the City Head and Coordinators.
 
-Kadam SOS Foundation is a Section 8 Company with 12A and 80G Certification we are a non profit organization working in 3 major sector of society like education, women empowerment and youth development. The organisation was started on March 2020 under the vision of our Founder Mam Mrs. Prachi Dwivedi Currently the NGO is serving in 15 Cities of India.
+Kadam SOS Foundation is a Section 8 Company with 12A and 80G Certification we are a non profit organization working in 3 major sector of society like education, women empowerment and youth development. The organisation was started on March 2020 under the vision of our Founder Mam Ms. Prachi Dwivedi Currently the NGO is serving in 15 Cities of India.
 
 
 real story . 
