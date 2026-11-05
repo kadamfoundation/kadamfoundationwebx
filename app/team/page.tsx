@@ -36,7 +36,7 @@ export default function TeamPage() {
               {founder.member.image && (
                 <Image
                   src={founder.member.image}
-                  alt="Prachi Dwivedi, Founder of Kadam Foundation"
+                  alt="Ms. Prachi Dwivedi, Founder of Kadam Foundation"
                   fill
                   sizes="(min-width: 1024px) 50vw, 100vw"
                   className="editorial-image object-cover object-[center_38%]"
@@ -51,7 +51,7 @@ export default function TeamPage() {
                 {founder.member.name}
               </h2>
               <p className="mt-5 font-body-lg text-body-lg text-white/75">
-                Kadam began with Prachi Dwivedi&apos;s first classroom in the
+                Kadam began with Ms. Prachi Dwivedi&apos;s first classroom in the
                 veranda of her home in March 2020. Her story remains at the heart
                 of the foundation&apos;s work.
               </p>

@@ -31,7 +31,7 @@ const programs = [
     activities:
       'Inter-collegiate orientation bootcamps, community field weekends, fellowship circles, and collaborative social action.',
     image: '/images/programs/project-samanvay-field-activity.jpg',
-    imageAlt: 'Kadam Foundation team members at a community event',
+    imageAlt: 'Youth leaders conducting a classroom session with school students',
   },
   {
     id: 'women-empowerment',
@@ -96,7 +96,7 @@ export default function AboutPage() {
               </h2>
             </div>
             <p className="font-body-md text-body-md leading-relaxed text-white/75 md:col-span-4">
-              Kadam began with one encounter near Prachi Dwivedi&apos;s home—and
+              Kadam began with one encounter near Ms. Prachi Dwivedi&apos;s home—and
               the decision not to look away.
             </p>
           </header>
@@ -112,7 +112,7 @@ export default function AboutPage() {
             </div>
             <div className="space-y-5 font-body-md text-body-md leading-relaxed text-white/80 md:col-span-6 md:col-start-7">
               <p>
-                On 20 March 2020, Prachi saw children near her home searching for
+                On 20 March 2020, Ms. Prachi saw children near her home searching for
                 food in a dustbin. She went to speak with them and brought food
                 supplies from her home.
               </p>
@@ -128,7 +128,7 @@ export default function AboutPage() {
                 hunger, and children missing out on an opportunity to learn.
               </p>
               <p>
-                Prachi was still a schoolgirl. She had no organisation, team,
+                Ms. Prachi was still a schoolgirl. She had no organisation, team,
                 funding, or roadmap—but she knew she could not let the encounter
                 become just a memory.
               </p>
@@ -153,7 +153,7 @@ export default function AboutPage() {
                 A classroom in the veranda.
               </h3>
               <p className="mt-5 font-body-md text-body-md leading-relaxed text-white/80">
-                The next day, Prachi began teaching 10 children in her home&apos;s
+                The next day, Ms. Prachi began teaching 10 children in her home&apos;s
                 veranda. Barande Wali Kaksha—“a classroom in the veranda”—started
                 with a small space, a few children, and the belief that every
                 child deserves an opportunity to learn.
@@ -179,7 +179,7 @@ export default function AboutPage() {
               </h3>
               <div className="mt-5 space-y-4 font-body-md text-body-md leading-relaxed text-white/80">
                 <p>
-                  In 2022, Prachi moved away from the place where the work had
+                  In 2022, Ms. Prachi moved away from the place where the work had
                   begun. Leaving the veranda behind raised a new question: how
                   could the effort reach children who could not come to that
                   classroom?
@@ -212,7 +212,7 @@ export default function AboutPage() {
               courage to take one Kadam.”
             </blockquote>
             <p className="mt-5 font-body-sm text-body-sm text-white/65">
-              Prachi Dwivedi · Founder &amp; Director, Kadam Foundation
+              Ms. Prachi Dwivedi · Founder &amp; Director, Kadam Foundation
             </p>
           </footer>
         </div>

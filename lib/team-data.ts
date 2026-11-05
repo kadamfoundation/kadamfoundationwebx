@@ -1,5 +1,6 @@
 export type TeamProfile = {
   name?: string;
+  honorific?: 'Ms.' | 'Mr.';
   image?: string;
 };
 
@@ -40,7 +41,7 @@ export const CENTRAL_LEADERSHIP: CentralLeader[] = [
   {
     id: 'founder',
     role: 'Founder',
-    member: { name: 'Prachi Dwivedi', image: '/images/leadership/founder.jpg' },
+    member: { name: 'Ms. Prachi Dwivedi', image: '/images/leadership/founder.jpg' },
   },
   {
     id: 'director-1',
@@ -58,22 +59,82 @@ const CITIES: CityDefinition[] = [
   {
     slug: 'bhopal',
     name: 'Bhopal',
-    cityHead: { name: 'Rashi Shukla', image: '/images/team/bhopal-city-head.jpg' },
+    cityHead: {
+      honorific: 'Ms.',
+      name: 'Rashi Shukla',
+      image: '/images/team/bhopal-city-head.jpg',
+    },
   },
-  { slug: 'indore', name: 'Indore' },
+  {
+    slug: 'indore',
+    name: 'Indore',
+    cityHead: {
+      honorific: 'Ms.',
+      name: 'Tanisha Wade',
+      image: '/images/team/indore-city-head.jpeg',
+    },
+  },
   { slug: 'sehore', name: 'Sehore' },
-  { slug: 'rewa', name: 'Rewa' },
-  { slug: 'ujjain', name: 'Ujjain' },
-  { slug: 'tikamgarh', name: 'Tikamgarh' },
+  {
+    slug: 'rewa',
+    name: 'Rewa',
+    cityHead: {
+      honorific: 'Ms.',
+      name: 'Vaishnavi Mishra',
+      image: '/images/team/rewa-city-head.jpeg',
+    },
+  },
+  {
+    slug: 'ujjain',
+    name: 'Ujjain',
+    cityHead: {
+      honorific: 'Ms.',
+      name: 'Atshi Meshram',
+      image: '/images/team/ujjain-city-head.jpeg',
+    },
+  },
+  {
+    slug: 'tikamgarh',
+    name: 'Tikamgarh',
+    cityHead: {
+      honorific: 'Ms.',
+      name: 'Nahid Khan',
+      image: '/images/team/tikamgarh-city-head.jpeg',
+    },
+  },
   { slug: 'guna', name: 'Guna' },
-  { slug: 'delhi', name: 'Delhi' },
-  { slug: 'hubli-karnataka', name: 'Hubli, Karnataka' },
+  {
+    slug: 'delhi',
+    name: 'Delhi',
+    cityHead: {
+      honorific: 'Ms.',
+      name: 'Vaishnavi Gupta',
+      image: '/images/team/delhi-city-head.jpeg',
+    },
+  },
+  {
+    slug: 'hubli-karnataka',
+    name: 'Hubli, Karnataka',
+    cityHead: {
+      honorific: 'Mr.',
+      name: 'Mahammad Akram Ranebennur',
+      image: '/images/team/hubli-karnataka-city-head.jpeg',
+    },
+  },
   { slug: 'pune', name: 'Pune' },
   { slug: 'gwalior', name: 'Gwalior' },
   { slug: 'jabalpur', name: 'Jabalpur' },
   { slug: 'satna', name: 'Satna' },
   { slug: 'sagar', name: 'Sagar' },
-  { slug: 'vidisha', name: 'Vidisha' },
+  {
+    slug: 'vidisha',
+    name: 'Vidisha',
+    cityHead: {
+      honorific: 'Ms.',
+      name: 'Naini Kirar',
+      image: '/images/team/vidisha-city-head.jpeg',
+    },
+  },
 ];
 
 const DEPARTMENTS: { id: DepartmentId; name: string }[] = [

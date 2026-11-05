@@ -26,7 +26,7 @@ const programs = [
     title: 'Youth Development',
     detail: 'Young people connect with communities through learning and local action.',
     image: '/images/programs/project-samanvay-field-activity.jpg',
-    imageAlt: 'Kadam Foundation team members at a community event',
+    imageAlt: 'Youth leaders conducting a classroom session with school students',
     href: '/about#project-samanvay',
     label: 'Project Samanvay',
   },
@@ -53,7 +53,7 @@ export default function HomePage() {
           <div className="max-w-4xl">
             <p className="mb-5 flex items-center gap-3 font-eyebrow text-eyebrow uppercase tracking-[0.2em] text-white/85">
               <span className="h-px w-8 bg-surface-peach" />
-              Kadam SOS Foundation · Established March 2020
+              Kadam SOS Foundation · Established March 2020 · Incorporated April 2025
             </p>
             <h1 className="max-w-4xl font-display-xl text-[clamp(3rem,9vw,7.5rem)] font-medium leading-[0.98] tracking-[-0.045em] text-white">
               Young Steps
@@ -209,7 +209,7 @@ export default function HomePage() {
               It began in a veranda.
             </h2>
             <p className="mt-6 font-body-md text-body-md text-text-secondary">
-              On 20 March 2020, Prachi Dwivedi met children near her home who were
+              On 20 March 2020, Ms. Prachi Dwivedi met children near her home who were
               hungry and not going to school. The next day, she began teaching 10
               children in her veranda. That small classroom became Kadam&apos;s first
               step.
@@ -261,13 +261,13 @@ export default function HomePage() {
           <div className="relative order-1 min-h-[26rem] overflow-hidden bg-surface-container sm:min-h-[34rem] lg:order-2 lg:col-span-7">
             <Image
               src="/images/leadership/founder.jpg"
-              alt="Prachi Dwivedi, Founder of Kadam Foundation"
+              alt="Ms. Prachi Dwivedi, Founder of Kadam Foundation"
               fill
               sizes="(min-width: 1024px) 58vw, 100vw"
               className="editorial-image object-cover object-[center_38%]"
             />
             <span className="absolute bottom-4 left-4 bg-surface-raised px-4 py-2 font-eyebrow text-eyebrow uppercase tracking-widest text-primary">
-              Prachi Dwivedi · Founder
+              Ms. Prachi Dwivedi · Founder
             </span>
           </div>
         </div>

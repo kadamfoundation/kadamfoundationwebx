@@ -3,7 +3,7 @@ import { createPageMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createPageMetadata(
   'Our Team',
-  'Meet Kadam SOS Foundation founder Prachi Dwivedi, its central leadership, and city teams.',
+  'Meet Kadam SOS Foundation founder Ms. Prachi Dwivedi, its central leadership, and city teams.',
   '/team',
 );
 

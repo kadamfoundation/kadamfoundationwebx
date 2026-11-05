@@ -61,7 +61,7 @@ export default function CityTeam({ city }: { city: CityTeamData }) {
                   City head
                 </p>
                 <p className="mt-1 font-headline-md text-headline-md font-semibold text-primary">
-                  {cityHead.name}
+                  {cityHead.honorific ?? 'Ms.'} {cityHead.name}
                 </p>
               </div>
             </article>

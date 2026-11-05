@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import Icon from '@/components/Icon';
 import { CONTACT_INFO } from '@/lib/site-config';
@@ -35,6 +36,36 @@ export default function PartnershipsPage() {
               <Icon name="arrow_outward" className="text-base" />
             </a>
           </div>
+        </div>
+      </section>
+
+      <section
+        aria-labelledby="current-partners-heading"
+        className="border-t border-border-subtle bg-surface-raised px-space-lg py-16 sm:px-margin md:py-24"
+      >
+        <div className="mx-auto grid max-w-[90rem] gap-8 md:grid-cols-12 md:items-center">
+          <div className="md:col-span-6">
+            <p className="font-eyebrow text-eyebrow uppercase tracking-[0.18em] text-secondary">
+              Working together
+            </p>
+            <h2
+              id="current-partners-heading"
+              className="mt-3 font-display-lg text-[clamp(2.2rem,4vw,3.8rem)] font-medium leading-[1.05] text-primary"
+            >
+              Our partners.
+            </h2>
+          </div>
+          <article className="flex items-center justify-center md:col-span-5 md:col-start-8">
+            <div className="relative size-56 overflow-hidden rounded-full">
+              <Image
+                src="/images/partners/upskilled-logo.png"
+                alt="UpskillED partner logo"
+                fill
+                sizes="224px"
+                className="object-contain"
+              />
+            </div>
+          </article>
         </div>
       </section>
 
