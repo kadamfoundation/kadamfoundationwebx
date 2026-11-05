@@ -1,4 +1,11 @@
 import { CONTACT_INFO } from '@/lib/site-config';
+import { createPageMetadata } from '@/lib/seo';
+
+export const metadata = createPageMetadata(
+  'Terms of Use',
+  'Read the terms for using the Kadam SOS Foundation website.',
+  '/terms',
+);
 
 export default function TermsPage() {
   return (

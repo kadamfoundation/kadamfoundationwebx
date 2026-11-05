@@ -2,6 +2,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Icon from '@/components/Icon';
 import { VOLUNTEER_FORM_URL } from '@/lib/site-config';
+import { createPageMetadata } from '@/lib/seo';
+
+export const metadata = createPageMetadata(
+  'About Us',
+  'Learn about Kadam SOS Foundation, its story, and its work in education, women’s empowerment, and youth development.',
+  '/about',
+);
 
 const programs = [
   {

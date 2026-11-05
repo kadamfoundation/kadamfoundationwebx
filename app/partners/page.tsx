@@ -1,6 +1,13 @@
 import Link from 'next/link';
 import Icon from '@/components/Icon';
 import { CONTACT_INFO } from '@/lib/site-config';
+import { createPageMetadata } from '@/lib/seo';
+
+export const metadata = createPageMetadata(
+  'Partnerships',
+  'Explore partnership and collaboration enquiries with Kadam SOS Foundation in support of community-led initiatives.',
+  '/partners',
+);
 
 export default function PartnershipsPage() {
   return (

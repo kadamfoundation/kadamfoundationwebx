@@ -1,5 +1,12 @@
 import Icon from '@/components/Icon';
 import { CONTACT_INFO, SOCIAL_LINKS } from '@/lib/site-config';
+import { createPageMetadata } from '@/lib/seo';
+
+export const metadata = createPageMetadata(
+  'Contact',
+  'Contact Kadam SOS Foundation by phone or email, or find the foundation’s office in Bhopal.',
+  '/contact',
+);
 
 export default function ContactPage() {
   return (

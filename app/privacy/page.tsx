@@ -1,4 +1,11 @@
 import { CONTACT_INFO } from '@/lib/site-config';
+import { createPageMetadata } from '@/lib/seo';
+
+export const metadata = createPageMetadata(
+  'Privacy Notice',
+  'Read how Kadam SOS Foundation handles information shared through its website and enquiry forms.',
+  '/privacy',
+);
 
 export default function PrivacyPage() {
   return (

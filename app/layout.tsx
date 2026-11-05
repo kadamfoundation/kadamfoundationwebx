@@ -3,6 +3,7 @@ import { Lora, Inter } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import { SITE_URL } from '@/lib/seo';
 
 const lora = Lora({
   subsets: ['latin'],
@@ -17,18 +18,28 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Kadam SOS Foundation — Young Steps Towards the Nation',
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: 'Kadam SOS Foundation | Young Steps Towards the Nation',
+    template: '%s | Kadam SOS Foundation',
+  },
+  alternates: {
+    canonical: '/',
+  },
   description:
     'Kadam SOS Foundation is a youth-led nonprofit working with communities through education, women’s empowerment, and youth development.',
   openGraph: {
-    title: 'Kadam SOS Foundation — Young Steps Towards the Nation',
+    title: 'Kadam SOS Foundation | Young Steps Towards the Nation',
     description:
       'A youth-led foundation working with communities through education, women’s empowerment, and youth development.',
     type: 'website',
+    url: SITE_URL,
+    siteName: 'Kadam SOS Foundation',
+    locale: 'en_IN',
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Kadam SOS Foundation — Young Steps Towards the Nation',
+    card: 'summary',
+    title: 'Kadam SOS Foundation | Young Steps Towards the Nation',
     description:
       'A youth-led foundation working with communities through education, women’s empowerment, and youth development.',
   },

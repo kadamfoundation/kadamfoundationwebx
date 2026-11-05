@@ -1,4 +1,11 @@
 import Icon from '@/components/Icon';
+import { createPageMetadata } from '@/lib/seo';
+
+export const metadata = createPageMetadata(
+  'Stories & Events',
+  'Explore community stories and events from Kadam SOS Foundation, including the Samanvay Youth Parliament in Bhopal.',
+  '/stories',
+);
 
 export default function StoriesPage() {
   return (
