@@ -1,6 +1,6 @@
 # Approved Image Assets
 
-Store original, approved Kadam Foundation photographs in the folders below. Use descriptive, lowercase filenames and update the matching page component when an image is supplied. Keep the existing media wrappers so their aspect ratios and page layout remain stable, and provide alt text describing the actual image.
+Store original, approved Kadam Foundation photographs in the folders below. Use descriptive, lowercase filenames and provide alt text describing the actual image. Use `next/image` for local photos.
 
 ## Folders
 
@@ -13,12 +13,14 @@ Store original, approved Kadam Foundation photographs in the folders below. Use 
 
 ## Current Image Slots
 
-- About: hero photo, portrait ratio `4:5`.
-- Home: community feature `4:5`, India chapter map visual `4:3`, community voice portrait `1:1`.
-- Programs: Shiksha, Samanvay, and Women Empowerment panels, `4:3` on small screens and `5:6` on large screens.
-- Stories: eight story-card thumbnails in fixed-height media areas (`12rem`).
-- Volunteer: learning-circle feature, portrait ratio `4:5`.
-- Team: leadership and city profiles already have optional local image paths in `lib/team-data.ts`; no real member photographs are currently included.
-- Navbar: the existing Kadam emblem remains at `public/assets/aistudio/Image_1_0f0bcb58.jpeg`.
+- Home: `homepage/kadam-hero.jpg` is the supplied Kadam volunteer group photograph used in the cinematic hero; `homepage/operational-cities-map.jpg` is the map visual.
+- About: `gallery/learning-community.jpg` illustrates Kadam's community learning work on both the homepage and About page.
+- Programs: Shiksha, the supplied `programs/project-samanvay-field-activity.jpg`, and Women Empowerment photographs are used on the programs page.
+- Leadership: `leadership/founder.jpg` is Prachi Dwivedi's portrait.
+- Volunteer: the learning-circle feature remains on the Volunteer page.
+- Team: leadership and city profiles use optional local image paths in `lib/team-data.ts`.
+- Navbar: uses an inline footprint icon and wordmark. No external logo asset is required.
 
-Current image slots show accessible neutral placeholders. Replace an `ImagePlaceholder` with `next/image` in the same wrapper when an approved original is available; preserve the wrapper sizing and write alt text for the actual photograph. The homepage map slot should use a verified map asset, not a photograph.
+The homepage hero and Project Samanvay photographs were selected from the supplied
+`photos/` collection. The map is color-adjusted in the interface to fit the dark
+theme; keep it as a verified map asset, not a photograph.

@@ -94,7 +94,7 @@ export default function StoriesPage() {
               {featuredPost.excerpt}
             </p>
             <Link
-              className="mt-7 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-label-md text-label-md font-semibold text-text-inverse transition-colors hover:bg-action-hover"
+              className="mt-7 inline-flex items-center gap-2 rounded-full bg-primary-container px-6 py-3 font-label-md text-label-md font-semibold text-text-inverse transition-colors hover:bg-action-hover"
               href={`/stories/${featuredPost.slug}`}
             >
               Read story
@@ -141,7 +141,7 @@ export default function StoriesPage() {
           </p>
           <div className="mt-7 flex flex-col justify-center gap-3 sm:flex-row">
             <a
-              className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 font-label-md text-label-md font-semibold text-text-inverse hover:bg-action-hover"
+              className="inline-flex items-center justify-center rounded-full bg-primary-container px-6 py-3 font-label-md text-label-md font-semibold text-text-inverse hover:bg-action-hover"
               href={VOLUNTEER_FORM_URL}
               rel="noopener noreferrer"
               target="_blank"

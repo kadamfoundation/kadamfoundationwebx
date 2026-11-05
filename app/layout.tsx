@@ -17,20 +17,20 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Kadam Foundation — Young Steps Towards the Nation',
+  title: 'Kadam SOS Foundation — Young Steps Towards the Nation',
   description:
-    'Youth-led nonprofit organization empowering communities through grassroots education, civic engagement, and social welfare across India.',
+    'Kadam SOS Foundation is a youth-led nonprofit working with communities through education, women’s empowerment, and youth development.',
   openGraph: {
-    title: 'Kadam Foundation — Young Steps Towards the Nation',
+    title: 'Kadam SOS Foundation — Young Steps Towards the Nation',
     description:
-      'Youth-led nonprofit organization empowering communities through grassroots education, civic engagement, and social welfare across India.',
+      'A youth-led foundation working with communities through education, women’s empowerment, and youth development.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kadam Foundation — Young Steps Towards the Nation',
+    title: 'Kadam SOS Foundation — Young Steps Towards the Nation',
     description:
-      'Youth-led nonprofit organization empowering communities through grassroots education, civic engagement, and social welfare across India.',
+      'A youth-led foundation working with communities through education, women’s empowerment, and youth development.',
   },
 };
 

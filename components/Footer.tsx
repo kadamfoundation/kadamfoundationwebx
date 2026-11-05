@@ -7,19 +7,20 @@ const FOOTER_LINKS = [
   { href: '/about', label: 'About' },
   { href: '/programs', label: 'Programs' },
   { href: '/stories', label: 'Stories' },
-  { href: '/gallery', label: 'Gallery' },
+  { href: '/team', label: 'Leadership' },
+  { href: '/volunteer', label: 'Volunteer' },
   { href: '/contact', label: 'Contact' },
 ];
 
 export default function Footer() {
   return (
-    <footer className="border-t border-border-subtle bg-surface-raised">
+    <footer className="border-t border-border-subtle bg-primary-container text-text-inverse">
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-6 px-space-lg py-8 md:flex-row md:items-center md:justify-between md:px-margin">
         <div>
-          <Link href="/" className="font-serif text-lg font-bold text-primary">
+          <Link href="/" className="font-serif text-lg font-bold text-text-inverse">
             Kadam Foundation
           </Link>
-          <p className="mt-1 text-sm text-text-secondary">
+          <p className="mt-1 text-sm text-text-inverse/70">
             Young Steps Towards the Nation
           </p>
         </div>
@@ -29,14 +30,14 @@ export default function Footer() {
             <Link
               key={href}
               href={href}
-              className="text-sm font-medium text-text-secondary transition-colors hover:text-primary"
+              className="text-sm font-medium text-text-inverse/75 transition-colors hover:text-text-inverse"
             >
               {label}
             </Link>
           ))}
           <Link
             href="/donate"
-            className="text-sm font-semibold text-primary transition-colors hover:text-action-hover"
+          className="text-sm font-semibold text-text-inverse transition-colors hover:text-surface-peach"
           >
             Donate
           </Link>
@@ -51,14 +52,14 @@ export default function Footer() {
               rel="noopener noreferrer"
               aria-label={`Visit Kadam Foundation on ${name}`}
               title={name}
-              className="rounded-full p-2 text-text-secondary transition-colors hover:bg-surface-canvas hover:text-primary focus:outline-none focus:ring-2 focus:ring-focus-ring"
+              className="rounded-full p-2 text-text-inverse/75 transition-colors hover:bg-white/10 hover:text-text-inverse focus:outline-none focus:ring-2 focus:ring-surface-peach"
             >
               <Icon name={icon} className="text-xl" />
             </a>
           ))}
         </nav>
 
-        <p className="text-sm text-text-secondary">
+        <p className="text-sm text-text-inverse/65">
           © {new Date().getFullYear()} Kadam Foundation
         </p>
       </div>

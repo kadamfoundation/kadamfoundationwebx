@@ -18,7 +18,7 @@ export default function DonatePage() {
       Every Contribution Moves Us Forward
     </h1>
     <p className="font-body-lg text-body-lg text-text-secondary max-w-2xl mx-auto leading-relaxed mb-10">
-      A heartfelt invitation to sustain Kadam Foundation’s youth-led, decentralized grassroots mission. We channel community solidarity directly to children's weekend learning pods, civic organizing cohorts, and frontline community circles across informal settlements.
+      A heartfelt invitation to sustain Kadam Foundation’s youth-led, decentralized grassroots mission. We channel community solidarity directly to children&apos;s weekend learning pods, civic organizing cohorts, and frontline community circles across informal settlements.
     </p>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
       <div className="flex items-center gap-3.5 p-4 rounded-2xl bg-surface-raised border border-border-subtle text-left">
@@ -81,7 +81,7 @@ export default function DonatePage() {
                   sizes="(min-width: 1024px) 560px, calc(100vw - 5rem)"
                   className="object-contain p-2"
                 />
-                <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <div className="absolute inset-0 bg-primary-container/15 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <span className="bg-surface px-2.5 py-1 rounded text-xs font-medium text-text-primary border border-border-subtle shadow-sm">
                     Scan with Phone
                   </span>
@@ -254,7 +254,7 @@ export default function DonatePage() {
             Artisan Micro-Aid
           </h3>
           <p className="font-body-sm text-body-sm text-text-secondary leading-relaxed">
-            Providing raw sewing fabrics, craft equipment, and fair accounting training to local mothers' self-help collectives.
+            Providing raw sewing fabrics, craft equipment, and fair accounting training to local mothers&apos; self-help collectives.
           </p>
         </div>
         <div className="pt-6 mt-6 border-t border-border-subtle/50 text-xs text-secondary font-medium">
@@ -281,7 +281,7 @@ export default function DonatePage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           <div className="p-5 rounded-2xl bg-surface-raised border border-border-subtle">
             <div className="flex items-center gap-2 mb-2">
-              <span className="w-6 h-6 rounded-full bg-primary text-text-inverse text-xs flex items-center justify-center font-bold">
+              <span className="w-6 h-6 rounded-full bg-primary text-inverse-primary text-xs flex items-center justify-center font-bold">
                 A
               </span>
               <h4 className="font-label-md text-label-md font-semibold text-primary">
@@ -294,7 +294,7 @@ export default function DonatePage() {
           </div>
           <div className="p-5 rounded-2xl bg-surface-raised border border-border-subtle">
             <div className="flex items-center gap-2 mb-2">
-              <span className="w-6 h-6 rounded-full bg-primary text-text-inverse text-xs flex items-center justify-center font-bold">
+              <span className="w-6 h-6 rounded-full bg-primary text-inverse-primary text-xs flex items-center justify-center font-bold">
                 B
               </span>
               <h4 className="font-label-md text-label-md font-semibold text-primary">
@@ -307,7 +307,7 @@ export default function DonatePage() {
           </div>
         </div>
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-          <a className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-primary text-text-inverse font-label-md text-label-md font-semibold hover:bg-action-hover transition-colors" href={`${CONTACT_INFO.emailHref}?subject=Donation%20Receipt%20Request`}>
+          <a className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-primary-container text-text-inverse font-label-md text-label-md font-semibold hover:bg-action-hover transition-colors" href={`${CONTACT_INFO.emailHref}?subject=Donation%20Receipt%20Request`}>
             <Icon name="mail" className="material-symbols-outlined text-[18px]" />
             <span>
               {CONTACT_INFO.email}
@@ -348,7 +348,7 @@ export default function DonatePage() {
           </p>
         </div>
       </div>
-      <a className="shrink-0 px-5 py-2.5 rounded-full border border-primary text-primary hover:bg-primary hover:text-text-inverse font-label-md text-label-md font-medium transition-all duration-150" href={`${CONTACT_INFO.emailHref}?subject=Financial%20and%20Compliance%20Documents`}>
+      <a className="shrink-0 px-5 py-2.5 rounded-full border border-primary text-primary hover:bg-primary hover:text-inverse-primary font-label-md text-label-md font-medium transition-all duration-150" href={`${CONTACT_INFO.emailHref}?subject=Financial%20and%20Compliance%20Documents`}>
         Request Financial &amp; Compliance Documents
       </a>
     </div>

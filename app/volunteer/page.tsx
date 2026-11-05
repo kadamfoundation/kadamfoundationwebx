@@ -27,7 +27,7 @@ export default function VolunteerPage() {
           At Kadam Foundation, we believe sustainable nation-building does not begin with grand speeches—it begins on quiet Sunday mornings in neighborhood learning pods. Our volunteer fellows, university students, and working professionals bridge educational inequities and catalyze civic accountability right where they live.
         </p>
         <div className="flex flex-wrap items-center gap-4 pt-2 w-full sm:w-auto">
-          <a className="inline-flex items-center justify-center font-label-md text-label-md font-semibold bg-primary text-text-inverse h-12 px-7 rounded-full hover:bg-action-hover transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-focus-ring active:scale-95 shadow-sm group" href="#register">
+          <a className="inline-flex items-center justify-center font-label-md text-label-md font-semibold bg-primary-container text-text-inverse h-12 px-7 rounded-full hover:bg-action-hover transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-focus-ring active:scale-95 shadow-sm group" href="#register">
             Register as a Volunteer{' '}
             <Icon name="arrow_forward" className="material-symbols-outlined ml-2 transition-transform duration-150 group-hover:translate-x-1" />
           </a>
@@ -103,7 +103,7 @@ export default function VolunteerPage() {
           Why Step Forward With Us
         </h2>
         <p className="font-body-md text-body-md text-text-secondary">
-          Grassroots volunteering at Kadam is not a one-sided act of charity; it is a collective practice of active listening, civic empathy, and frontline unlearning. Here, you don't merely instruct—you grow alongside the communities you partner with.
+          Grassroots volunteering at Kadam is not a one-sided act of charity; it is a collective practice of active listening, civic empathy, and frontline unlearning. Here, you don&apos;t merely instruct—you grow alongside the communities you partner with.
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -192,19 +192,19 @@ export default function VolunteerPage() {
         </p>
       </div>
       <div className="flex flex-wrap gap-2" id="filterContainer">
-        <button data-filter="all" className={activeFilter === "all" ? "px-4 py-2 rounded-full font-label-md text-label-md font-semibold bg-primary text-text-inverse transition-colors filter-btn" : "px-4 py-2 rounded-full font-label-md text-label-md font-medium bg-surface-raised border border-border-subtle text-text-secondary hover:text-text-primary hover:border-text-primary transition-colors filter-btn"} onClick={() => setActiveFilter("all")}>
+        <button data-filter="all" className={activeFilter === "all" ? "px-4 py-2 rounded-full font-label-md text-label-md font-semibold bg-primary text-inverse-primary transition-colors filter-btn" : "px-4 py-2 rounded-full font-label-md text-label-md font-medium bg-surface-raised border border-border-subtle text-text-secondary hover:text-text-primary hover:border-text-primary transition-colors filter-btn"} onClick={() => setActiveFilter("all")}>
           All Tracks
         </button>
-        <button data-filter="education" className={activeFilter === "education" ? "px-4 py-2 rounded-full font-label-md text-label-md font-semibold bg-primary text-text-inverse transition-colors filter-btn" : "px-4 py-2 rounded-full font-label-md text-label-md font-medium bg-surface-raised border border-border-subtle text-text-secondary hover:text-text-primary hover:border-text-primary transition-colors filter-btn"} onClick={() => setActiveFilter("education")}>
+        <button data-filter="education" className={activeFilter === "education" ? "px-4 py-2 rounded-full font-label-md text-label-md font-semibold bg-primary text-inverse-primary transition-colors filter-btn" : "px-4 py-2 rounded-full font-label-md text-label-md font-medium bg-surface-raised border border-border-subtle text-text-secondary hover:text-text-primary hover:border-text-primary transition-colors filter-btn"} onClick={() => setActiveFilter("education")}>
           Field Education
         </button>
-        <button data-filter="civic" className={activeFilter === "civic" ? "px-4 py-2 rounded-full font-label-md text-label-md font-semibold bg-primary text-text-inverse transition-colors filter-btn" : "px-4 py-2 rounded-full font-label-md text-label-md font-medium bg-surface-raised border border-border-subtle text-text-secondary hover:text-text-primary hover:border-text-primary transition-colors filter-btn"} onClick={() => setActiveFilter("civic")}>
+        <button data-filter="civic" className={activeFilter === "civic" ? "px-4 py-2 rounded-full font-label-md text-label-md font-semibold bg-primary text-inverse-primary transition-colors filter-btn" : "px-4 py-2 rounded-full font-label-md text-label-md font-medium bg-surface-raised border border-border-subtle text-text-secondary hover:text-text-primary hover:border-text-primary transition-colors filter-btn"} onClick={() => setActiveFilter("civic")}>
           Civic Action
         </button>
-        <button data-filter="wellbeing" className={activeFilter === "wellbeing" ? "px-4 py-2 rounded-full font-label-md text-label-md font-semibold bg-primary text-text-inverse transition-colors filter-btn" : "px-4 py-2 rounded-full font-label-md text-label-md font-medium bg-surface-raised border border-border-subtle text-text-secondary hover:text-text-primary hover:border-text-primary transition-colors filter-btn"} onClick={() => setActiveFilter("wellbeing")}>
+        <button data-filter="wellbeing" className={activeFilter === "wellbeing" ? "px-4 py-2 rounded-full font-label-md text-label-md font-semibold bg-primary text-inverse-primary transition-colors filter-btn" : "px-4 py-2 rounded-full font-label-md text-label-md font-medium bg-surface-raised border border-border-subtle text-text-secondary hover:text-text-primary hover:border-text-primary transition-colors filter-btn"} onClick={() => setActiveFilter("wellbeing")}>
           Wellbeing
         </button>
-        <button data-filter="backbone" className={activeFilter === "backbone" ? "px-4 py-2 rounded-full font-label-md text-label-md font-semibold bg-primary text-text-inverse transition-colors filter-btn" : "px-4 py-2 rounded-full font-label-md text-label-md font-medium bg-surface-raised border border-border-subtle text-text-secondary hover:text-text-primary hover:border-text-primary transition-colors filter-btn"} onClick={() => setActiveFilter("backbone")}>
+        <button data-filter="backbone" className={activeFilter === "backbone" ? "px-4 py-2 rounded-full font-label-md text-label-md font-semibold bg-primary text-inverse-primary transition-colors filter-btn" : "px-4 py-2 rounded-full font-label-md text-label-md font-medium bg-surface-raised border border-border-subtle text-text-secondary hover:text-text-primary hover:border-text-primary transition-colors filter-btn"} onClick={() => setActiveFilter("backbone")}>
           Backbone
         </button>
       </div>
@@ -556,7 +556,7 @@ export default function VolunteerPage() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
         <div className="bg-surface-raised p-6 rounded-2xl border border-border-subtle flex flex-col justify-between relative">
-          <div className="absolute -top-3.5 left-6 bg-primary text-text-inverse font-eyebrow text-[11px] font-bold px-3 py-0.5 rounded-full">
+          <div className="absolute -top-3.5 left-6 bg-primary-container text-text-inverse font-eyebrow text-[11px] font-bold px-3 py-0.5 rounded-full">
             STEP 01
           </div>
           <div className="pt-2">
@@ -575,7 +575,7 @@ export default function VolunteerPage() {
           </div>
         </div>
         <div className="bg-surface-raised p-6 rounded-2xl border border-border-subtle flex flex-col justify-between relative">
-          <div className="absolute -top-3.5 left-6 bg-primary text-text-inverse font-eyebrow text-[11px] font-bold px-3 py-0.5 rounded-full">
+          <div className="absolute -top-3.5 left-6 bg-primary-container text-text-inverse font-eyebrow text-[11px] font-bold px-3 py-0.5 rounded-full">
             STEP 02
           </div>
           <div className="pt-2">
@@ -594,7 +594,7 @@ export default function VolunteerPage() {
           </div>
         </div>
         <div className="bg-surface-raised p-6 rounded-2xl border border-border-subtle flex flex-col justify-between relative">
-          <div className="absolute -top-3.5 left-6 bg-primary text-text-inverse font-eyebrow text-[11px] font-bold px-3 py-0.5 rounded-full">
+          <div className="absolute -top-3.5 left-6 bg-primary-container text-text-inverse font-eyebrow text-[11px] font-bold px-3 py-0.5 rounded-full">
             STEP 03
           </div>
           <div className="pt-2">
@@ -613,7 +613,7 @@ export default function VolunteerPage() {
           </div>
         </div>
         <div className="bg-surface-raised p-6 rounded-2xl border border-border-subtle flex flex-col justify-between relative">
-          <div className="absolute -top-3.5 left-6 bg-primary text-text-inverse font-eyebrow text-[11px] font-bold px-3 py-0.5 rounded-full">
+          <div className="absolute -top-3.5 left-6 bg-primary-container text-text-inverse font-eyebrow text-[11px] font-bold px-3 py-0.5 rounded-full">
             STEP 04
           </div>
           <div className="pt-2">
@@ -658,7 +658,7 @@ export default function VolunteerPage() {
           </div>
         </div>
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-          <a className="inline-flex items-center justify-center font-label-md text-label-md font-semibold bg-primary text-text-inverse h-14 px-8 rounded-full hover:bg-action-hover transition-all active:scale-95 shadow-sm group focus:outline-none focus:ring-2 focus:ring-focus-ring" href={VOLUNTEER_FORM_URL} rel="noopener noreferrer" target="_blank">
+          <a className="inline-flex items-center justify-center font-label-md text-label-md font-semibold bg-primary-container text-text-inverse h-14 px-8 rounded-full hover:bg-action-hover transition-all active:scale-95 shadow-sm group focus:outline-none focus:ring-2 focus:ring-focus-ring" href={VOLUNTEER_FORM_URL} rel="noopener noreferrer" target="_blank">
             Open Official Registration Form ↗{' '}
             <Icon name="open_in_new" className="material-symbols-outlined ml-2 text-[20px] transition-transform duration-150 group-hover:translate-x-1" />
           </a>
@@ -726,7 +726,7 @@ export default function VolunteerPage() {
               </h3>
             </div>
             <p className="font-body-sm text-body-sm text-text-secondary leading-relaxed mb-4">
-              We explicitly repudiate the condescending "savior complex." Kadam volunteers are guests in community neighborhoods, honoring regional autonomy, local vernaculars, culinary habits, and dignified agency.
+              We explicitly repudiate the condescending &quot;savior complex.&quot; Kadam volunteers are guests in community neighborhoods, honoring regional autonomy, local vernaculars, culinary habits, and dignified agency.
             </p>
             <ul className="space-y-2 text-text-primary font-body-sm text-body-sm">
               <li className="flex items-center gap-2">
@@ -963,7 +963,7 @@ export default function VolunteerPage() {
         Whether you can teach for two hours on a Sunday morning or help coordinate collegiate civic forums across your campus, there is a place for your energy here.
       </p>
       <div className="flex flex-wrap items-center justify-center gap-4">
-        <a className="inline-flex items-center justify-center font-label-md text-label-md font-semibold bg-primary text-text-inverse h-14 px-8 rounded-full hover:bg-action-hover transition-all duration-150 active:scale-95 shadow-sm group focus:outline-none focus:ring-2 focus:ring-focus-ring" href="#register">
+        <a className="inline-flex items-center justify-center font-label-md text-label-md font-semibold bg-primary-container text-text-inverse h-14 px-8 rounded-full hover:bg-action-hover transition-all duration-150 active:scale-95 shadow-sm group focus:outline-none focus:ring-2 focus:ring-focus-ring" href="#register">
           Register as a Volunteer ↗{' '}
           <Icon name="north_east" className="material-symbols-outlined ml-2 text-[20px] transition-transform duration-150 group-hover:translate-x-1" />
         </a>

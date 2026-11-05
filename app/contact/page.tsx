@@ -57,7 +57,7 @@ export default function ContactPage() {
         </a>
       </div>
       <div className="bg-surface-peach rounded-[22px] p-8 border border-border-subtle flex flex-col justify-between shadow-sm relative overflow-hidden">
-        <div className="absolute top-0 right-0 bg-primary text-text-inverse px-4 py-1 rounded-bl-xl font-eyebrow text-[10px] tracking-wider uppercase font-semibold">
+        <div className="absolute top-0 right-0 bg-primary-container text-text-inverse px-4 py-1 rounded-bl-xl font-eyebrow text-[10px] tracking-wider uppercase font-semibold">
           Fastest Channel
         </div>
         <div>
@@ -183,7 +183,7 @@ export default function ContactPage() {
           </div>
         </div>
         <div className="lg:col-span-5 bg-surface-peach p-8 flex flex-col justify-between items-center text-center relative border-t lg:border-t-0 lg:border-l border-border-subtle min-h-[380px]">
-          <div className="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(#3F2C2E_1px,transparent_1px)] [background-size:16px_16px]"></div>
+          <div className="absolute inset-0 opacity-15 pointer-events-none bg-[radial-gradient(#D6B56E_1px,transparent_1px)] [background-size:16px_16px]"></div>
           <div className="relative z-10 w-full flex justify-end">
             <span className="px-3 py-1 bg-surface-raised rounded-full text-[11px] font-eyebrow font-medium text-text-secondary border border-border-subtle">
               Office Location

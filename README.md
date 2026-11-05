@@ -18,11 +18,14 @@ Key sections include:
 - About
 - Programs
 - Stories
-- Gallery
-- Team
+- Leadership and city teams
 - Volunteer
 - Donate
 - Contact
+
+The Gallery page has been retired. The homepage uses approved local Kadam
+photographs, a map of operational cities, program highlights, and founder-led
+storytelling. Volunteer registration remains connected to the existing form.
 
 ## Tech stack
 

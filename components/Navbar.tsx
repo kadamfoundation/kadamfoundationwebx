@@ -1,66 +1,49 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Icon from '@/components/Icon';
+import VolunteerDialog from '@/components/VolunteerDialog';
 
 const NAV_LINKS = [
   { href: '/', label: 'Home' },
-  { href: '/partners', label: 'Partners' },
   { href: '/about', label: 'About' },
   { href: '/programs', label: 'Programs' },
   { href: '/stories', label: 'Stories' },
-  { href: '/gallery', label: 'Gallery' },
-  { href: '/team', label: 'Our Team' },
-  { href: '/volunteer', label: 'Volunteer' },
+  { href: '/team', label: 'Leadership' },
   { href: '/contact', label: 'Contact' },
 ];
-
-const BRAND_TAGLINES: Record<string, string> = {
-  '/': 'YOUTH-LED NONPROFIT',
-  '/about': 'YOUTH-LED NONPROFIT',
-  '/contact': 'Young Steps Towards the Nation',
-  '/team': 'Youth-Led Nonprofit',
-  '/volunteer': 'YOUNG STEPS TOWARDS THE NATION',
-};
 
 export default function Navbar() {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const tagline = BRAND_TAGLINES[pathname] ?? '';
   const isDonatePage = pathname === '/donate';
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border-subtle bg-surface-canvas/95 backdrop-blur-sm">
-      <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-space-lg py-3 md:px-margin md:py-4">
+    <header className="sticky top-0 z-50 border-b border-border-subtle/80 bg-surface-raised/95 backdrop-blur-md">
+      <div className="mx-auto flex w-full max-w-[90rem] items-center justify-between gap-3 px-space-lg py-3 md:px-margin md:py-4">
         <Link
           href="/"
-          className="group flex items-center gap-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-focus-ring"
+          className="group flex min-w-0 items-center gap-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-focus-ring"
         >
-          <span className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full border border-border-subtle bg-[#8F6E64] md:h-12 md:w-12">
-            <Image
-              src="/assets/aistudio/Image_1_0f0bcb58.jpeg"
-              alt="Kadam Foundation circular footprint emblem logo"
-              fill
-              sizes="48px"
-              className="object-cover transition-transform duration-200 group-hover:scale-105"
-            />
+          <span
+            aria-hidden="true"
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-primary/50 bg-surface-peach text-primary transition-colors group-hover:bg-primary group-hover:text-inverse-primary md:h-12 md:w-12"
+          >
+            <Icon name="footprint" className="text-xl" />
           </span>
-          <span className="flex flex-col">
-            <span className="font-serif text-lg font-bold leading-none tracking-tight text-primary md:text-xl">
+          <span className="flex min-w-0 flex-col">
+            <span className="truncate font-serif text-base font-bold leading-none tracking-tight text-primary sm:text-lg md:text-xl">
               Kadam Foundation
             </span>
-            {tagline && (
-              <span className="mt-1 hidden font-eyebrow text-[10px] uppercase tracking-widest text-text-secondary sm:inline md:text-[11px]">
-                {tagline}
-              </span>
-            )}
+            <span className="mt-1 hidden font-eyebrow text-[10px] uppercase tracking-widest text-text-secondary sm:inline">
+              Young Steps Towards the Nation
+            </span>
           </span>
         </Link>
 
-        <nav aria-label="Global Navigation" className="hidden items-center gap-3 lg:flex xl:gap-5">
+        <nav aria-label="Global Navigation" className="hidden items-center gap-4 xl:flex">
           {NAV_LINKS.map(({ href, label }) => {
             const active = href === '/' ? pathname === '/' : pathname.startsWith(href);
             return (
@@ -68,9 +51,9 @@ export default function Navbar() {
                 key={href}
                 href={href}
                 aria-current={active ? 'page' : undefined}
-                className={`relative py-1 text-xs transition-colors xl:text-sm ${
+                className={`relative py-2 text-sm transition-colors ${
                   active
-                    ? 'font-bold text-primary after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-primary after:content-[""]'
+                    ? 'font-semibold text-primary'
                     : 'font-medium text-text-secondary hover:text-primary'
                 }`}
               >
@@ -80,32 +63,26 @@ export default function Navbar() {
           })}
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex shrink-0 items-center gap-2">
+          <VolunteerDialog />
           <Link
             href="/donate"
             aria-current={isDonatePage ? 'page' : undefined}
-            className={`inline-flex items-center justify-center rounded-full px-4 py-2.5 text-sm font-semibold text-text-inverse transition-colors sm:px-6 ${
-              isDonatePage ? 'bg-primary' : 'bg-primary-container hover:bg-action-hover'
+            className={`hidden min-h-10 items-center justify-center gap-1.5 rounded-full px-3 py-2 font-label-md text-label-md font-semibold transition-colors sm:inline-flex sm:px-5 ${
+              isDonatePage
+                ? 'bg-primary text-inverse-primary'
+                : 'bg-primary-container text-text-inverse hover:bg-action-hover'
             }`}
           >
-            {isDonatePage ? (
-              <>
-                <Icon name="volunteer_activism" className="mr-1.5 text-[18px]" />
-                Donate
-              </>
-            ) : (
-              <>
-                Donate
-                <Icon name="favorite" className="ml-1.5 text-[16px]" filled />
-              </>
-            )}
+            Donate
+            <Icon name="favorite" className="hidden text-base sm:inline" filled />
           </Link>
           <button
             type="button"
             onClick={() => setMobileMenuOpen((open) => !open)}
             aria-label="Toggle navigation menu"
             aria-expanded={mobileMenuOpen}
-            className="rounded-lg p-2 text-text-primary transition-colors hover:bg-surface-raised focus:outline-none focus:ring-2 focus:ring-focus-ring lg:hidden"
+            className="rounded-full border border-border-subtle p-2 text-text-primary transition-colors hover:bg-surface-canvas focus:outline-none focus:ring-2 focus:ring-focus-ring xl:hidden"
           >
             <Icon name={mobileMenuOpen ? 'close' : 'menu'} className="text-2xl" />
           </button>
@@ -113,8 +90,8 @@ export default function Navbar() {
       </div>
 
       {mobileMenuOpen && (
-        <div className="border-t border-border-subtle bg-surface-canvas px-space-lg pb-6 pt-3 shadow-lg lg:hidden">
-          <nav aria-label="Mobile Navigation" className="flex flex-col gap-1.5 text-sm">
+        <div className="border-t border-border-subtle bg-surface-raised px-space-lg pb-5 pt-3 xl:hidden">
+          <nav aria-label="Mobile Navigation" className="mx-auto flex max-w-7xl flex-col gap-1.5">
             {NAV_LINKS.map(({ href, label }) => {
               const active = href === '/' ? pathname === '/' : pathname.startsWith(href);
               return (
@@ -123,10 +100,10 @@ export default function Navbar() {
                   href={href}
                   onClick={() => setMobileMenuOpen(false)}
                   aria-current={active ? 'page' : undefined}
-                  className={`rounded-lg px-3 py-2 font-medium transition-colors ${
+                  className={`rounded-md px-3 py-2.5 font-label-md text-label-md transition-colors ${
                     active
-                      ? 'border-l-4 border-primary bg-surface-raised font-bold text-primary'
-                      : 'text-text-secondary hover:bg-surface-raised/50 hover:text-primary'
+                      ? 'bg-surface-canvas font-semibold text-primary'
+                      : 'text-text-secondary hover:bg-surface-canvas hover:text-primary'
                   }`}
                 >
                   {label}
@@ -136,9 +113,10 @@ export default function Navbar() {
             <Link
               href="/donate"
               onClick={() => setMobileMenuOpen(false)}
-              className="mt-2 block rounded-full bg-primary py-2.5 text-center text-sm font-semibold text-text-inverse hover:bg-action-hover"
+              aria-current={isDonatePage ? 'page' : undefined}
+              className="mt-2 inline-flex min-h-11 items-center justify-center rounded-full bg-primary-container px-4 py-2 font-label-md text-label-md font-semibold text-white transition-colors hover:bg-action-hover"
             >
-              {isDonatePage ? 'Donate (Current Page)' : 'Donate'}
+              Donate
             </Link>
           </nav>
         </div>
