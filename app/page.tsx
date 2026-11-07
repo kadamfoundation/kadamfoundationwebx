@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Icon from '@/components/Icon';
+import HomeHeroBackground from '@/components/HomeHeroBackground';
 import ImpactMetrics from '@/components/ImpactMetrics';
 import JsonLd from '@/components/JsonLd';
 import { CENTRAL_LEADERSHIP, CITY_TEAMS } from '@/lib/team-data';
-import { VOLUNTEER_FORM_URL } from '@/lib/site-config';
+import { SOCIAL_LINKS, VOLUNTEER_FORM_URL } from '@/lib/site-config';
 import { organizationStructuredData } from '@/lib/structured-data';
 
 const programs = [
@@ -41,14 +42,7 @@ export default function HomePage() {
     <main>
       <JsonLd data={organizationStructuredData} />
       <section className="relative isolate min-h-[min(760px,calc(100svh-5rem))] overflow-hidden bg-primary-container text-text-inverse">
-        <Image
-          src="/images/homepage/kadam-hero.jpg"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center"
-        />
+        <HomeHeroBackground />
         <div className="absolute inset-0 bg-gradient-to-r from-[#100B07]/85 via-[#100B07]/55 to-[#100B07]/10" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#100B07]/70 via-transparent to-[#100B07]/15" />
 
@@ -275,6 +269,46 @@ export default function HomePage() {
             >
               Ms. Prachi Dwivedi · Founder
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section
+        aria-labelledby="community-media-heading"
+        className="border-t border-border-subtle px-space-lg py-16 sm:px-margin md:py-20"
+      >
+        <div className="mx-auto grid max-w-[90rem] gap-8 md:grid-cols-12 md:items-end">
+          <div className="md:col-span-8">
+            <p className="font-eyebrow text-eyebrow uppercase tracking-[0.18em] text-secondary">
+              Stories in motion
+            </p>
+            <h2
+              id="community-media-heading"
+              className="mt-3 font-display-lg text-[clamp(2.2rem,4vw,3.8rem)] font-medium leading-[1.05] text-primary"
+            >
+              From our community.
+            </h2>
+            <p className="mt-4 max-w-2xl font-body-md text-body-md text-text-secondary">
+              Watch videos and reels from Kadam&apos;s community activities on
+              our official social channels.
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-3 md:col-span-4 md:justify-end">
+            {SOCIAL_LINKS.filter(({ name }) =>
+              ['YouTube', 'Instagram'].includes(name),
+            ).map(({ name, href, icon }) => (
+              <a
+                key={name}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-primary px-5 py-3 font-label-md text-label-md font-semibold text-primary transition-colors hover:bg-surface-raised focus:outline-none focus:ring-2 focus:ring-focus-ring"
+              >
+                <Icon name={icon} className="text-lg" />
+                Visit {name}
+                <Icon name="arrow_outward" className="text-base" />
+              </a>
+            ))}
           </div>
         </div>
       </section>
