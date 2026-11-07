@@ -4,6 +4,21 @@ import Icon from '@/components/Icon';
 import { CONTACT_INFO } from '@/lib/site-config';
 import { createPageMetadata } from '@/lib/seo';
 
+const PARTNER_LOGOS = [
+  {
+    name: 'UpskillED',
+    src: '/images/partners/upskilled-logo.png',
+    className: 'size-56 overflow-hidden rounded-full',
+    imageClassName: 'object-contain',
+  },
+  {
+    name: 'Shubh Shri Seva Samiti',
+    src: '/images/partners/shubh-shri-seva-samiti.webp',
+    className: 'relative aspect-square w-full max-w-56 overflow-hidden',
+    imageClassName: 'object-contain',
+  },
+] as const;
+
 export const metadata = createPageMetadata(
   'Partnerships',
   'Explore partnership and collaboration enquiries with Kadam SOS Foundation in support of community-led initiatives.',
@@ -55,17 +70,27 @@ export default function PartnershipsPage() {
               Our partners.
             </h2>
           </div>
-          <article className="flex items-center justify-center md:col-span-5 md:col-start-8">
-            <div className="relative size-56 overflow-hidden rounded-full">
-              <Image
-                src="/images/partners/upskilled-logo.png"
-                alt="UpskillED partner logo"
-                fill
-                sizes="224px"
-                className="object-contain"
-              />
-            </div>
-          </article>
+          <div className="grid gap-8 sm:grid-cols-2 md:col-span-6 md:col-start-7">
+            {PARTNER_LOGOS.map(({ name, src, className, imageClassName }) => (
+              <article
+                key={name}
+                className="flex flex-col items-center justify-center gap-3"
+              >
+                <div className={`relative ${className}`}>
+                  <Image
+                    src={src}
+                    alt={`${name} partner logo`}
+                    fill
+                    sizes="(min-width: 768px) 224px, 45vw"
+                    className={imageClassName}
+                  />
+                </div>
+                <p className="font-label-md text-label-md font-semibold text-text-primary">
+                  {name}
+                </p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 

@@ -35,6 +35,19 @@ const programs = [
   },
 ];
 
+const COMMUNITY_SHORTS = [
+  {
+    url: 'https://www.youtube.com/shorts/FNG3v9ccHpI',
+    thumbnail: '/images/social/youtube-short-FNG3v9ccHpI.webp',
+    label: 'Watch Kadam community Short one on YouTube',
+  },
+  {
+    url: 'https://www.youtube.com/shorts/CS9VVgOghz8',
+    thumbnail: '/images/social/youtube-short-CS9VVgOghz8.webp',
+    label: 'Watch Kadam community Short two on YouTube',
+  },
+] as const;
+
 export default function HomePage() {
   const founder = CENTRAL_LEADERSHIP.find(({ role }) => role === 'Founder');
 
@@ -289,27 +302,48 @@ export default function HomePage() {
               From our community.
             </h2>
             <p className="mt-4 max-w-2xl font-body-md text-body-md text-text-secondary">
-              Watch videos and reels from Kadam&apos;s community activities on
-              our official social channels.
+              Watch moments from Kadam&apos;s community work on YouTube.
+              Instagram Reels will be added later.
             </p>
           </div>
           <div className="flex flex-wrap gap-3 md:col-span-4 md:justify-end">
-            {SOCIAL_LINKS.filter(({ name }) =>
-              ['YouTube', 'Instagram'].includes(name),
-            ).map(({ name, href, icon }) => (
-              <a
-                key={name}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-primary px-5 py-3 font-label-md text-label-md font-semibold text-primary transition-colors hover:bg-surface-raised focus:outline-none focus:ring-2 focus:ring-focus-ring"
-              >
-                <Icon name={icon} className="text-lg" />
-                Visit {name}
-                <Icon name="arrow_outward" className="text-base" />
-              </a>
-            ))}
+            <a
+              href={SOCIAL_LINKS.find(({ name }) => name === 'YouTube')?.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-primary px-5 py-3 font-label-md text-label-md font-semibold text-primary transition-colors hover:bg-surface-raised focus:outline-none focus:ring-2 focus:ring-focus-ring"
+            >
+              <Icon name="youtube" className="text-lg" />
+              Visit YouTube
+              <Icon name="arrow_outward" className="text-base" />
+            </a>
           </div>
+        </div>
+        <div className="mx-auto mt-8 grid max-w-[90rem] gap-5 sm:grid-cols-2">
+          {COMMUNITY_SHORTS.map(({ url, thumbnail, label }) => (
+            <a
+              key={url}
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={label}
+              className="group relative block aspect-video overflow-hidden bg-surface-raised focus:outline-none focus:ring-2 focus:ring-focus-ring"
+            >
+              <Image
+                src={thumbnail}
+                alt=""
+                fill
+                sizes="(min-width: 640px) 45vw, 100vw"
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <span className="absolute inset-0 flex items-center justify-center bg-black/15 transition-colors group-hover:bg-black/35">
+                <span className="flex items-center gap-2 bg-black/70 px-4 py-2 font-label-md text-label-md font-semibold text-white">
+                  <Icon name="play_circle" className="text-xl" />
+                  Watch on YouTube
+                </span>
+              </span>
+            </a>
+          ))}
         </div>
       </section>
 
