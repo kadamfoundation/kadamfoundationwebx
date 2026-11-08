@@ -79,6 +79,15 @@ export default function StoriesPage() {
                 </dd>
               </div>
             </dl>
+            <a
+              href="https://forms.gle/UXuS8jj8MzPSFtEu6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-7 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-primary-container px-6 py-3 font-label-md text-label-md font-semibold text-white transition-colors hover:bg-action-hover focus:outline-none focus:ring-2 focus:ring-focus-ring"
+            >
+              Register for the event
+              <Icon name="arrow_outward" className="text-base" />
+            </a>
           </div>
         </article>
       </section>

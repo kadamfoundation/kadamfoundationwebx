@@ -17,6 +17,12 @@ const PARTNER_LOGOS = [
     className: 'relative aspect-square w-full max-w-56 overflow-hidden',
     imageClassName: 'object-contain',
   },
+  {
+    name: 'ARTTELE INDIA',
+    src: '/images/partners/arttele-india.webp',
+    className: 'relative aspect-square w-full max-w-56 overflow-hidden',
+    imageClassName: 'object-contain',
+  },
 ] as const;
 
 export const metadata = createPageMetadata(
