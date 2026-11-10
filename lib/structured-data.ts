@@ -1,5 +1,6 @@
 import { CONTACT_INFO, SOCIAL_LINKS } from '@/lib/site-config';
 import { SITE_URL } from '@/lib/seo';
+import type { CityTeamData, TeamProfile } from '@/lib/team-data';
 
 export const ORGANIZATION_ID = `${SITE_URL}/#organization`;
 export const FOUNDER_ID = `${SITE_URL}/founder#person`;
@@ -46,3 +47,54 @@ export const founderStructuredData: Record<string, unknown> = {
   worksFor: { '@id': ORGANIZATION_ID },
   mainEntityOfPage: new URL('/founder', SITE_URL).toString(),
 };
+
+export function cityTeamStructuredData(
+  city: CityTeamData,
+): Record<string, unknown> {
+  const profiles: { profile: TeamProfile; role: string }[] = [];
+
+  if (city.cityHead?.name?.trim()) {
+    profiles.push({ profile: city.cityHead, role: 'City head' });
+  }
+
+  for (const department of city.departments ?? []) {
+    for (const profile of department.coordinators ?? []) {
+      if (profile.name?.trim()) {
+        profiles.push({
+          profile,
+          role: profile.role ?? department.name,
+        });
+      }
+    }
+  }
+
+  return {
+    '@context': 'https://schema.org',
+    '@graph': profiles.map(({ profile, role }, index) => ({
+      '@type': 'Person',
+      '@id': new URL(
+        `/team#${city.slug}-${index + 1}`,
+        SITE_URL,
+      ).toString(),
+      name: profile.name,
+      ...(profile.honorific ? { honorificPrefix: profile.honorific } : {}),
+      jobTitle: role,
+      ...(profile.bio?.trim() ? { description: profile.bio.trim() } : {}),
+      ...(profile.image
+        ? { image: new URL(profile.image, SITE_URL).toString() }
+        : {}),
+      ...(profile.instagramUrl || profile.linkedinUrl
+        ? {
+            sameAs: [profile.instagramUrl, profile.linkedinUrl].filter(
+              (url): url is string => Boolean(url),
+            ),
+          }
+        : {}),
+      worksFor: { '@id': ORGANIZATION_ID },
+      homeLocation: {
+        '@type': 'Place',
+        name: city.name,
+      },
+    })),
+  };
+}

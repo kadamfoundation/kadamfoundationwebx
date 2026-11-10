@@ -8,20 +8,37 @@ const PARTNER_LOGOS = [
   {
     name: 'UpskillED',
     src: '/images/partners/upskilled-logo.png',
-    className: 'size-56 overflow-hidden rounded-full',
-    imageClassName: 'object-contain',
+    alt: 'UpskillED, Challenging Norms, partner logo',
+    className: 'relative size-36 overflow-hidden rounded-full',
+    imageClassName: 'scale-[0.82] object-contain',
   },
   {
     name: 'Shubh Shri Seva Samiti',
     src: '/images/partners/shubh-shri-seva-samiti.webp',
-    className: 'relative aspect-square w-full max-w-56 overflow-hidden',
+    alt: 'Shubh Shri Seva Samiti partner logo',
+    className: 'relative size-36 overflow-hidden',
     imageClassName: 'object-contain',
   },
   {
     name: 'ARTTELE INDIA',
     src: '/images/partners/arttele-india.webp',
-    className: 'relative aspect-square w-full max-w-56 overflow-hidden',
-    imageClassName: 'object-contain',
+    alt: 'ARTTELE INDIA partner logo',
+    className: 'relative size-36 overflow-hidden',
+    imageClassName: 'scale-[1.1] object-contain',
+  },
+  {
+    name: 'AGST & Associates',
+    src: '/images/partners/agst-associates.jpeg',
+    alt: 'AGST & Associates, Chartered Accountants, partner logo',
+    className: 'relative size-36 overflow-hidden',
+    imageClassName: 'scale-[0.88] object-contain',
+  },
+  {
+    name: 'Original Redheir',
+    src: '/images/partners/original-redheir.jpeg',
+    alt: 'Original Redheir, Website Design & Development, partner logo',
+    className: 'relative size-36 overflow-hidden',
+    imageClassName: 'scale-[0.84] object-contain',
   },
 ] as const;
 
@@ -64,38 +81,51 @@ export default function PartnershipsPage() {
         aria-labelledby="current-partners-heading"
         className="border-t border-border-subtle bg-surface-raised px-space-lg py-16 sm:px-margin md:py-24"
       >
-        <div className="mx-auto grid max-w-[90rem] gap-8 md:grid-cols-12 md:items-center">
-          <div className="md:col-span-6">
-            <p className="font-eyebrow text-eyebrow uppercase tracking-[0.18em] text-secondary">
-              Working together
-            </p>
-            <h2
-              id="current-partners-heading"
-              className="mt-3 font-display-lg text-[clamp(2.2rem,4vw,3.8rem)] font-medium leading-[1.05] text-primary"
-            >
-              Our partners.
-            </h2>
-          </div>
-          <div className="grid gap-8 sm:grid-cols-2 md:col-span-6 md:col-start-7">
-            {PARTNER_LOGOS.map(({ name, src, className, imageClassName }) => (
-              <article
-                key={name}
-                className="flex flex-col items-center justify-center gap-3"
-              >
-                <div className={`relative ${className}`}>
-                  <Image
-                    src={src}
-                    alt={`${name} partner logo`}
-                    fill
-                    sizes="(min-width: 768px) 224px, 45vw"
-                    className={imageClassName}
-                  />
+        <div className="mx-auto max-w-[90rem]">
+          <p className="font-eyebrow text-eyebrow uppercase tracking-[0.18em] text-secondary">
+            Working together
+          </p>
+          <h2
+            id="current-partners-heading"
+            className="mt-3 font-display-lg text-[clamp(2.2rem,4vw,3.8rem)] font-medium leading-[1.05] text-primary"
+          >
+            Our partners.
+          </h2>
+          <div
+            aria-label="Current partner logos"
+            className="marquee-viewport mt-8"
+            role="region"
+            tabIndex={0}
+          >
+            <div className="marquee-track">
+              {[false, true].map((isDuplicate) => (
+                <div
+                  key={String(isDuplicate)}
+                  aria-hidden={isDuplicate}
+                  className="marquee-group"
+                >
+                  {PARTNER_LOGOS.map(({ name, src, alt, className, imageClassName }) => (
+                    <article
+                      key={name}
+                      className="flex w-36 shrink-0 flex-col items-center justify-center gap-3"
+                    >
+                      <div className={`relative ${className}`}>
+                        <Image
+                          src={src}
+                          alt={alt}
+                          fill
+                          sizes="144px"
+                          className={imageClassName}
+                        />
+                      </div>
+                      <p className="font-label-md text-label-md text-center font-semibold text-text-primary">
+                        {name}
+                      </p>
+                    </article>
+                  ))}
                 </div>
-                <p className="font-label-md text-label-md font-semibold text-text-primary">
-                  {name}
-                </p>
-              </article>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>

@@ -1,5 +1,74 @@
 import Image from 'next/image';
-import type { CityTeamData } from '@/lib/team-data';
+import type { CityTeamData, TeamProfile } from '@/lib/team-data';
+
+function ProfileLinks({ profile }: { profile: TeamProfile }) {
+  const links = [
+    { label: 'Instagram', href: profile.instagramUrl },
+    { label: 'LinkedIn', href: profile.linkedinUrl },
+  ].filter((link): link is { label: string; href: string } => Boolean(link.href));
+
+  if (links.length === 0) return null;
+
+  return (
+    <ul className="mt-4 flex flex-wrap gap-x-4 gap-y-2">
+      {links.map(({ label, href }) => (
+        <li key={label}>
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-label-md text-label-md font-semibold text-primary underline decoration-border-subtle underline-offset-4 hover:text-secondary focus:outline-none focus:ring-2 focus:ring-focus-ring"
+          >
+            {label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function CityProfileCard({
+  profile,
+  role,
+}: {
+  profile: TeamProfile;
+  role: string;
+}) {
+  if (!profile.name?.trim()) return null;
+
+  return (
+    <article className="border border-border-subtle bg-surface-raised p-4">
+      <div className="flex items-center gap-4">
+        {profile.image ? (
+          <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full bg-surface-container">
+            <Image
+              src={profile.image}
+              alt=""
+              fill
+              sizes="64px"
+              className="object-cover"
+            />
+          </div>
+        ) : null}
+        <div>
+          <p className="font-eyebrow text-eyebrow uppercase tracking-widest text-secondary">
+            {role}
+          </p>
+          <h4 className="mt-1 font-headline-md text-headline-md font-semibold text-primary">
+            {profile.honorific ? `${profile.honorific} ` : ''}
+            {profile.name}
+          </h4>
+        </div>
+      </div>
+      {profile.bio?.trim() ? (
+        <p className="mt-4 font-body-sm text-body-sm leading-relaxed text-text-secondary">
+          {profile.bio}
+        </p>
+      ) : null}
+      <ProfileLinks profile={profile} />
+    </article>
+  );
+}
 
 export default function CityTeam({ city }: { city: CityTeamData }) {
   const cityHead = city.cityHead?.name?.trim()
@@ -9,7 +78,7 @@ export default function CityTeam({ city }: { city: CityTeamData }) {
     (department.coordinators ?? [])
       .filter((coordinator) => coordinator.name?.trim())
       .map((coordinator) => ({
-        ...coordinator,
+        profile: coordinator,
         department: department.name,
       })),
   );
@@ -39,46 +108,15 @@ export default function CityTeam({ city }: { city: CityTeamData }) {
       {cityHead || coordinators.length > 0 ? (
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {cityHead && (
-            <article className="flex items-center gap-4 border border-border-subtle bg-surface-raised p-4">
-              {cityHead.image ? (
-                <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full bg-surface-container">
-                  <Image
-                    src={cityHead.image}
-                    alt=""
-                    fill
-                    sizes="64px"
-                    className="object-cover"
-                  />
-                </div>
-              ) : (
-                <div
-                  aria-hidden="true"
-                  className="h-16 w-16 shrink-0 rounded-full bg-surface-container"
-                />
-              )}
-              <div>
-                <p className="font-eyebrow text-eyebrow uppercase tracking-widest text-secondary">
-                  City head
-                </p>
-                <p className="mt-1 font-headline-md text-headline-md font-semibold text-primary">
-                  {cityHead.honorific ?? 'Ms.'} {cityHead.name}
-                </p>
-              </div>
-            </article>
+            <CityProfileCard profile={cityHead} role="City head" />
           )}
 
-          {coordinators.map((coordinator, index) => (
-            <article
-              key={`${coordinator.department}-${coordinator.name}-${index}`}
-              className="border border-border-subtle bg-surface-raised p-4"
-            >
-              <p className="font-eyebrow text-eyebrow uppercase tracking-widest text-secondary">
-                {coordinator.department}
-              </p>
-              <p className="mt-1 font-headline-md text-headline-md font-semibold text-primary">
-                {coordinator.name}
-              </p>
-            </article>
+          {coordinators.map(({ profile, department }, index) => (
+            <CityProfileCard
+              key={`${department}-${profile.name}-${index}`}
+              profile={profile}
+              role={profile.role ?? department}
+            />
           ))}
         </div>
       ) : (

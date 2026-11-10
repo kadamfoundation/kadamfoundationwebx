@@ -4,7 +4,7 @@ import Icon from '@/components/Icon';
 import HomeHeroBackground from '@/components/HomeHeroBackground';
 import ImpactMetrics from '@/components/ImpactMetrics';
 import JsonLd from '@/components/JsonLd';
-import { CENTRAL_LEADERSHIP, CITY_TEAMS } from '@/lib/team-data';
+import { ADVISORS, CENTRAL_LEADERSHIP, CITY_TEAMS } from '@/lib/team-data';
 import { SOCIAL_LINKS, VOLUNTEER_FORM_URL } from '@/lib/site-config';
 import { organizationStructuredData } from '@/lib/structured-data';
 
@@ -45,6 +45,19 @@ const COMMUNITY_SHORTS = [
     url: 'https://www.youtube.com/shorts/CS9VVgOghz8',
     thumbnail: '/images/social/youtube-short-CS9VVgOghz8.webp',
     label: 'Watch Kadam community Short two on YouTube',
+  },
+] as const;
+
+const COMMUNITY_REELS = [
+  {
+    url: 'https://www.instagram.com/kadamfoundation_/reel/C8W2tDeIOL3/',
+    thumbnail: '/images/social/community-reel-1.jpeg',
+    label: 'Watch Kadam Foundation community Reel 1 on Instagram',
+  },
+  {
+    url: 'https://www.instagram.com/kadamfoundation_/reel/C_XYB_Ovfge/',
+    thumbnail: '/images/social/community-reel-2.jpeg',
+    label: 'Watch Kadam Foundation community Reel 2 on Instagram',
   },
 ] as const;
 
@@ -259,6 +272,34 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
+            <div
+              aria-label="Kadam Foundation advisors"
+              className="marquee-viewport mt-5 border-b border-border-subtle py-4"
+              role="region"
+              tabIndex={0}
+            >
+              <div className="marquee-track">
+                {[false, true].map((isDuplicate) => (
+                  <div
+                    key={String(isDuplicate)}
+                    aria-hidden={isDuplicate}
+                    className="marquee-group items-center"
+                  >
+                    {ADVISORS.map((name) => (
+                      <span
+                        key={name}
+                        className="whitespace-nowrap font-body-sm text-body-sm font-semibold text-text-secondary"
+                      >
+                        <span className="mr-2 uppercase tracking-wider text-secondary">
+                          Advisor
+                        </span>
+                        {name}
+                      </span>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </div>
             <Link
               href="/founder"
               className="group mt-6 inline-flex items-center gap-2 font-label-md text-label-md font-semibold text-primary"
@@ -302,8 +343,8 @@ export default function HomePage() {
               From our community.
             </h2>
             <p className="mt-4 max-w-2xl font-body-md text-body-md text-text-secondary">
-              Watch moments from Kadam&apos;s community work on YouTube.
-              Instagram Reels will be added later.
+              Watch moments from Kadam&apos;s community work on YouTube and
+              Instagram.
             </p>
           </div>
           <div className="flex flex-wrap gap-3 md:col-span-4 md:justify-end">
@@ -344,6 +385,39 @@ export default function HomePage() {
               </span>
             </a>
           ))}
+        </div>
+        <div className="mx-auto mt-10 max-w-[90rem]">
+          <div className="mx-auto max-w-2xl">
+            <h3 className="text-center font-headline-md text-headline-md font-semibold text-primary">
+              Instagram Reels.
+            </h3>
+            <div className="mx-auto mt-5 grid max-w-2xl grid-cols-2 gap-4 sm:gap-6">
+              {COMMUNITY_REELS.map(({ url, thumbnail, label }) => (
+                <a
+                  key={url}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="group relative block aspect-[9/16] overflow-hidden bg-surface-raised focus:outline-none focus:ring-2 focus:ring-focus-ring"
+                >
+                  <Image
+                    src={thumbnail}
+                    alt=""
+                    fill
+                    sizes="(min-width: 640px) 16rem, 44vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <span className="absolute inset-0 flex items-center justify-center bg-black/15 transition-colors group-hover:bg-black/35">
+                    <span className="flex items-center gap-2 bg-black/70 px-4 py-2 font-label-md text-label-md font-semibold text-white">
+                      <Icon name="instagram" className="text-lg" />
+                      Watch on Instagram
+                    </span>
+                  </span>
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

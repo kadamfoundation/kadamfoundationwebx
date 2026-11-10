@@ -2,6 +2,10 @@ export type TeamProfile = {
   name?: string;
   honorific?: 'Ms.' | 'Mr.';
   image?: string;
+  role?: string;
+  bio?: string;
+  instagramUrl?: string;
+  linkedinUrl?: string;
 };
 
 export type CentralLeader = {
@@ -54,6 +58,8 @@ export const CENTRAL_LEADERSHIP: CentralLeader[] = [
     member: { name: 'Mrs. Shachi Dwivedi' },
   },
 ];
+
+export const ADVISORS = ['CA Gautam Jain', 'CA Shreya Jain'] as const;
 
 const CITIES: CityDefinition[] = [
   {
@@ -150,6 +156,6 @@ export const CITY_TEAMS: CityTeamData[] = CITIES.map(({ cityHead, coordinators, 
   cityHead: cityHead ?? {},
   departments: DEPARTMENTS.map((department) => ({
     ...department,
-    coordinators: coordinators?.[department.id] ?? [{}],
+    coordinators: coordinators?.[department.id] ?? [],
   })),
 }));

@@ -4,7 +4,9 @@ import Image from 'next/image';
 import { useState } from 'react';
 import CityTeam from '@/components/CityTeam';
 import Icon from '@/components/Icon';
-import { CENTRAL_LEADERSHIP, CITY_TEAMS } from '@/lib/team-data';
+import JsonLd from '@/components/JsonLd';
+import { CENTRAL_LEADERSHIP, ADVISORS, CITY_TEAMS } from '@/lib/team-data';
+import { cityTeamStructuredData } from '@/lib/structured-data';
 
 const founder = CENTRAL_LEADERSHIP.find(({ role }) => role === 'Founder');
 const directors = CENTRAL_LEADERSHIP.filter(({ role }) => role === 'Director');
@@ -15,6 +17,7 @@ export default function TeamPage() {
 
   return (
     <main>
+      {selectedCity && <JsonLd data={cityTeamStructuredData(selectedCity)} />}
       <section className="px-space-lg pb-16 pt-16 sm:px-margin md:pb-24 md:pt-24">
         <div className="mx-auto max-w-[90rem]">
           <p className="font-eyebrow text-eyebrow uppercase tracking-[0.18em] text-secondary">
@@ -94,6 +97,50 @@ export default function TeamPage() {
                 </h3>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section
+        aria-labelledby="advisors-heading"
+        className="border-t border-border-subtle bg-surface-raised px-space-lg py-8 sm:px-margin md:py-10"
+      >
+        <div className="mx-auto grid max-w-[90rem] gap-5 md:grid-cols-12 md:items-center">
+          <div className="md:col-span-3">
+            <p className="font-eyebrow text-eyebrow uppercase tracking-[0.18em] text-secondary">
+              Guidance
+            </p>
+            <h2
+              id="advisors-heading"
+              className="mt-2 font-headline-lg text-headline-lg font-semibold text-primary"
+            >
+              Our advisors.
+            </h2>
+          </div>
+          <div
+            aria-label="Kadam Foundation advisors"
+            className="marquee-viewport md:col-span-9"
+            role="region"
+            tabIndex={0}
+          >
+            <div className="marquee-track">
+              {[false, true].map((isDuplicate) => (
+                <div
+                  key={String(isDuplicate)}
+                  aria-hidden={isDuplicate}
+                  className="marquee-group items-center"
+                >
+                  {ADVISORS.map((name) => (
+                    <span
+                      key={name}
+                      className="whitespace-nowrap font-headline-md text-headline-md font-semibold text-text-primary"
+                    >
+                      {name}
+                    </span>
+                  ))}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
