@@ -1,26 +1,35 @@
-# Approved Image Assets
+# Active Website Images
 
-Store original, approved Kadam Foundation photographs in the folders below. Use descriptive, lowercase filenames and provide alt text describing the actual image. Use `next/image` for local photos.
+This directory contains approved images that are served by the website. Keep
+unreviewed uploads and original source files in `assets/source/`, not here.
+
+Use descriptive, lowercase kebab-case filenames. Reference local images with
+`next/image` where appropriate and write alt text that describes the actual
+image. Choose JPEG or WebP for photos and keep posters/logos at a quality where
+their details remain legible.
 
 ## Folders
 
+- `donate/`: donation QR artwork.
+- `events/`: current event posters.
+- `gallery/`: approved community photos used in stories and program sections.
+- `homepage/`: homepage feature photographs and operational city map.
 - `leadership/`: central leadership portraits.
+- `partners/`: active partner logos.
+- `programs/`: program-specific photographs.
+- `social/`: YouTube and Instagram thumbnails.
+- `stories/`: approved story images (add assets here when story cards use them).
 - `team/`: city heads and department coordinators.
-- `programs/`: Project Siksha, Project Samanvay, and Women Empowerment photographs.
-- `stories/`: approved photographs for the story cards.
-- `events/`: future event photographs.
-- `homepage/`: homepage feature and community photographs.
+- `volunteer/`: volunteer-page photography.
 
-## Current Image Slots
+The root `kadam-logo.jpg` is the active Kadam wordmark used in structured data,
+the navigation, and footer.
 
-- Home: `homepage/kadam-hero.jpg` is the supplied Kadam volunteer group photograph used in the cinematic hero; `homepage/operational-cities-map.jpg` is the map visual.
-- About: `gallery/learning-community.jpg` illustrates Kadam's community learning work on both the homepage and About page.
-- Programs: Shiksha, the supplied `programs/project-samanvay-field-activity.jpg`, and Women Empowerment photographs are used on the programs page.
-- Leadership: `leadership/founder.jpg` is Prachi Dwivedi's portrait.
-- Volunteer: the learning-circle feature remains on the Volunteer page.
-- Team: leadership and city profiles use optional local image paths in `lib/team-data.ts`.
-- Navbar: uses an inline footprint icon and wordmark. No external logo asset is required.
+## Adding an image
 
-The homepage hero and Project Samanvay photographs were selected from the supplied
-`photos/` collection. The map is color-adjusted in the interface to fit the dark
-theme; keep it as a verified map asset, not a photograph.
+1. Review the original in `assets/source/` and confirm it is approved for the
+   website.
+2. Add the production version to the matching folder here, using a clear name.
+3. Update the relevant page/data reference and provide suitable alt text.
+4. Keep the original in `assets/source/`; do not copy source uploads into this
+   public directory unless the website uses them.
