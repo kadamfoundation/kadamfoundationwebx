@@ -7,15 +7,25 @@ export const FOUNDER_ID = `${SITE_URL}/founder#person`;
 
 export const organizationStructuredData: Record<string, unknown> = {
   '@context': 'https://schema.org',
-  '@type': 'Organization',
+  '@type': 'NGO',
   '@id': ORGANIZATION_ID,
   name: 'Kadam SOS Foundation',
+  alternateName: 'Kadam Foundation',
   url: SITE_URL,
-  logo: new URL('/images/kadam-logo.jpg', SITE_URL).toString(),
+  logo: {
+    '@type': 'ImageObject',
+    url: new URL('/images/kadam-logo.jpg', SITE_URL).toString(),
+    width: 475,
+    height: 475,
+  },
   description:
     'A youth-led foundation working alongside communities through education, women’s empowerment, and youth development.',
   foundingDate: '2020-03-20',
   founder: { '@id': FOUNDER_ID },
+  areaServed: {
+    '@type': 'Country',
+    name: 'India',
+  },
   address: {
     '@type': 'PostalAddress',
     streetAddress: CONTACT_INFO.officeAddress,
@@ -28,9 +38,9 @@ export const organizationStructuredData: Record<string, unknown> = {
     telephone: CONTACT_INFO.phone,
     email: CONTACT_INFO.email,
   },
-  sameAs: SOCIAL_LINKS.filter(({ name }) => name !== 'WhatsApp').map(
-    ({ href }) => href,
-  ),
+  sameAs: SOCIAL_LINKS.filter(
+    ({ name }) => ['YouTube', 'LinkedIn', 'X', 'Instagram'].includes(name),
+  ).map(({ href }) => href),
 };
 
 export const founderStructuredData: Record<string, unknown> = {

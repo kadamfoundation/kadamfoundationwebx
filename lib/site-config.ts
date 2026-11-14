@@ -27,5 +27,5 @@ export const SOCIAL_LINKS = [
   { name: 'WhatsApp', href: CONTACT_INFO.whatsappUrl, icon: 'whatsapp' },
   { name: 'X', href: 'https://x.com/kadamfoundatioX', icon: 'x' },
   { name: 'Facebook', href: 'https://www.facebook.com/share/1GVsWwrdJW/', icon: 'facebook' },
-  { name: 'Instagram', href: 'https://www.instagram.com/kadamfoundation_?xtok=MWgxdGowZjZibWt5', icon: 'instagram' },
+  { name: 'Instagram', href: 'https://www.instagram.com/kadamfoundation_/', icon: 'instagram' },
 ] satisfies readonly SocialLink[];
