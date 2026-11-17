@@ -250,7 +250,7 @@ export default function HomePage() {
 
       <section className="px-space-lg py-12 sm:px-margin sm:py-16 md:py-28">
         <div className="mx-auto grid max-w-[90rem] gap-6 sm:gap-8 lg:grid-cols-12 lg:items-center lg:gap-10">
-          <div className="order-2 lg:order-1 lg:col-span-5">
+          <div className="order-2 min-w-0 lg:order-1 lg:col-span-5">
             <p className="font-eyebrow text-eyebrow uppercase tracking-[0.18em] text-secondary">
               Leadership
             </p>
@@ -274,7 +274,7 @@ export default function HomePage() {
             </div>
             <div
               aria-label="Kadam Foundation advisors"
-              className="marquee-viewport mt-5 border-b border-border-subtle py-4"
+              className="marquee-viewport mt-5 min-w-0 border-b border-border-subtle py-4"
               role="region"
               tabIndex={0}
             >
@@ -309,12 +309,12 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div className="relative order-1 mx-auto aspect-[4/3] max-h-[24rem] w-full max-w-[36rem] overflow-hidden bg-surface-container sm:max-h-[30rem] lg:order-2 lg:col-span-7 lg:aspect-auto lg:max-h-none lg:min-h-[34rem] lg:max-w-none">
+          <div className="relative order-1 mx-auto aspect-[4/3] max-h-[18rem] w-full min-w-0 max-w-[24rem] overflow-hidden bg-surface-container sm:max-h-[30rem] sm:max-w-[36rem] lg:order-2 lg:col-span-7 lg:aspect-auto lg:max-h-none lg:min-h-[34rem] lg:max-w-none">
             <Image
               src="/images/leadership/founder.jpg"
               alt="Ms. Prachi Dwivedi, Founder of Kadam Foundation"
               fill
-              sizes="(min-width: 1024px) 58vw, 100vw"
+              sizes="(min-width: 1024px) 58vw, (min-width: 640px) 36rem, 24rem"
               className="editorial-image object-cover object-[center_38%]"
             />
             <Link
