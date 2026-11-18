@@ -80,6 +80,15 @@ export default function StoriesPage() {
                   ₹499
                 </dd>
               </div>
+              <div>
+                <dt className="font-eyebrow text-eyebrow uppercase tracking-[0.16em] text-secondary">
+                  Venue
+                </dt>
+                <dd className="mt-2 inline-flex items-center gap-2 font-body-md text-body-md text-primary">
+                  <Icon name="location_on" className="text-base text-secondary" />
+                  Sri Sathya Sai College, Bhopal
+                </dd>
+              </div>
             </dl>
             <a
               href="https://forms.gle/UXuS8jj8MzPSFtEu6"
@@ -153,10 +162,18 @@ export default function StoriesPage() {
             </div>
             <p className="mt-6 font-body-md text-body-md text-text-secondary">
               The poster lists cash awards, trophies and certificates, and
-              features on Artelle. Event dates and registration details are
-              coming soon.
+              features on Artelle. Register now to participate.
             </p>
             <div className="mt-6 flex flex-wrap gap-x-5 gap-y-3">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfKCOeW9aOi8XqcecOgws61li_a8QA89bwgoP6fE1u92Z55Mg/viewform?usp=header"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-primary-container px-6 py-3 font-label-md text-label-md font-semibold text-white transition-colors hover:bg-action-hover focus:outline-none focus:ring-2 focus:ring-focus-ring"
+              >
+                Register for the event
+                <Icon name="arrow_outward" className="text-base" />
+              </a>
               <a
                 href="https://artelle.in"
                 target="_blank"
